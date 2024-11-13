@@ -64,12 +64,9 @@ export default component$(() => {
                 <ul class="dropdown-menu md:backdrop-blur-md dark:md:bg-slate-800 rounded md:absolute pl-4 md:pl-0 md:hidden font-medium md:bg-white/90 md:min-w-[200px] drop-shadow-xl">
                   {items.map(({ text: text2, href: href2 }, key2) => (
                     <li key={key2}>
-                      <a
-                        class="first:rounded-t last:rounded-b md:hover:bg-gray-100 hover:text-link dark:hover:text-white dark:hover:bg-gray-700 py-2 px-5 block whitespace-no-wrap"
-                        href={href2}
-                      >
-                        {text2}
-                      </a>
+                     <a class={`hover:text-link ${store.isScrolling ? "text-gray-900 dark:text-slate-200" : "text-gray-900"} px-4 py-3 flex items-center`} href={href}>
+  {text}
+</a>
                     </li>
                   ))}
                 </ul>
