@@ -59,18 +59,17 @@ export default component$(() => {
   ];
 
   return (
-    <footer class="py-3 px-3 sm:px-6">
-      <div class="max-w-7xl mx-auto px-8 bg-white dark:bg-gray-900 rounded-lg shadow-lg">
+    <footer class="border-t border-gray-200 dark:border-slate-800">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6">
         <div class="grid grid-cols-12 gap-4 gap-y-8 sm:gap-8 pt-8 pb-2 md:py-12">
           <div class="col-span-12 lg:col-span-4 pr-8">
             <div class="mb-2">
-        
               <Link class="inline-block font-bold text-xl" href={"/"}>
                 Etchy Sketchy
               </Link>
             </div>
             <div class="text-sm text-gray-600 dark:text-gray-400">
-              Scribble your way through creativity! Master the lines, embrace the quirks, and turn every twist into a masterpiece—because art’s all about the journey, not the perfect line.
+            Scribble your way through creativity! Master the lines, embrace the quirks, and turn every twist into a masterpiece—because art’s all about the journey, not the perfect line.
             </div>
           </div>
           {links.map(({ title, items }, index) => (
