@@ -21,7 +21,7 @@ export default component$(() => {
          <span class="text-primary-500">Etchy Sketchy</span> 
       </h1>
       <p class="text-xl text-muted mb-6 dark:text-slate-300 max-w-3xl mx-auto lg:max-w-none">
-        Scribble your way through creativity! Master the lines, embrace the quirks, and turn every twist into a masterpiece—because art’s all about the journey, not the perfect line.
+        Scribble your way through creativity. Master the lines, embrace the quirks, and turn every twist into a masterpiece—because art’s all about the journey, not the perfect line.
       </p>
       <div class="max-w-xs sm:max-w-md flex flex-col sm:flex-row sm:justify-center gap-4 lg:justify-start">
         <a class="btn btn-primary w-full" href="https://github.com/onwidget/qwind" target="_blank" rel="noopener">Start Etching</a>
