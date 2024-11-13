@@ -43,7 +43,7 @@ export default component$(() => {
       </div>
     </a>
     <div class="flex items-center md:hidden">
-      <ToggleTheme iconClass={`w-6 h-6 md:w-5 md:h-5 ${store.isScrolling ? "text-gray-900 dark:text-slate-200" : "text-white"}`} />
+      <ToggleTheme iconClass={`w-6 h-6 md:w-5 md:h-5 ${store.isScrolling ? "text-gray-900 dark:text-slate-200" : " lg:text-gray-900 text-white"}`} />
       <ToggleMenu iconClass={`w-6 h-6 md:w-5 md:h-5 ${store.isScrolling ? "text-gray-900 dark:text-slate-200" : "text-white"}`} />
     </div>
   </div>
