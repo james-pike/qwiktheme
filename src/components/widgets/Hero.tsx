@@ -23,7 +23,7 @@ export default component$(() => {
         Scribble your way through creativity. Master the lines, embrace the quirks, and turn every twist into a masterpiece— art's about the journey, not the perfect line.
       </p>
       <div class=" sm:max-w-md flex flex-col sm:flex-row sm:justify-center gap-4 lg:justify-start">
-        <a class="btn btn-primary w-full" href="https://github.com/onwidget/qwind" target="_blank" rel="noopener">Start Etching</a>
+        <a class="btn btn-primary w-full" href="https://aymansor.github.io/Etch-a-Sketch/" target="_blank" rel="noopener">Start Etching</a>
         <button class="btn w-full bg-gray-50 dark:bg-transparent">Learn More</button>
       </div>
     </div>
