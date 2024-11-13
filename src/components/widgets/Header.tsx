@@ -36,7 +36,7 @@ export default component$(() => {
       <Logo />
       <div
         class={`text-2xl md:text-xl font-bold whitespace-nowrap tracking-tight ${
-          store.isScrolling ? "text-gray-900 dark:text-slate-200" : "text-white"
+          store.isScrolling ? "text-gray-900 dark:text-slate-200" : "lg:text-gray-900 text-white"
         }`}
       >
         Etchy Sketchy
@@ -54,7 +54,7 @@ export default component$(() => {
     {menu && menu.items ? (
       <ul class="flex flex-col md:flex-row md:self-center w-full md:w-auto text-xl md:text-[0.9375rem] tracking-[0.01rem] font-medium">
         {menu.items.map(({ text, href, items }, key) => (
-          <li key={key} class={items?.length ? "dropdown" : ""}>
+          <li key={key} class={items?.length ? "dropdown " : ""}>
             {items?.length ? (
               <>
                 <button class={`hover:text-link ${store.isScrolling ? "text-gray-900 dark:text-slate-200" : "text-white"} px-4 py-3 flex items-center`}>
@@ -74,7 +74,7 @@ export default component$(() => {
                 </ul>
               </>
             ) : (
-              <a class={`hover:text-link ${store.isScrolling ? "text-gray-900 dark:text-slate-200" : "text-white"} px-4 py-3 flex items-center`} href={href}>
+              <a class={`hover:text-link ${store.isScrolling ? "text-gray-900 dark:text-slate-200" : "text-gray-900"} px-4 py-3 flex items-center`} href={href}>
                 {text}
               </a>
             )}
