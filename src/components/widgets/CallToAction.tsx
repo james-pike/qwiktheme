@@ -2,12 +2,12 @@ import { component$ } from "@builder.io/qwik";
 
 export default component$(() => {
   return (
-    <section class="relative bg-gradient-to-r from-primary-500 via-pink-200 to-red-300 py-3 sm:py-20">
+    <section class="relative bg-gradient-to-r from-primary-300 via-pink-200 to-red-200 py-3 sm:py-20">
       <div class="max-w-7xl mx-auto px-3 sm:px-6">
         <div class="py-0 md:py-20">
        
           <div class="max-w-3xl mx-auto text-center p-6 rounded-md shadow-xl bg-white dark:bg-gray-900">
-            <h2 class="text-4xl md:text-4xl font-bold leading-tighter tracking-tighter mb-4 font-heading">
+            <h2 class="text-4xl md:text-4xl font-bold leading-tighter tracking-tighter pt-2 my-4 font-heading">
               <span class="text-primary-500">Not convinced?</span>
               <br class="block sm:hidden" />
             </h2>
@@ -59,7 +59,7 @@ export default component$(() => {
                   ></textarea>
                 </div>
 
-                <div class="text-center">
+                <div class="text-center pb-1">
                   <button
                     type="submit"
                     class="btn btn-primary w-full sm:w-auto"
