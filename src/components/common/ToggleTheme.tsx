@@ -14,10 +14,8 @@ export default component$((props: ItemProps) => {
       undefined,
   });
 
-  // eslint-disable-next-line qwik/no-use-visible-task
   useVisibleTask$(() => {
-    store.theme =
-      document.documentElement.classList.contains("dark")
+    store.theme = document.documentElement.classList.contains("dark")
       ? "dark"
       : "light";
   });
@@ -40,10 +38,10 @@ export default component$((props: ItemProps) => {
         }
       }}
     >
-      {store.theme == "dark" ? (
-        <IconMoon class={iconClass} />
+      {store.theme === "dark" ? (
+        <IconMoon class={`${iconClass} md:text-black`} />
       ) : (
-        <IconSun class={iconClass} />
+        <IconSun class={`${iconClass} md:text-black`} />
       )}
     </button>
   );
