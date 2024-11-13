@@ -6,7 +6,14 @@ const coverImage =
 
 export default component$(() => {
   return (
+        <div>
     <section class="relative md:-mt-[76px] not-prose">
+      <div class="-mt-20">
+       
+
+        <div class="relative w-full h-[55vh] sm:h-[90vh] overflow-hidden">
+      <img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%201920%20993%22%20preserveAspectRatio%3D%22xMidYMid%22%20width%3D%221920%22%20height%3D%22993%22%20style%3D%22shape-rendering%3A%20auto%3B%20display%3A%20block%3B%20background%3A%20rgb(255%2C%20255%2C%20255)%3B%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%3E%3Cg%20style%3D%22transform%3Atranslate(960.0px%2C496.5px)%20scale(1%2C-1)%20translate(-960.0px%2C-496.5px)%22%3E%3Cdefs%3E%3ClinearGradient%20y2%3D%221%22%20y1%3D%220%22%20x2%3D%220%22%20x1%3D%220%22%20id%3D%22lg-bk-n2c88aimwtj%22%3E%3Cstop%20offset%3D%220%22%20stop-opacity%3D%220%22%20stop-color%3D%22%23fee8c8%22%3E%3C%2Fstop%3E%3Cstop%20offset%3D%220.125%22%20stop-opacity%3D%221%22%20stop-color%3D%22%23fee8c8%22%3E%3C%2Fstop%3E%3C%2FlinearGradient%3E%3ClinearGradient%20y2%3D%221%22%20y1%3D%220%22%20x2%3D%220%22%20x1%3D%220%22%20id%3D%22lg-jg6mq6wfbyj%22%3E%3Cstop%20offset%3D%220%22%20stop-color%3D%22%23fee8c8%22%3E%3C%2Fstop%3E%3Cstop%20offset%3D%220.37%22%20stop-color%3D%22%23fdbb84%22%3E%3C%2Fstop%3E%3Cstop%20offset%3D%221%22%20stop-color%3D%22%23e34a33%22%3E%3C%2Fstop%3E%3C%2FlinearGradient%3E%3C%2Fdefs%3E%3Crect%20fill%3D%22url(%23lg-bk-n2c88aimwtj)%22%20height%3D%22993%22%20width%3D%221920%22%20y%3D%220%22%20x%3D%220%22%3E%3C%2Frect%3E%3Cg%3E%3Cpath%20opacity%3D%220.4%22%20fill%3D%22url(%23lg-jg6mq6wfbyj)%22%20d%3D%22M0%2099.30000000000001C960%2099.30000000000001%20960%20358.473%201920%20358.473C2880%20358.473%202880%2099.30000000000001%203840%2099.30000000000001C4800%2099.30000000000001%204800%20358.473%205760%20358.473C6720%20358.473%206720%2099.30000000000001%207680%2099.30000000000001L7680%20993%20L0%20993%20Z%22%3E%3CanimateTransform%20values%3D%22-3840%200%3B0%200%22%20begin%3D%220s%22%20keyTimes%3D%220%3B1%22%20repeatCount%3D%22indefinite%22%20dur%3D%2210s%22%20type%3D%22translate%22%20attributeName%3D%22transform%22%3E%3C%2FanimateTransform%3E%3C%2Fpath%3E%3CanimateTransform%20values%3D%220%200%3B0%2010%3B%200%22%20begin%3D%220s%22%20keyTimes%3D%220%3B0.5%3B1%22%20keySplines%3D%220.3%200%200.7%201%3B0.3%200%200.7%201%22%20calcMode%3D%22spline%22%20repeatCount%3D%22indefinite%22%20dur%3D%2210s%22%20type%3D%22translate%22%20attributeName%3D%22transform%22%3E%3C%2FanimateTransform%3E%3C%2Fg%3E%3Cg%3E%3Cpath%20opacity%3D%220.4%22%20fill%3D%22url(%23lg-jg6mq6wfbyj)%22%20d%3D%22M0%2099.30000000000001C960%2099.30000000000001%20960%20358.473%201920%20358.473C2880%20358.473%202880%2099.30000000000001%203840%2099.30000000000001C4800%2099.30000000000001%204800%20358.473%205760%20358.473C6720%20358.473%206720%2099.30000000000001%207680%2099.30000000000001L7680%20993%20L0%20993%20Z%22%3E%3CanimateTransform%20values%3D%22-3840%200%3B0%200%22%20begin%3D%22-0.46666666666666673s%22%20keyTimes%3D%220%3B1%22%20repeatCount%3D%22indefinite%22%20dur%3D%2210s%22%20type%3D%22translate%22%20attributeName%3D%22transform%22%3E%3C%2FanimateTransform%3E%3C%2Fpath%3E%3CanimateTransform%20values%3D%220%200%3B0%2010%3B%200%22%20begin%3D%22-3.3333333333333335s%22%20keyTimes%3D%220%3B0.5%3B1%22%20keySplines%3D%220.3%200%200.7%201%3B0.3%200%200.7%201%22%20calcMode%3D%22spline%22%20repeatCount%3D%22indefinite%22%20dur%3D%2210s%22%20type%3D%22translate%22%20attributeName%3D%22transform%22%3E%3C%2FanimateTransform%3E%3C%2Fg%3E%3Cg%3E%3Cpath%20opacity%3D%220.4%22%20fill%3D%22url(%23lg-jg6mq6wfbyj)%22%20d%3D%22M0%2099.30000000000001C960%2099.30000000000001%20960%20358.473%201920%20358.473C2880%20358.473%202880%2099.30000000000001%203840%2099.30000000000001C4800%2099.30000000000001%204800%20358.473%205760%20358.473C6720%20358.473%206720%2099.30000000000001%207680%2099.30000000000001L7680%20993%20L0%20993%20Z%22%3E%3CanimateTransform%20values%3D%22-3840%200%3B0%200%22%20begin%3D%22-0.9333333333333335s%22%20keyTimes%3D%220%3B1%22%20repeatCount%3D%22indefinite%22%20dur%3D%2210s%22%20type%3D%22translate%22%20attributeName%3D%22transform%22%3E%3C%2FanimateTransform%3E%3C%2Fpath%3E%3CanimateTransform%20values%3D%220%200%3B0%2010%3B%200%22%20begin%3D%22-6.666666666666667s%22%20keyTimes%3D%220%3B0.5%3B1%22%20keySplines%3D%220.3%200%200.7%201%3B0.3%200%200.7%201%22%20calcMode%3D%22spline%22%20repeatCount%3D%22indefinite%22%20dur%3D%2210s%22%20type%3D%22translate%22%20attributeName%3D%22transform%22%3E%3C%2FanimateTransform%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3C%2Fg%3E%3C!--%20%5Bldio%5D%20generated%20by%20https%3A%2F%2Floading.io%20--%3E%3C%2Fsvg%3E"/>
+     
       <div class="absolute inset-0 pointer-events-none" aria-hidden="true"></div>
       <div class="relative max-w-7xl mx-auto px-4 sm:px-6">
         <div class="pt-0 md:pt-[76px] pointer-events-none"></div>
@@ -14,8 +21,8 @@ export default component$(() => {
           <div class="basis-1/2 text-center lg:text-left pb-10 md:pb-16 mx-auto">
             <h1 class="text-5xl md:text-6xl font-bold leading-tighter tracking-tighter mb-4 font-heading dark:text-gray-200">
               Free template for <br class="hidden lg:block" />{" "}
-              <span class="hidden lg:inline">create a website using </span> <span class="text-[#039de1]">Qwik</span> +{" "}
-              <span class="sm:whitespace-nowrap text-[#039de1]">Tailwind CSS</span>
+              <span class="hidden lg:inline">create a website using </span> <span class="text-primary-500">Qwik</span> +{" "}
+              <span class="sm:whitespace-nowrap text-primary-500">Tailwind CSS</span>
             </h1>
             <div class="max-w-3xl mx-auto lg:max-w-none">
               <p class="text-xl text-muted mb-6 dark:text-slate-300">
@@ -61,6 +68,9 @@ export default component$(() => {
           </div>
         </div>
       </div>
+      </div>
+      </div>
     </section>
+    </div>
   );
 });
