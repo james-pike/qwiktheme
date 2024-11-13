@@ -1,9 +1,5 @@
 # Menu
-
-## Pages
-
-
-- [Terms](/terms)
-- [Privacy](/privacy)
-
+## [About](/)
+## [Terms](/terms)
+## [Privacy](/privacy)
 ## [Blog](/blog)

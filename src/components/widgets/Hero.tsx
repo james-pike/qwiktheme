@@ -15,11 +15,11 @@ export default component$(() => {
   
   <div class="relative max-w-7xl mx-auto px-4 sm:px-6 flex flex-col items-center text-center lg:flex-row lg:items-center lg:text-left">
     <div class="lg:basis-1/2 pb-10 md:pb-16">
-      <h1 class="text-5xl md:text-6xl font-bold leading-tighter tracking-tighter mb-4 font-heading dark:text-gray-200">
+      <h1 class="text-5xl md:text-6xl font-bold leading-tighter tracking-tighter mb-4 font-heading">
         Draw Outside the Lines with<br class="hidden lg:block" />{" "}
          <span class="text-primary-500">Etchy Sketchy</span> 
       </h1>
-      <p class="text-xl text-muted mb-6 dark:text-slate-300 max-w-3xl mx-auto lg:max-w-none">
+      <p class="text-xl text-muted mb-6 max-w-3xl mx-auto lg:max-w-none">
         Scribble your way through creativity. Master the lines, embrace the quirks, and turn every twist into a masterpiece— art's about the journey, not the perfect line.
       </p>
       <div class=" sm:max-w-md flex flex-col sm:flex-row sm:justify-center gap-4 lg:justify-start">
