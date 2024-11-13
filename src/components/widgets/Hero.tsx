@@ -23,8 +23,8 @@ export default component$(() => {
         Master the lines, embrace the quirks, and turn every twist into a masterpiece— because art's all about the journey, not the perfect line.
       </p>
       <div class=" sm:max-w-md flex flex-col sm:flex-row sm:justify-center gap-4 lg:justify-start">
-        <a class="btn btn-primary w-full" href="https://aymansor.github.io/Etch-a-Sketch/" target="_blank" rel="noopener">Start Etching</a>
-        <button class="btn w-full bg-gray-50 dark:bg-transparent">Learn More</button>
+        <a class="btn bg-primary-500 w-full" href="https://aymansor.github.io/Etch-a-Sketch/" target="_blank" rel="noopener">Start Etching</a>
+        <button class="btn w-full bg-gray-50">Learn More</button>
       </div>
     </div>
     <div class="lg:basis-1/2">
