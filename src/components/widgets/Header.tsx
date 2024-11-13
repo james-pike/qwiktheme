@@ -15,20 +15,20 @@ export default component$(() => {
 
   return (
     <header
-      id="header"
-      class={`sticky top-0 z-40 flex-none mx-auto w-full border-b border-gray-50/0 transition-[opacity] ease-in-out ${
-        store.isScrolling
-          ? " md:bg-white/90 md:backdrop-blur-sm dark:md:bg-slate-900/90 bg-white dark:bg-slate-900"
-          : ""
-      }`}
-      window:onScroll$={() => {
-        if (!store.isScrolling && window.scrollY >= 10) {
-          store.isScrolling = true;
-        } else if (store.isScrolling && window.scrollY < 10) {
-          store.isScrolling = false;
-        }
-      }}
-    >
+    id="header"
+    class={`sticky top-0 z-40 flex-none border-b border-gray-50/0 transition-all ease-in-out duration-300 ${
+      store.isScrolling
+        ? "w-full md:bg-white/90 p-1 md:backdrop-blur-sm dark:md:bg-slate-900/90 bg-white dark:bg-slate-900 md:mx-0 md:rounded-none md:shadow-none"
+        : "w-[93%] mx-auto p-1 rounded-lg shadow-md mt-3"
+    }`}
+    window:onScroll$={() => {
+      if (!store.isScrolling && window.scrollY >= 10) {
+        store.isScrolling = true;
+      } else if (store.isScrolling && window.scrollY < 10) {
+        store.isScrolling = false;
+      }
+    }}
+  >
       <div class="absolute inset-0"></div>
       <div class="relative text-default py-3 px-3 md:px-6 mx-auto w-full md:flex md:justify-between max-w-7xl">
         <div class="mr-auto rtl:mr-0 rtl:ml-auto flex justify-between">
