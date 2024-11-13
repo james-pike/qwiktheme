@@ -29,12 +29,13 @@ export default component$(() => {
       </div>
     </div>
     <div class="lg:basis-1/2">
-    <Image
+       <Image
         src={coverImage}
         alt="Background cover image"
         width={958} // adjust width to your layout needs
         height={792} // adjust height for your layout
-        class="object-cover w-full h-full" // ensures full width and height scaling
+        class="object-cover w-full h-full" 
+        priority="true"
       />
     </div>
   </div>
