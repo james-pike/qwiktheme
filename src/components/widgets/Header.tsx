@@ -39,7 +39,7 @@ export default component$(() => {
             </div>
           </a>
           <div class="flex items-center md:hidden">
-            <ToggleTheme iconClass="w-6 h-6 md:w-5 md:h-5 md:inline-block text-white" />
+            <ToggleTheme iconClass="w-6 h-6 md:w-5 md:h-5 md:inline-block" />
             <ToggleMenu />
           </div>
         </div>
@@ -48,7 +48,7 @@ export default component$(() => {
           aria-label="Main navigation"
         >
           {menu && menu.items ? (
-            <ul class="flex flex-col md:flex-row md:self-center w-full md:w-auto text-xl md:text-[0.9375rem] tracking-[0.01rem] font-medium">
+            <ul class="flex flex-col md:flex-row md:self-center text-black w-full md:w-auto text-xl md:text-[0.9375rem] tracking-[0.01rem] font-medium">
               {menu.items.map(({ text, href, items }, key) => (
                 <li key={key} class={items?.length ? "dropdown" : ""}>
                   {items?.length ? (
