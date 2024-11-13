@@ -9,50 +9,42 @@ import IconGithub from "~/components/icons/IconGithub"
 export default component$(() => {
   const links = [
     {
-      title: "Product",
+      title: "Etch Features",
       items: [
-        { title: "Features", href: "#" },
-        { title: "Security", href: "#" },
-        { title: "Team", href: "#" },
-        { title: "Enterprise", href: "#" },
-        { title: "Customer stories", href: "#" },
-        { title: "Pricing", href: "#" },
-        { title: "Resources", href: "#" },
+        { title: "Knob Precision", href: "#" },
+        { title: "Shake to Erase", href: "#" },
+        { title: "Accidental Squiggles", href: "#" },
+        { title: "One-of-a-Kind Art", href: "#" },
       ],
     },
     {
-      title: "Platform",
+      title: "Etch Platform",
       items: [
-        { title: "Developer API", href: "#" },
-        { title: "Partners", href: "#" },
-        { title: "Atom", href: "#" },
-        { title: "Electron", href: "#" },
-        { title: "Qwind Desktop", href: "#" },
+        { title: "Left Knob API", href: "#" },
+        { title: "Right Knob API", href: "#" },
+        { title: "Etch Hub", href: "#" },
+        { title: "Shake Mode", href: "#" },
       ],
     },
     {
-      title: "Support",
+      title: "Support Center",
       items: [
-        { title: "Docs", href: "#" },
-        { title: "Community Forum", href: "#" },
-        { title: "Professional Services", href: "#" },
-        { title: "Skills", href: "#" },
-        { title: "Status", href: "#" },
+        { title: "User Manual", href: "#" },
+        { title: "Etch Artists Forum", href: "#" },
+        { title: "Pro Tips", href: "#" },
+        { title: "Etch Skills", href: "#" },
       ],
     },
     {
-      title: "Company",
+      title: "The Etch Team",
       items: [
-        { title: "About", href: "#" },
-        { title: "Blog", href: "#" },
-        { title: "Careers", href: "#" },
-        { title: "Press", href: "#" },
-        { title: "Inclusion", href: "#" },
-        { title: "Social Impact", href: "#" },
-        { title: "Shop", href: "#" },
+        { title: "Our Story", href: "#" },
+        { title: "Etch Blog", href: "#" },
+        { title: "Join the Etch Team", href: "#" },
+        { title: "Media", href: "#" },
       ],
     },
-  ];
+  ]
 
   const social = [
     { label: "Twitter", icon: IconTwitter, href: "#" },
