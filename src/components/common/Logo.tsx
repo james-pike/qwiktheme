@@ -12,6 +12,6 @@ export default component$(() => (
       height={32}
       alt="Qwind Logo"
     />
-    Etchy Sketchy
+    
   </span>
 ));
