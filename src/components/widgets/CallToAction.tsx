@@ -2,7 +2,7 @@ import { component$ } from "@builder.io/qwik";
 
 export default component$(() => {
   return (
-    <section class="relative  py-3 sm:py-20">
+    <section class="relative bg-gray-100 py-3 sm:py-20">
       <div class="max-w-7xl mx-auto px-3 sm:px-6">
         <div class="py-0 md:py-20">
        
