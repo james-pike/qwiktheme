@@ -9,7 +9,7 @@ export default component$(() => {
             132K
           </div>
           <p class="text-sm font-medium tracking-widest text-gray-800 dark:text-slate-400 uppercase lg:text-base">
-            Downloads
+            Etcher Sketchers
           </p>
         </div>
         <div class="text-center md:border-r dark:md:border-slate-500 mb-10 md:mb-0">
@@ -30,10 +30,10 @@ export default component$(() => {
         </div>
         <div class="text-center">
           <div class="text-4xl font-bold lg:text-5xl xl:text-6xl text-primary-500 font-heading">
-            48.4K
+            N/A
           </div>
           <p class="text-sm font-medium tracking-widest text-gray-800 dark:text-slate-400 uppercase lg:text-base">
-            Users
+            Designs worth keeping
           </p>
         </div>
       </div>

@@ -24,7 +24,7 @@ export default component$(() => {
       <Hero />
       <Features
   highlight="Features"
-  title="What You Get with SketchMaster"
+  title="What You Get with the Etchy Sketchy"
   subtitle="Bringing you the latest in retro design tools—because digital brushes are overrated."
   items={[
     {

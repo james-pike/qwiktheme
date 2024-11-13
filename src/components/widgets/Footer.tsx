@@ -53,7 +53,7 @@ export default component$(() => {
     {
       label: "Github",
       icon: IconGithub,
-      href: "https://github.com/onwidget/qwind",
+      href: "#",
     },
   ];
 
