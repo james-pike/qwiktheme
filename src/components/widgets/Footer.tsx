@@ -116,7 +116,7 @@ export default component$(() => {
               {" "}
               Webdev.ca
             </a>{" "}
-            · All rights reserved.
+            <span class="hidden md:inline"> · All rights reserved.</span>
           </div>
         </div>
       </div>
