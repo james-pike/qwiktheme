@@ -39,7 +39,7 @@ export default component$(() => {
             </div>
           </a>
           <div class="flex items-center md:hidden">
-            <ToggleTheme iconClass="w-6 h-6 md:w-5 md:h-5 md:inline-block" />
+            <ToggleTheme iconClass="w-6 h-6 md:w-5 md:h-5 md:inline-block text-white" />
             <ToggleMenu />
           </div>
         </div>
