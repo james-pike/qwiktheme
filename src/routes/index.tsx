@@ -65,9 +65,9 @@ export default component$(() => {
     },
   ]}
 />
-<svg xmlns="http://www.w3.org/2000/svg" class="px-4" viewBox="0 0 1000 100" fill="#FF0000"><path d="M0 0v100l500-48 500 48V0H0z" opacity=".5"></path><path d="M0 0h1000v52H0z" opacity=".5"></path><path d="M0 0v4l500 48 500-48V0H0z" opacity=".5"></path><path d="M0 0v4l500 48 500-48V0H0z"></path></svg>
+
       <Steps />
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" fill="#FF0000"><path d="M0 100V0h1000v4L0 100z"></path><path d="M0 100V0h1000v24L0 100z" opacity=".5"></path><path d="M0 100V0h1000v44L0 100z" opacity=".4"></path><path d="M0 100V0h1000v64L0 100z" opacity=".4"></path><path d="M0 100V0h1000v84L0 100z" opacity=".2"></path></svg>
+    
       <FAQs
   title="Frequently Asked Questions"
   subtitle="Answers to questions you didn't know you had about designing with an Etch A Sketch."
