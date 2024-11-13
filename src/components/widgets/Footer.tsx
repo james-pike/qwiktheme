@@ -60,7 +60,7 @@ export default component$(() => {
 
   return (
     <footer class="py-3 bg-gray-100 px-3 sm:px-6">
-      <div class="max-w-7xl mx-auto px-4 bg-white dark:bg-gray-900 rounded-lg shadow-lg">
+      <div class="max-w-7xl mx-auto px-6 bg-white dark:bg-gray-900 rounded-lg shadow-lg">
         <div class="grid grid-cols-12 gap-4 gap-y-8 sm:gap-8 pt-8 pb-2 md:py-12">
           <div class="col-span-12 lg:col-span-4 pr-8">
             <div class="mb-2">
@@ -111,7 +111,7 @@ export default component$(() => {
 
           <div class="text-sm text-gray-700 mr-4 dark:text-slate-400">
             <span class="w-5 h-5 md:w-6 md:h-6 md:-mt-0.5 bg-cover mr-1.5 float-left rounded-sm bg-[url(https://onwidget.com/favicon/favicon-32x32.png)]"></span>
-            Made by{" "}
+            Made with ❤️ by{" "}
             <a class="text-secondary-800 underline dark:text-gray-200" href="https://webdev.ca">
               {" "}
               Webdev.ca
