@@ -19,7 +19,7 @@ export default component$(() => {
     class={`sticky top-0 z-40 flex-none border-b border-gray-100 border-gray-50/0 transition-all ease-in-out duration-300 ${
       store.isScrolling
         ? "w-full md:bg-white/90 brorder-b border-gray-100 px-1 py-0 md:backdrop-blur-sm dark:md:bg-slate-900/90 bg-white dark:bg-slate-900 md:mx-0 md:rounded-none md:shadow-none"
-        : "w-[93%] mx-auto p-1 rounded-lg shadow-md mt-3"
+        : "w-[93%] mx-auto p-1 rounded-lg shadow-md mt-3 text-white"
     }`}
     window:onScroll$={() => {
       if (!store.isScrolling && window.scrollY >= 10) {
@@ -34,13 +34,9 @@ export default component$(() => {
         <div class="mr-auto rtl:mr-0 rtl:ml-auto flex justify-between">
           <a class="flex items-center" href={"/"}>
             <Logo />
-            <div
-  class={`text-2xl md:text-xl font-bold whitespace-nowrap tracking-tight ${
-    store.isScrolling ? "text-gray-900 dark:text-slate-200" : "text-black dark:text-slate-400"
-  }`}
->
-  Etchy Sketchy
-</div>
+            <div class="text-2xl md:text-xl font-bold whitespace-nowrap tracking-tight">
+            Etchy Sketchy
+            </div>
           </a>
           <div class="flex items-center md:hidden">
             <ToggleTheme iconClass="w-6 h-6 md:w-5 md:h-5 md:inline-block" />
