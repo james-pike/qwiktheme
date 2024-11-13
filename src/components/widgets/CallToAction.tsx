@@ -32,7 +32,7 @@ export default component$(() => {
               </div>
 
               <div>
-                <label class="block text-gray-700 dark:text-slate-300 font-medium mb-2" htmlFor="email">
+                <label class="block text-gray-700 dark:text-slate-300 font-medium mb-2" for="email">
                   Email
                 </label>
                 <input
@@ -46,13 +46,13 @@ export default component$(() => {
               </div>
 
               <div>
-                <label class="block text-gray-700 dark:text-slate-300 font-medium mb-2" htmlFor="message">
+                <label class="block text-gray-700 dark:text-slate-300 font-medium mb-2" for="message">
                   Message
                 </label>
                 <textarea
                   id="message"
                   name="message"
-                  rows="4"
+                  rows={4}
                   class="w-full px-4 py-2 border rounded-md shadow-sm dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-slate-200"
                   placeholder="Write your message here"
                   required
