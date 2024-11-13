@@ -25,7 +25,7 @@ export default component$((props: ItemProps) => {
   return (
     <button
       type="button"
-      class="text-gray-500 dark:text-gray-400 hover:bg-primary-500 dark:hover:bg-gray-700 rounded-lg text-sm p-2.5 inline-flex items-center"
+      class="text-gray-500 lg:text-white dark:text-gray-400 hover:bg-primary-500 dark:hover:bg-gray-700 rounded-lg text-sm p-2.5 inline-flex items-center"
       aria-label="Toggle between Dark and Light mode"
       onClick$={() => {
         switch (store.theme) {
