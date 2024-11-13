@@ -11,7 +11,6 @@ export default component$(() => (
       width={32}
       height={32}
       alt="Qwind Logo"
-      loading="lazy"
     />
     Qwind
   </span>
