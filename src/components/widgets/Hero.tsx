@@ -8,7 +8,7 @@ export default component$(() => {
   return (
         <div>
     <section class="relative md:-mt-[76px] not-prose">
-      <div class="-mt-20">
+      <div class="-mt-28">
        
 
         <div class="relative w-full h-[80vh] sm:h-[90vh] overflow-hidden">
@@ -19,10 +19,10 @@ export default component$(() => {
         <div class="pt-0 md:pt-[76px] pointer-events-none"></div>
         <div class="py-12 md:py-20 lg:py-0 lg:flex lg:items-center lg:h-screen lg:gap-8">
         <div class="basis-1/2 text-center lg:text-left pb-10 md:pb-16 mx-auto">
-        <h1 class="text-5xl md:text-6xl font-bold leading-tighter tracking-tighter mb-4 font-heading dark:text-gray-200 -mt-36">
+        <h1 class="text-5xl md:text-6xl font-bold leading-tighter tracking-tighter mb-4 font-heading dark:text-gray-200 -mt-24">
     Draw Outside the Lines with <br class="hidden lg:block" />{" "}
     <span class="hidden lg:inline">hand-sketched vibes, </span> <span class="text-primary-500">Qwik</span> +{" "}
-    <span class="sm:whitespace-nowrap text-primary-500">Tailwind CSS</span> templates!
+  
 </h1>
 
   <div class="max-w-3xl mx-auto lg:max-w-none">
