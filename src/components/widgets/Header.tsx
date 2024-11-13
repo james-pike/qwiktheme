@@ -54,31 +54,46 @@ export default component$(() => {
   >
     {menu && menu.items ? (
       <ul class="flex flex-col md:flex-row md:self-center w-full md:w-auto text-xl md:text-[0.9375rem] tracking-[0.01rem] font-medium">
-        {menu.items.map(({ text, href, items }, key) => (
-          <li key={key} class={items?.length ? "dropdown " : ""}>
-            {items?.length ? (
-              <>
-                <button class={`hover:text-link ${store.isScrolling ? "text-gray-900 dark:text-slate-200" : "text-white"} px-4 py-3 flex items-center`}>
-                  {text} <IconChevronDown class="w-3.5 h-3.5 ml-0.5 rtl:ml-0 rtl:mr-0.5 hidden md:inline" />
-                </button>
-                <ul class="dropdown-menu md:backdrop-blur-md dark:md:bg-slate-800 rounded md:absolute pl-4 md:pl-0 md:hidden font-medium md:bg-white/90 md:min-w-[200px] drop-shadow-xl">
-                  {items.map(({ text: text2, href: href2 }, key2) => (
-                    <li key={key2}>
-                     <a class={`hover:text-link ${store.isScrolling ? "text-gray-900 dark:text-slate-200" : "text-gray-900"} px-4 py-3 flex items-center`} href={href}>
-  {text}
-</a>
-                    </li>
-                  ))}
-                </ul>
-              </>
-            ) : (
-              <a class={`hover:text-link ${store.isScrolling ? "text-gray-900 dark:text-slate-200" : "text-gray-900"} px-4 py-3 flex items-center`} href={href}>
-                {text}
-              </a>
-            )}
-          </li>
-        ))}
-      </ul>
+  {menu && menu.items ? (
+    menu.items.map(({ text, href, items = [] }, key) => (
+      <li key={key} class={items.length ? "dropdown" : ""}>
+        {items.length ? (
+          <>
+            <button
+              class={`hover:text-link ${
+                store.isScrolling ? "text-gray-900 dark:text-slate-200" : "text-gray-900 dark:text-white"
+              } px-4 py-3 flex items-center`}
+            >
+              {text} <IconChevronDown class="w-3.5 h-3.5 ml-0.5 rtl:ml-0 rtl:mr-0.5 hidden md:inline" />
+            </button>
+            <ul class="dropdown-menu md:backdrop-blur-md dark:md:bg-slate-800 rounded md:absolute pl-4 md:pl-0 md:hidden font-medium md:bg-white/90 md:min-w-[200px] drop-shadow-xl">
+              {items.map((subItem, key2) => (
+                <li key={key2}>
+                  <a
+                    class="first:rounded-t last:rounded-b md:hover:bg-gray-100 hover:text-link dark:hover:text-white dark:hover:bg-gray-700 py-2 px-5 block whitespace-no-wrap"
+                    href={subItem.href || "#"}
+                  >
+                    {subItem.text || "Untitled"}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </>
+        ) : (
+          <a
+            class={`hover:text-link ${
+              store.isScrolling ? "text-gray-900 dark:text-slate-200" : "text-gray-900 dark:text-white"
+            } px-4 py-3 flex items-center`}
+            href={href || "#"}
+          >
+            {text || "Untitled"}
+          </a>
+        )}
+      </li>
+    ))
+  ) : null}
+</ul>
+
     ) : null}
   </nav>
   <div class="hidden md:self-center md:flex items-center md:mb-0 fixed w-full md:w-auto md:static justify-end left-0 rtl:left-auto rtl:right-0 bottom-0 p-3 md:p-0">
