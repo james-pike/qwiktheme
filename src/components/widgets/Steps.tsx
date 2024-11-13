@@ -7,31 +7,34 @@ const sideImg =
 
 export default component$(() => {
   const stepsData = {
-    title: "Sed ac magna sit amet risus tristique interdum. hac.",
+    title: "How to Master the Art of Etch A Sketching",
     items: [
       {
-        title: "Step 1",
+        title: "Step 1: Embrace the Knobs",
         description:
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, quam nec venenatis lobortis, mirisus tempus nulla, sed porttitor est nibh at nulla. Praesent placerat enim ut ex tincidunt vehicula. Fusce sit amet dui tellus.",
+          "Gently take hold of the left and right knobs. Each one controls only one axis, so prepare for a drawing process that’s half art, half workout. Muscle memory may vary.",
         icon: IconStar,
       },
       {
-        title: "Step 2",
+        title: "Step 2: Find Your Inner Line",
         description:
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, quam nec venenatis lobortis, mirisus tempus nulla, sed porttitor est nibh at nulla.",
+          "Now, twist those knobs with care. One wrong turn could mean hours of delicate linework... or one more abstract masterpiece! Remember: straight lines are a suggestion, not a rule.",
         icon: IconStar,
       },
       {
-        title: "Step 3",
+        title: "Step 3: Shake (and Possibly Cry)",
         description:
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, quam nec venenatis lobortis, mirisus tempus nulla, sed porttitor est nibh at nulla.",
+          "The piece didn’t turn out as planned? Give it a shake, and poof! The slate’s clean again. Take a deep breath; it’s all part of the creative journey (or so they say).",
         icon: IconStar,
       },
       {
-        title: "Ready!",
+        title: "Ready to Show Off?",
+        description:
+          "If you’ve managed something recognizable, it’s time to impress friends and family! But handle with care—one bump, and your masterpiece could become a memory.",
         icon: IconStar,
       },
     ],
+  
     image: {
       src: sideImg,
       alt: "Steps image",
