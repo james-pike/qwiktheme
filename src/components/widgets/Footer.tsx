@@ -60,7 +60,7 @@ export default component$(() => {
 
   return (
     <footer class="py-3 bg-gray-100 px-3 sm:px-6">
-      <div class="max-w-7xl mx-auto px-8 bg-white dark:bg-gray-900 rounded-lg shadow-lg">
+      <div class="max-w-7xl mx-auto px-4 bg-white dark:bg-gray-900 rounded-lg shadow-lg">
         <div class="grid grid-cols-12 gap-4 gap-y-8 sm:gap-8 pt-8 pb-2 md:py-12">
           <div class="col-span-12 lg:col-span-4 pr-8">
             <div class="mb-2">
