@@ -19,18 +19,15 @@ export default component$(() => {
         <div class="pt-0 md:pt-[76px] pointer-events-none"></div>
         <div class="py-12 md:py-20 lg:py-0 lg:flex lg:items-center lg:h-screen lg:gap-8">
         <div class="basis-1/2 text-center lg:text-left pb-10 md:pb-16 mx-auto">
-  <h1 class="text-5xl md:text-6xl font-bold leading-tighter tracking-tighter mb-4 font-heading dark:text-gray-200 -mt-36">
-    Unleash Your Creativity with <br class="hidden lg:block" />{" "}
-    <span class="hidden lg:inline">hand-drawn style, </span> <span class="text-primary-500">Qwik</span> +{" "}
-    <span class="sm:whitespace-nowrap text-primary-500">Tailwind CSS</span> templates
-  </h1>
+        <h1 class="text-5xl md:text-6xl font-bold leading-tighter tracking-tighter mb-4 font-heading dark:text-gray-200 -mt-36">
+    Draw Outside the Lines with <br class="hidden lg:block" />{" "}
+    <span class="hidden lg:inline">hand-sketched vibes, </span> <span class="text-primary-500">Qwik</span> +{" "}
+    <span class="sm:whitespace-nowrap text-primary-500">Tailwind CSS</span> templates!
+</h1>
+
   <div class="max-w-3xl mx-auto lg:max-w-none">
     <p class="text-xl text-muted mb-6 dark:text-slate-300">
-      <span class="font-semibold underline decoration-wavy decoration-1 decoration-secondary-600 underline-offset-2">
-        SketchTemplate
-      </span>{" "}
-      is an Etchy Sketchy inspired, production-ready template crafted for your next web adventure with <em>Qwik</em> + <em>Tailwind CSS</em>. 
-      Packed with essentials like SEO, Accessibility, Dark Mode, lightning speed, optimized images, and more.
+Scribble your way through creativity! Master the lines, embrace the quirks, and turn every twist into a masterpiece—because art’s all about the journey, not the perfect line.
     </p>
 
     <div class="max-w-xs sm:max-w-md m-auto flex flex-nowrap flex-col sm:flex-row sm:justify-center gap-4 lg:justify-start lg:m-0 lg:max-w-7xl">

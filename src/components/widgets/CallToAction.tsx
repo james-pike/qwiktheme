@@ -11,14 +11,14 @@ export default component$(() => {
               <br class="block sm:hidden" />
             </h2>
             <p class="text-xl text-gray-600 dark:text-slate-400">
-              Get in touch to learn more about how the Etchy Sketchy can help up your UX game. <br class="hidden md:inline" />
-              Don't waste more time!
+              Get in touch to learn more about how the Etchy Sketchy can help level up your UX game. <br class="hidden md:inline" />
+            
             </p>
 
             <div class="mt-6">
             <form class="space-y-6">
               <div>
-                <label class="block text-gray-700 dark:text-slate-300 font-medium mb-2" htmlFor="name">
+                <label class="block text-left text-gray-700 dark:text-slate-300 font-medium mb-2" for="name">
                   Name
                 </label>
                 <input
@@ -32,7 +32,7 @@ export default component$(() => {
               </div>
 
               <div>
-                <label class="block text-gray-700 dark:text-slate-300 font-medium mb-2" for="email">
+                <label class="block text-left text-gray-700 dark:text-slate-300 font-medium mb-2" for="email">
                   Email
                 </label>
                 <input
@@ -46,7 +46,7 @@ export default component$(() => {
               </div>
 
               <div>
-                <label class="block text-gray-700 dark:text-slate-300 font-medium mb-2" for="message">
+                <label class="block text-left text-gray-700 dark:text-slate-300 font-medium mb-2" for="message">
                   Message
                 </label>
                 <textarea
