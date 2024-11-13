@@ -50,7 +50,7 @@ export default component$(() => {
                   <h2 class="text-xl sm:text-2xl font-bold leading-snug mb-2 font-heading">
                     <a
                       class="hover:text-primary-600 underline underline-offset-4 decoration-1 decoration-dotted transition ease-in duration-200"
-                      href={`/blog/${post.slug}`}
+                      href={`/etch-a-sketch/blog/${post.slug}`}
                     >
                       {post.title}
                     </a>
