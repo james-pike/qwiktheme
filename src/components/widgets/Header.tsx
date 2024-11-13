@@ -36,7 +36,9 @@ export default component$(() => {
       <Logo />
       <div
   class={`text-2xl md:text-xl font-bold whitespace-nowrap tracking-tight ${
-    store.isScrolling ? "text-gray-900 dark:text-slate-200" : "text-gray-900 dark:text-white"
+    store.isScrolling
+      ? "text-gray-900 dark:text-slate-200"
+      : "text-white md:text-gray-900 dark:md:text-slate-200"
   }`}
 >
   Etchy Sketchy
