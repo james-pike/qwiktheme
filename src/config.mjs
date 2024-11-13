@@ -1,12 +1,12 @@
 export const SITE = {
-  name: "Qwind",
+  name: "Etchy Sketchy",
 
   title:
-    "Qwind — Free template for Qwik + Tailwind CSS to build your new website.",
+    "Etchy Sketchy — The 'draw it right or start over' template for adventurous creators!",
   description:
-    "Qwind is a free and ready to start template to make your website using Qwik and Tailwind CSS.",
+    "Etchy Sketchy is a free, ready-to-use template that’s as easy as mastering an Etch A Sketch! Dive in to create a site with all the charm and challenge of hand-drawn design.",
 
-  origin: "https://qwind.pages.dev",
+  origin: "https://webdev.ca",
   basePathname: "/",
   trailingSlash: true,
 };
