@@ -35,7 +35,7 @@ export default component$(() => {
     <a class="flex items-center" href={"/etch-a-sketch"}>
       <Logo />
       <div
-  class={`text-2xl md:text-xl font-bold whitespace-nowrap tracking-tight ${
+  class={`text-2xl md:text-xl font-bold text-white whitespace-nowrap tracking-tight ${
     store.isScrolling
       ? "text-gray-900 dark:text-slate-200"
       : "text-white md:text-gray-900 dark:md:text-slate-200"
@@ -72,7 +72,7 @@ export default component$(() => {
               {items.map((subItem, key2) => (
                 <li key={key2}>
                   <a
-                    class="first:rounded-t  last:rounded-b md:hover:bg-gray-100 hover:text-link dark:hover:text-white dark:hover:bg-gray-700 py-2 px-5 block whitespace-no-wrap"
+                    class="first:rounded-t last:rounded-b md:hover:bg-gray-100 hover:text-link dark:hover:text-white dark:hover:bg-gray-700 py-2 px-5 block whitespace-no-wrap"
                     href={subItem.href || "#"}
                   >
                     {subItem.text || "Untitled"}
