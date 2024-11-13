@@ -1,14 +1,16 @@
 import { component$, useTask$ } from "@builder.io/qwik";
-import { CountUp } from "countup.js";
 
+// Dynamically import the 'countup.js' module and access CountUp from the default export.
 export default component$(() => {
-  // Using useTask$ to run the animation on the client-side when the component is mounted
   useTask$(() => {
-    // Initialize the CountUp for each stat
-    new CountUp("etcher-stat", 132000).start();
-    new CountUp("stars-stat", 24800).start();
-    new CountUp("forks-stat", 10300).start();
-    new CountUp("designs-stat", 0).start(); // N/A or can be replaced with a value
+    import("countup.js").then((module) => {
+      // Access the default export (which is the CountUp constructor)
+      const { CountUp } = module;
+      new CountUp("etcher-stat", 132000).start();
+      new CountUp("stars-stat", 24800).start();
+      new CountUp("forks-stat", 10300).start();
+      new CountUp("designs-stat", 0).start(); // N/A or can be replaced with a value
+    });
   });
 
   return (
