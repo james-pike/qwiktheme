@@ -72,7 +72,7 @@ export default component$(() => {
               {items.map((subItem, key2) => (
                 <li key={key2}>
                   <a
-                    class="first:rounded-t last:rounded-b md:hover:bg-gray-100 hover:text-link dark:hover:text-white dark:hover:bg-gray-700 py-2 px-5 block whitespace-no-wrap"
+                    class="first:rounded-t  last:rounded-b md:hover:bg-gray-100 hover:text-link dark:hover:text-white dark:hover:bg-gray-700 py-2 px-5 block whitespace-no-wrap"
                     href={subItem.href || "#"}
                   >
                     {subItem.text || "Untitled"}
