@@ -4,7 +4,7 @@ export default component$(() => {
   return (
     <section class="relative bg-gray-100 py-3 sm:pb-20">
       <div class="max-w-7xl mx-auto px-3 sm:px-6">
-        <div class="py-0 md:py-0">
+        <div class="pb-5 md:py-0">
        
           <div class="max-w-3xl mx-auto text-center p-6 rounded-md shadow-xl bg-white dark:bg-gray-900">
             <h2 class="text-4xl md:text-4xl font-bold leading-tighter tracking-tighter pt-2 my-4 font-heading">
