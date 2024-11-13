@@ -35,12 +35,13 @@ export default component$(() => {
     <a class="flex items-center" href={"/"}>
       <Logo />
       <div
-        class={`text-2xl md:text-xl font-bold whitespace-nowrap tracking-tight ${
-          store.isScrolling ? "text-gray-900 dark:text-slate-200" : "lg:text-gray-900 text-white"
-        }`}
-      >
-        Etchy Sketchy
-      </div>
+  class={`text-2xl md:text-xl font-bold whitespace-nowrap tracking-tight ${
+    store.isScrolling ? "text-gray-900 dark:text-slate-200" : "text-gray-900 dark:text-white"
+  }`}
+>
+  Etchy Sketchy
+</div>
+
     </a>
     <div class="flex items-center md:hidden">
       <ToggleTheme iconClass={`w-6 h-6 md:w-5 md:h-5 ${store.isScrolling ? "text-gray-900 dark:text-slate-200" : "text-white"}`} />
