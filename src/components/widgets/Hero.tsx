@@ -11,7 +11,7 @@ export default component$(() => {
   <div class="absolute inset-0 -mt-28 overflow-hidden -z-10">
    <img width={600} height={600} src={HeroBackground} alt="Background cover image" class="object-cover w-full h-full" />
   </div>
-  <div class="relative max-w-7xl mx-auto lg:px-12 lg:mt-8 px-4 sm:px-6 flex flex-col items-center text-center lg:flex-row lg:items-center lg:text-left">
+  <div class="relative max-w-7xl mx-auto lg:px-12 lg:gap-20 lg:mt-8 px-4 sm:px-6 flex flex-col items-center text-center lg:flex-row lg:items-center lg:text-left">
     <div class="lg:basis-1/2 pb-10 md:pb-16">
       <h1 class="text-5xl md:text-6xl text-white sm:text-gray-900 font-bold leading-tighter tracking-tighter mb-4 font-heading">
         Draw Outside the Lines with<br class="hidden lg:block" />{" "}
@@ -29,8 +29,8 @@ export default component$(() => {
        <Image
         src={CoverImage}
         alt="Background cover image"
-        width={958} // adjust width to your layout needs
-        height={792} // adjust height for your layout
+        width={500} // adjust width to your layout needs
+        height={500} // adjust height for your layout
         class="object-cover w-full h-full" 
         priority="true"
       />
