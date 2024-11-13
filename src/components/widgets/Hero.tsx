@@ -29,15 +29,12 @@ export default component$(() => {
       </div>
     </div>
     <div class="lg:basis-1/2">
-      <Image
+    <Image
         src={coverImage}
-        layout="constrained"
-        width={493}
-        height={616}
-        alt="Qwind Hero Image (Cool dog)"
-        class="mx-auto lg:mr-0 w-full drop-shadow-2xl rounded-md"
-        priority={true}
-        breakpoints={[320, 480, 640, 768, 1024]}
+        alt="Background cover image"
+        width={958} // adjust width to your layout needs
+        height={792} // adjust height for your layout
+        class="object-cover w-full h-full" // ensures full width and height scaling
       />
     </div>
   </div>
