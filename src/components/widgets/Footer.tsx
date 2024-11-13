@@ -59,7 +59,7 @@ export default component$(() => {
   ];
 
   return (
-    <footer class="bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 py-3 px-3 sm:px-6">
+    <footer class="bg-gradient-to-r from-primary-500 via-white to-red-300 py-3 px-3 sm:px-6">
       <div class="max-w-7xl mx-auto px-8 bg-white dark:bg-gray-900 rounded-lg shadow-lg">
         <div class="grid grid-cols-12 gap-4 gap-y-8 sm:gap-8 pt-8 pb-2 md:py-12">
           <div class="col-span-12 lg:col-span-4 pr-8">
