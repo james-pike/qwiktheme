@@ -46,9 +46,13 @@ export default component$(() => {
   const { title, items, image, highlight } = stepsData;
 
   return (
+    
     <section class="mx-auto max-w-6xl px-4 py-10 sm:px-6 lg:px-8 lg:py-20">
+      
     <div class="row-gap-10 grid gap-6 md:grid-cols-2">
+      
       <div class="mb-4 md:mb-0 md:py-4 md:pr-16">
+        
         {title && (
           <Headline
             title={title}

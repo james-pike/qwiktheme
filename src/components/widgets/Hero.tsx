@@ -21,7 +21,7 @@ export default component$(() => {
         <div class="basis-1/2 text-center lg:text-left pb-10 md:pb-16 mx-auto">
         <h1 class="text-5xl md:text-6xl font-bold leading-tighter tracking-tighter mb-4 font-heading dark:text-gray-200 -mt-24">
     Draw Outside the Lines with <br class="hidden lg:block" />{" "}
-    <span class="hidden lg:inline">hand-sketched vibes, </span> <span class="text-primary-500">Qwik</span> +{" "}
+    <span class="hidden lg:inline">hand-sketched vibes, </span> <span class="text-primary-500">Etchy Sketchy</span> +{" "}
   
 </h1>
 
