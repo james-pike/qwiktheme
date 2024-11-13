@@ -2,7 +2,7 @@
 publishDate: 2023-02-02T00:00:00Z
 title: Drawing a Line on the Etch-A-Sketch
 excerpt: Master the art of creating intricate designs and lines on your Etch-A-Sketch. Tips, tricks, and techniques for precision and creativity.
-image: https://images.unsplash.com/photo-1638643391904-9b551ba91eaa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1674&q=80
+image: (https://images.unsplash.com/photo-1638643391904-9b551ba91eaa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1674&q=80)
 tags:
   - etch-a-sketch
   - drawing
