@@ -19,7 +19,7 @@ export default component$(() => {
         Draw Outside the Lines with<br class="hidden lg:block" />{" "}
          <span class="text-primary-500">Etchy Sketchy</span> 
       </h1>
-      <p class="text-xl text-muted mb-6 dark:text-white max-w-3xl mx-auto lg:max-w-none">
+      <p class="text-xl text-muted mb-6 text-black max-w-3xl mx-auto lg:max-w-none">
         Scribble your way through creativity. Master the lines, embrace the quirks, and turn every twist into a masterpiece— art's about the journey, not the perfect line.
       </p>
       <div class=" sm:max-w-md flex flex-col sm:flex-row sm:justify-center gap-4 lg:justify-start">
