@@ -35,7 +35,7 @@ export default component$(() => {
     <a class="flex items-center" href={"/etch-a-sketch"}>
       <Logo />
       <div
-  class={`text-2xl md:text-xl font-bold text-white whitespace-nowrap tracking-tight ${
+  class={`text-2xl md:text-xl font-bold whitespace-nowrap tracking-tight ${
     store.isScrolling
       ? "text-gray-900 dark:text-slate-200"
       : "text-white md:text-gray-900 dark:md:text-slate-200"
