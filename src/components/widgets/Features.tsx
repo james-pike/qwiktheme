@@ -26,7 +26,7 @@ export default component$((props: Props) => {
   const { id, title = "", subtitle = "", highlight = "", items = [], classes = {}, isDark = false } = props;
 
   return (
-    <section class="relative bg-gray-100 scroll-mt-16" {...(id ? { id } : {})}>
+    <section class="relative bg-gray-100 dark:bg-gray-900 scroll-mt-16" {...(id ? { id } : {})}>
       
       <div class="absolute inset-0 pointer-events-none -z-[1]" aria-hidden="true">
         <slot name="bg">
