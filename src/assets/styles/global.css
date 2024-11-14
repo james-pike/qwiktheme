@@ -10,31 +10,74 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer components {
-  .btn {
-    @apply inline-flex items-center justify-center rounded-md shadow-md border-gray-400 border bg-transparent font-medium text-center text-lg text-gray-700 leading-snug transition py-3 px-6 md:px-8 ease-in duration-200 focus:ring-blue-500 focus:ring-offset-blue-200 focus:ring-2 focus:ring-offset-2 hover:bg-gray-100 hover:border-gray-600 dark:text-slate-300 dark:border-slate-500 dark:hover:bg-slate-800 dark:hover:border-slate-800;
-  }
-
-  .btn-ghost {
-    @apply border-none shadow-none text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white;
-  }
-
-  .btn-primary {
-    @apply font-semibold bg-primary-600 text-white border-primary-600 hover:bg-primary-800 hover:border-primary-800 hover:text-white dark:text-white dark:bg-primary-700 dark:border-primary-700 dark:hover:border-primary-900 dark:hover:bg-primary-900;
-  }
-
-  [data-aw-toggle-menu] path {
-    @apply transition;
-  }
-  [data-aw-toggle-menu].expanded g > path:first-child {
-    @apply -rotate-45 translate-y-[15px] translate-x-[-3px];
-  }
-
-  [data-aw-toggle-menu].expanded g > path:last-child {
-    @apply rotate-45 translate-y-[-8px] translate-x-[14px];
-  }
+@layer base {
+:root{
+--color-primary: hsl(0, 0%, 0%);
+--color-secondary: hsl(0, 0%, 50%);
+--color-text-base: hsl(0, 0%, 100%);
+--color-bg-primary: hsl(0, 0%, 100%);
 }
 
-.dropdown:hover .dropdown-menu {
-  display: block;
+*{
+  @apply transition-colors duration-500 ease-in-out;
+}
+
+.theme-black {
+  --color-primary: hsl(0, 0%, 0%);
+  --color-secondary: hsl(0, 0%, 50%);
+}
+
+
+.theme-blue {
+  --color-primary: hsl(220, 100%, 50%);
+  --color-secondary: hsl(220, 100%, 70%);
+}
+
+
+.theme-purple {
+  --color-primary: hsl(270, 100%, 50%);
+  --color-secondary: hsl(270, 100%, 70%);
+}
+
+
+.theme-green {
+  --color-primary: hsl(120, 100%, 50%);
+  --color-secondary: hsl(120, 100%, 70%);
+}
+
+
+.theme-yellow {
+  --color-primary: hsl(60, 100%, 50%);
+  --color-secondary: hsl(60, 100%, 70%);
+}
+.theme-red {
+  --color-primary: hsl(0, 100%, 50%);
+  --color-secondary: hsl(0, 100%, 70%);
+}
+
+.theme-orange {
+  --color-primary: hsl(30, 100%, 50%);
+  --color-secondary: hsl(30, 100%, 70%);
+}
+
+.theme-pink {
+  --color-primary: hsl(300, 100%, 50%);
+  --color-secondary: hsl(300, 100%, 70%);
+}
+
+.theme-cyan {
+  --color-primary: hsl(180, 100%, 50%);
+  --color-secondary: hsl(180, 100%, 70%);
+}
+
+.theme-teal {
+  --color-primary: hsl(150, 100%, 50%);
+  --color-secondary: hsl(150, 100%, 70%);
+}
+
+.theme-indigo {
+  --color-primary: hsl(240, 100%, 50%);
+  --color-secondary: hsl(240, 100%, 70%);
+}
+
 }

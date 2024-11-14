@@ -20,6 +20,7 @@ export default component$(() => {
   return (
     <QwikCityProvider>
       <head>
+        
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="manifest" href="/manifest.json" />
@@ -30,6 +31,10 @@ export default component$(() => {
         <RouterHead />
         <DarkThemeLauncher />
         <ServiceWorkerRegister />
+        
+
+
+        
       </head>
       <body class="text-gray-900 dark:text-slate-300 tracking-tight bg-white dark:bg-gray-900 antialiased">
         <RouterOutlet />

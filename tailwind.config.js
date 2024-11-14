@@ -8,8 +8,10 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: colors.red,
-        secondary: colors.red,
+        primary: 'var(--color-primary)',
+        secondary: 'var(--color-secondary)',
+        bgPrimary: 'var(--color-bg-primary)',
+        tBase: 'var(--color-text-base)',
       },
       fontFamily: {
         sans: ["'Inter Variable'", ...defaultTheme.fontFamily.sans],
