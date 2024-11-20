@@ -1,7 +1,6 @@
 import { component$ } from "@builder.io/qwik";
 import { Image } from "@unpic/qwik";
-import { CoverImage } from "./coverImage";
-import { HeroBackground } from "./HeroBackground";
+
 
 export default component$(() => {
   return (
@@ -9,7 +8,7 @@ export default component$(() => {
 <section class="relative md:-mt-[76px] not-prose bg-primary flex items-center justify-center h-[100vh]">
   
   <div class="absolute inset-0 -mt-28 overflow-hidden -z-10">
-   <img width={600} height={600} src={HeroBackground} alt="Background cover image" class="object-cover w-full h-full" />
+   <img width={600} height={600} src={""} alt="Background cover image" class="object-cover w-full h-full" />
   </div>
   <div class="relative max-w-7xl mx-auto lg:px-12 lg:gap-20 lg:mt-8 px-4 sm:px-6 flex flex-col items-center text-center lg:flex-row lg:items-center lg:text-left">
     <div class="lg:basis-1/2 pb-10 md:pb-16">
@@ -27,7 +26,7 @@ export default component$(() => {
     </div>
     <div class="lg:basis-1/2">
        <Image
-        src={CoverImage}
+        src={""}
         alt="Background cover image"
         width={500} // adjust width to your layout needs
         height={500} // adjust height for your layout

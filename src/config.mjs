@@ -6,7 +6,7 @@ export const SITE = {
   description:
     "Etchy Sketchy is a free, ready-to-use template that’s as easy as mastering an Etch A Sketch! Dive in to create a site with all the charm and challenge of hand-drawn design.",
 
-  origin: "https://webdev.ca",
-  basePathname: "/etch-a-sketch/",
+  origin: "/",
+  basePathname: "/",
   trailingSlash: true,
 };
