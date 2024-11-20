@@ -18,7 +18,7 @@ export default component$(() => {
 					themes={[
             
 
-						["dark", "light", "blue"],
+						["dark", "light"],
 					]}
 					attribute="class"
 				>
@@ -27,7 +27,6 @@ export default component$(() => {
 			
       <Header />
       <main>
-      <Test/>
         <Slot />
       </main>
       <Footer />
