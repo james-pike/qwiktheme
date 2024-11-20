@@ -6,6 +6,9 @@ import ToggleTheme from "~/components/common/ToggleTheme";
 import ToggleMenu from "~/components/common/ToggleMenu";
 import IconChevronDown from "../icons/IconChevronDown";
 import { useTheme } from "~/lib/provider";
+import { Popover } from "@qwik-ui/headless";
+import IconApps from "../icons/IconApps";
+import ToggleColor from "../common/ToggleColor";
 
 export default component$(() => {
   const store = useStore({
@@ -49,6 +52,7 @@ export default component$(() => {
 
     </a>
     <div class="flex items-center md:hidden">
+      <ToggleColor iconClass={`w-6 h-6 md:w-5 md:h-5 ${store.isScrolling ? "text-gray-900 dark:text-slate-200" : "text-white"}`} />
       <ToggleTheme iconClass={`w-6 h-6 md:w-5 md:h-5 ${store.isScrolling ? "text-gray-900 dark:text-slate-200" : "text-white"}`} />
       <ToggleMenu iconClass={`w-6 h-6 md:w-5 md:h-5 ${store.isScrolling ? "text-gray-900 dark:text-slate-200" : "text-white"}`} />
     </div>
