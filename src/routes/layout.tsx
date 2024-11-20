@@ -4,9 +4,6 @@ import Footer from "~/components/widgets/Footer";
 import Header from "~/components/widgets/Header";
 
 import { ThemeProvider } from "~/lib/provider";
-import { Test } from "./test";
-
-
 
 export default component$(() => {
   

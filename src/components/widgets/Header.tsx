@@ -6,8 +6,6 @@ import ToggleTheme from "~/components/common/ToggleTheme";
 import ToggleMenu from "~/components/common/ToggleMenu";
 import IconChevronDown from "../icons/IconChevronDown";
 import { useTheme } from "~/lib/provider";
-import { Popover } from "@qwik-ui/headless";
-import IconApps from "../icons/IconApps";
 import ToggleColor from "../common/ToggleColor";
 
 export default component$(() => {
