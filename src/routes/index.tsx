@@ -17,13 +17,18 @@ const IconBrandGoogle = qwikSerialized(() => import("../components/icons/IconBra
 const IconBulb = qwikSerialized(() => import("../components/icons/IconBulb"));
 
 import { SITE } from "~/config.mjs";
-import Hero1 from "~/components/widgets/Hero1";
+import { useTheme } from "~/lib/provider";
 
 export default component$(() => {
+
+  const { themeSig } = useTheme();
+
+  
   return (
     <>
-    <Hero1 />
-      <Hero />
+    <div class={themeSig.value}>
+    <Hero />
+      
       {/* <svg xmlns="http://www.w3.org/2000/svg" class="mx-0" viewBox="0 0 1000 100" fill="#FF6464"><path d="M0 0v100l500-48 500 48V0H0z" opacity=".5"></path><path d="M0 0h1000v52H0z" opacity=".5"></path><path d="M0 0v4l500 48 500-48V0H0z" opacity=".5"></path><path d="M0 0v4l500 48 500-48V0H0z"></path></svg> */}
 
       <Features
@@ -112,6 +117,7 @@ export default component$(() => {
       {/* <svg xmlns="http://www.w3.org/2000/svg" class="mx-0" viewBox="0 0 1000 100" fill="#FF6464"><path d="M0 0v100l500-48 500 48V0H0z" opacity=".5"></path><path d="M0 0h1000v52H0z" opacity=".5"></path><path d="M0 0v4l500 48 500-48V0H0z" opacity=".5"></path><path d="M0 0v4l500 48 500-48V0H0z"></path></svg> */}
 
       <CallToAction />
+      </div>
     </>
   );
 });

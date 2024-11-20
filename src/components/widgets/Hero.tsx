@@ -6,7 +6,7 @@ import { HeroBackground } from "./HeroBackground";
 export default component$(() => {
   return (
         <div>
-<section class="relative md:-mt-[76px] not-prose flex items-center justify-center h-[100vh]">
+<section class="relative md:-mt-[76px] not-prose bg-primary flex items-center justify-center h-[100vh]">
   
   <div class="absolute inset-0 -mt-28 overflow-hidden -z-10">
    <img width={600} height={600} src={HeroBackground} alt="Background cover image" class="object-cover w-full h-full" />

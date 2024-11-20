@@ -5,21 +5,24 @@ import Logo from "~/components/common/Logo";
 import ToggleTheme from "~/components/common/ToggleTheme";
 import ToggleMenu from "~/components/common/ToggleMenu";
 import IconChevronDown from "../icons/IconChevronDown";
+import { useTheme } from "~/lib/provider";
 
 export default component$(() => {
   const store = useStore({
     isScrolling: false,
   });
 
+  const {themeSig} = useTheme();
+
   const { menu } = useContent();
 
   return (
     <header
     id="header"
-    class={`sticky top-0 z-40 flex-none border-b border-gray-100 border-gray-50/0 transition-all ease-in-out duration-300 ${
+    class={`sticky top-0 z-40 flex-none border-b border-gray-100 ${themeSig.value} border-gray-50/0 transition-all ease-in-out duration-300 ${
       store.isScrolling
         ? "w-full md:bg-white/90 brorder-b border-gray-100 px-1 py-0 md:backdrop-blur-sm dark:md:bg-slate-900/90 bg-white dark:bg-slate-900 md:mx-0 md:rounded-none md:shadow-none"
-        : "w-[93%] mx-auto p-1 rounded-lg shadow-md mt-3 text-white sm:text-gray-900"
+        : "w-[93%] mx-auto p-1 rounded-lg shadow-md mt-3 bg-primary text-white sm:text-gray-900"
     }`}
     window:onScroll$={() => {
       if (!store.isScrolling && window.scrollY >= 10) {

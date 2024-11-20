@@ -6,18 +6,18 @@ export default component$(() => {
   const themeColors = ["theme-indigo", "theme-red", "theme-orange", "theme-yellow", "theme-green", "theme-blue", "theme-violet"];
 
   // Signal to store the selected theme color
-  const selectedTheme = useSignal("");
+  
 
   // Load theme from localStorage once component is mounted
-  useVisibleTask$(() => {
-    const savedTheme = localStorage.getItem("selectedTheme");
-    if (savedTheme && themeColors.includes(savedTheme)) {
-      selectedTheme.value = savedTheme;
-    }
-  });
+  // useVisibleTask$(() => {
+  //   const savedTheme = localStorage.getItem("selectedTheme");
+  //   if (savedTheme && themeColors.includes(savedTheme)) {
+  //     selectedTheme.value = savedTheme;
+  //   }
+  // });
 
   return (
-    <main class={`flex flex-col min-h-screen gap-16 p-24 bg-white ${selectedTheme.value}`}>
+    <main class={`flex flex-col min-h-screen gap-16 p-24 bg-primary dark:bg-gray-600  ${selectedTheme.value}`}>
       <div class="flex mb-8">
         <label for="theme-selector" class="mr-4 text-lg font-medium">
           Choose Theme:

@@ -22,6 +22,24 @@
   @apply transition-colors duration-500 ease-in-out;
 }
 
+.simple.red {
+  background-color: #f00;
+}
+
+.brutalist.green {
+  background-color: #0f0;
+}
+
+.blue {
+  background-color: #00f;
+}
+
+
+
+.purple {
+  background-color: #f0f;
+}
+
 .theme-black {
   --color-primary: hsl(0, 0%, 0%);
   --color-secondary: hsl(0, 0%, 50%);
