@@ -3,7 +3,7 @@ import { Image } from "@unpic/qwik";
 
 import IconStar from "~/components/icons/IconStar";
 import { Headline } from "../ui/Headline";
-import { CoverImage } from "./coverImage";
+
 
 export default component$(() => {
   const stepsData = {
@@ -38,7 +38,7 @@ export default component$(() => {
     ],
   
     image: {
-      src: CoverImage,
+      src: "",
       alt: "Steps image",
     },
   };
