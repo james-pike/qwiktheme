@@ -5,7 +5,7 @@ import { Image } from "@unpic/qwik";
 export default component$(() => {
   return (
         <div>
-<section class="relative md:-mt-[76px] not-prose bg-primary flex items-center justify-center h-[100vh]">
+<section class="relative md:-mt-[76px] not-prose bg-primary flex items-center justify-center h-[75vh]">
   
   <div class="absolute inset-0 -mt-28 overflow-hidden -z-10">
    <img width={600} height={600} src={""} alt="Background cover image" class="object-cover w-full h-full" />
@@ -24,18 +24,20 @@ export default component$(() => {
         <button class="btn w-full bg-gray-50">Learn More</button>
       </div>
     </div>
-    <div class="lg:basis-1/2">
-       <Image
-        src={""}
-        alt="Background cover image"
-        width={500} // adjust width to your layout needs
-        height={500} // adjust height for your layout
-        class="object-cover w-full h-full" 
-        priority="true"
-      />
-    </div>
+   
+    
   </div>
 </section>
+ <div class="lg:basis-1/2">
+ <Image
+  src={""}
+  alt="Background cover image"
+  width={500} // adjust width to your layout needs
+  height={500} // adjust height for your layout
+  class="object-cover w-full h-full" 
+  priority="true"
+/>
+    </div>
     </div>
   );
 });
