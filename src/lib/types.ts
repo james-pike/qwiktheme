@@ -24,6 +24,8 @@ export interface UseThemeProps {
   systemTheme: SystemTheme | undefined;
   /** List of all available theme names */
   themes: string[] | string[][];
+
+
 }
 
 export interface ThemeProviderProps {
