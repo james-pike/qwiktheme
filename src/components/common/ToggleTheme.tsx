@@ -34,21 +34,21 @@ export default component$((props: ItemProps) => {
       aria-label="Toggle between Dark and Light mode"
       onClick$={() => {
         console.log("button clicked");
-
+      
         // Extract the current theme
-        const currentTheme = store.theme || ""; // e.g., "light-green" or "dark-green"
-        const [mode, color] = currentTheme.split("-"); // Split into ["light", "green"] or ["dark", "green"]
-
-        // Toggle between "light" and "dark" mode
-        const newMode = mode === "light" ? "dark" : "light"; // Toggle modes
-        const newTheme = `${newMode}-${color}`; // Construct the new theme (e.g., "dark-green" or "light-green")
-
-        // Update the document and classList
+        const currentTheme = store.theme; // e.g., "light-green" or "dark-green"
+        const [mode, color] = currentTheme.split("-"); // Split into ["light", "green"] or ["dark", "blue"]
+      
+        // Determine the new theme based on the current mode
+        const newMode = mode === "light" ? "dark" : "light"; // Toggle between "light" and "dark"
+        const newTheme = `${newMode}-${color}`; // Construct the new theme, e.g., "dark-green"
+      
+        // Remove the old theme and add the new theme immediately to the document
         document.documentElement.classList.remove(currentTheme); // Remove the old theme class
         document.documentElement.classList.add(newTheme); // Add the new theme class
-
-        // Update store and localStorage with the new theme
-        store.theme = window.localStorage.theme = newTheme;
+      
+        // Update the store and localStorage immediately to reflect the change
+        store.theme = window.localStorage.theme = newTheme; // Update the store and localStorage
       }}
     >
       {store.theme && store.theme.includes("dark") ? (
