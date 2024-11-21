@@ -1,9 +1,10 @@
 import { component$, useComputed$, useSignal } from "@builder.io/qwik";
-
+import { Image } from "@unpic/qwik";
+import { useTheme } from "~/lib/provider";
 
 const colorThemes = [
   { name: "light-blue", primary: "1467efb" },
-  { name: "red", primary: "fc3d39" },
+  { name: "dark-red", primary: "fc3d39" },
   { name: "green", primary: "1F7735" },
   { name: "yellow", primary: "eab308" },
   { name: "indigo", primary: "4f46e5" },
@@ -17,14 +18,15 @@ export default component$(() => {
 
 
 
-const themeSig = useSignal<string>("light-blue");
+const {themeSig} = useTheme();
 
 // Computed signal to derive the primary color based on the current theme
-const primaryColor = useComputed$(() => {
-  const currentTheme = colorThemes.find((theme) => theme.name === themeSig.value);
-  return currentTheme ? currentTheme.primary : "000000"; // Default to black if no match
-});
-
+  // Computed signal to derive the primary color based on the current theme
+  const primaryColor = useComputed$(() => {
+    const themeValue = themeSig.value ?? ""; // Ensure `themeSig.value` is always a string
+    const currentTheme = colorThemes.find((theme) => themeValue.includes(theme.name));
+    return currentTheme ? currentTheme.primary : "000000"; // Default to black if no match
+  });
   return (
         <div>
 <section class="relative md:-mt-[76px] not-prose bg-primary flex items-center justify-center h-[75vh]">
@@ -57,7 +59,14 @@ const primaryColor = useComputed$(() => {
   </div>
 </section>
  <div class="lg:basis-1/2">
-
+ <Image
+  src={""}
+  alt="Background cover image"
+  width={500} // adjust width to your layout needs
+  height={500} // adjust height for your layout
+  class="object-cover w-full h-full" 
+  priority="true"
+/>
     </div>
     </div>
   );
