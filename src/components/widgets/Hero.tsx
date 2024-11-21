@@ -1,4 +1,4 @@
-import { component$, useComputed$, useSignal } from "@builder.io/qwik";
+import { component$, useComputed$ } from "@builder.io/qwik";
 import { Image } from "@unpic/qwik";
 import { useTheme } from "~/lib/provider";
 
