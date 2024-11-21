@@ -1,5 +1,5 @@
 import { component$, useComputed$, useSignal } from "@builder.io/qwik";
-import { Image } from "@unpic/qwik";
+
 
 const colorThemes = [
   { name: "light-blue", primary: "1467efb" },
@@ -57,14 +57,7 @@ const primaryColor = useComputed$(() => {
   </div>
 </section>
  <div class="lg:basis-1/2">
- <Image
-  src={""}
-  alt="Background cover image"
-  width={500} // adjust width to your layout needs
-  height={500} // adjust height for your layout
-  class="object-cover w-full h-full" 
-  priority="true"
-/>
+
     </div>
     </div>
   );

@@ -1,4 +1,4 @@
-import { component$, useSignal } from "@builder.io/qwik";
+import { component$} from "@builder.io/qwik";
 import { Popover } from "@qwik-ui/headless";
 import IconApps from "../icons/IconApps";
 import { useTheme } from "~/lib/provider";
