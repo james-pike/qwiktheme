@@ -24,20 +24,14 @@ export default component$((props: ItemProps) => {
   const { themeSig } = useTheme();
   const isOpen = useSignal(false); // Signal to track popover open state
 
-  const togglePopover = () => {
-    isOpen.value = !isOpen.value; // Toggle the open state
-  };
-
-  const closePopover = () => {
-    isOpen.value = false; // Close the popover
-  };
-
   return (
     <Popover.Root>
       <Popover.Trigger>
         <div
           class="px-4 py-2 font-medium text-white bg-primary rounded-md cursor-pointer"
-          onClick$={togglePopover}
+          onClick$={() => {
+            isOpen.value = !isOpen.value; // Toggle the popover state
+          }}
         >
           <IconApps class={iconClass} />
         </div>
@@ -57,7 +51,7 @@ export default component$((props: ItemProps) => {
                   }`}
                   onClick$={() => {
                     themeSig.value = theme.name; // Set the theme
-                    closePopover(); // Close the popover
+                    isOpen.value = false; // Close the popover
                   }}
                   aria-label={`Select ${theme.name} theme`}
                 />
