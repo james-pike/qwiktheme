@@ -1,59 +1,72 @@
-/**
- * WHAT IS THIS FILE?
- *
- * Globally applied styles. No matter which components are in the page or matching route,
- * the styles in here will be applied to the Document, without any sort of CSS scoping.
- *
- */
-
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 @layer base {
-:root{
---color-primary: hsl(0, 0%, 0%);
---color-secondary: hsl(0, 0%, 50%);
---color-text-base: hsl(0, 0%, 100%);
---color-bg-primary: hsl(0, 0%, 100%);
+  :root {
+    --color-primary: hsl(0, 0%, 0%);
+    --color-secondary: hsl(0, 0%, 50%);
+    --color-text-base: hsl(0, 0%, 100%);
+    --color-bg-primary: hsl(0, 0%, 100%);
+  }
+
+  * {
+    @apply transition-colors duration-500 ease-in-out;
+  }
+
+  .dark-green {
+    --color-primary: hsl(120, 100%, 25%); /* Dark green */
+    --color-secondary: hsl(120, 100%, 40%);
+    --color-text-base: hsl(0, 0%, 100%);
+    --color-bg-primary: hsl(0, 0%, 0%);
+  }
+
+  .dark-blue {
+    --color-primary: hsl(220, 100%, 25%); /* Dark blue */
+    --color-secondary: hsl(220, 100%, 40%);
+    --color-text-base: hsl(0, 0%, 100%);
+    --color-bg-primary: hsl(220, 100%, 10%);
+  }
+
+  .light-green {
+    --color-primary: hsl(120, 100%, 50%); /* Light green */
+    --color-secondary: hsl(120, 100%, 70%);
+    --color-text-base: hsl(0, 0%, 100%);
+    --color-bg-primary: hsl(0, 0%, 100%);
+  }
+
+  .light-blue {
+    --color-primary: hsl(220, 100%, 50%); /* Light blue */
+    --color-secondary: hsl(220, 100%, 70%);
+    --color-text-base: hsl(0, 0%, 100%);
+    --color-bg-primary: hsl(0, 0%, 100%);
+  }
+
+  .dark-red {
+    --color-primary: hsl(0, 100%, 25%); /* Dark red */
+    --color-secondary: hsl(0, 100%, 40%);
+    --color-text-base: hsl(0, 0%, 100%);
+    --color-bg-primary: hsl(0, 0%, 0%);
+  }
+
+  .dark-purple {
+    --color-primary: hsl(285, 100%, 25%); /* Dark purple */
+    --color-secondary: hsl(285, 100%, 40%);
+    --color-text-base: hsl(0, 0%, 100%);
+    --color-bg-primary: hsl(285, 100%, 10%);
+  }
+
+  .light-red {
+    --color-primary: hsl(0, 100%, 50%); /* Light red */
+    --color-secondary: hsl(0, 100%, 70%);
+    --color-text-base: hsl(0, 0%, 100%);
+    --color-bg-primary: hsl(0, 0%, 100%);
+  }
+
+  .light-purple {
+    --color-primary: hsl(285, 100%, 50%); /* Light purple */
+    --color-secondary: hsl(285, 100%, 70%);
+    --color-text-base: hsl(0, 0%, 100%);
+    --color-bg-primary: hsl(0, 0%, 100%);
+  }
 }
 
-*{
-  @apply transition-colors duration-500 ease-in-out;
-}
-
-.dark-green {
-
-  --color-primary: hsl(120, 100%, 20%);
-  --color-secondary: hsl(0, 0%, 0%);
-  --color-text-base: hsl(0, 0%, 100%);
-  --color-bg-primary: hsl(0, 0%, 0%);
-}
-
-.dark-blue {
-
-  --color-primary: hsl(220, 100%, 23%);
-  --color-secondary: hsl(0, 0%, 0%);
-  --color-text-base: hsl(0, 0%, 100%);
-  --color-bg-primary: hsl(0, 50%, 1%);
-}
-
-.light-green {
-
-  --color-primary: hsl(120, 100%, 50%);
-  --color-secondary: hsl(120, 100%, 70%);
-  --color-text-base: hsl(0, 0%, 100%);
---color-bg-primary: hsl(0, 0%, 100%);
-}
-
-.light-blue {
-
-  --color-primary: hsl(220, 100%, 50%);
-  --color-secondary: hsl(220, 100%, 70%);
-  --color-text-base: hsl(0, 0%, 100%);
---color-bg-primary: hsl(0, 0%, 100%);
-  
-}
 
 .dark-red {
 
@@ -88,4 +101,66 @@
   
 }
 
+.light-pink {
+  --color-primary: hsl(330, 100%, 50%); /* Light pink */
+  --color-secondary: hsl(330, 100%, 70%);
+  --color-text-base: hsl(0, 0%, 100%);
+  --color-bg-primary: hsl(0, 0%, 100%);
 }
+
+.dark-pink {
+  --color-primary: hsl(330, 100%, 25%); /* Dark pink */
+  --color-secondary: hsl(330, 100%, 40%);
+  --color-text-base: hsl(0, 0%, 100%);
+  --color-bg-primary: hsl(330, 100%, 10%);
+}
+
+.light-teal {
+  --color-primary: hsl(180, 100%, 50%); /* Light teal */
+  --color-secondary: hsl(180, 100%, 70%);
+  --color-text-base: hsl(0, 0%, 100%);
+  --color-bg-primary: hsl(0, 0%, 100%);
+}
+
+.dark-teal {
+  --color-primary: hsl(180, 100%, 25%); /* Dark teal */
+  --color-secondary: hsl(180, 100%, 40%);
+  --color-text-base: hsl(0, 0%, 100%);
+  --color-bg-primary: hsl(180, 100%, 10%);
+}
+
+.light-cyan {
+  --color-primary: hsl(200, 100%, 50%); /* Light cyan */
+  --color-secondary: hsl(200, 100%, 70%);
+  --color-text-base: hsl(0, 0%, 100%);
+  --color-bg-primary: hsl(0, 0%, 100%);
+}
+
+.dark-cyan {
+  --color-primary: hsl(200, 100%, 25%); /* Dark cyan */
+  --color-secondary: hsl(200, 100%, 40%);
+  --color-text-base: hsl(0, 0%, 100%);
+  --color-bg-primary: hsl(200, 100%, 10%);
+}
+
+.light-indigo {
+  --color-primary: hsl(260, 100%, 50%); /* Light indigo */
+  --color-secondary: hsl(260, 100%, 70%);
+  --color-text-base: hsl(0, 0%, 100%);
+  --color-bg-primary: hsl(0, 0%, 100%);
+}
+
+.dark-indigo {
+  --color-primary: hsl(260, 100%, 25%); /* Dark indigo */
+  --color-secondary: hsl(260, 100%, 40%);
+  --color-text-base: hsl(0, 0%, 100%);
+  --color-bg-primary: hsl(260, 100%, 10%);
+}
+
+.light-yellow {
+  --color-primary: hsl(50, 100%, 50%); /* Light yellow */
+  --color-secondary: hsl(50, 100%, 70%);
+  --color-text-base: hsl(0, 0%, 0%);
+  --color-bg-primary: hsl(0, 0%, 100%);
+}
+
