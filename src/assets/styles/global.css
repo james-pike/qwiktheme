@@ -65,8 +65,8 @@
 
 .dark-purple {
 
-  --color-primary: hsl(266, 100%, 23%);
-  --color-secondary: hsl(0, 0%, 0%);
+  --color-primary: hsla(266, 100%, 23%, 0.274);
+  --color-secondary: hsla(0, 0%, 0%, 0.108);
   --color-text-base: hsl(0, 0%, 100%);
   --color-bg-primary: hsl(0, 50%, 1%);
 }
@@ -74,7 +74,7 @@
 .light-red {
 
   --color-primary: hsl(0, 73%, 58%);
-  --color-secondary: hsl(120, 100%, 70%);
+  --color-secondary: hsl(0, 97%, 75%);
   --color-text-base: hsl(0, 0%, 100%);
 --color-bg-primary: hsl(0, 0%, 100%);
 }
