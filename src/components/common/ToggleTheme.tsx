@@ -1,6 +1,7 @@
 import { component$, useStore, useVisibleTask$ } from "@builder.io/qwik";
 import IconSun from "~/components/icons/IconSun";
 import IconMoon from "~/components/icons/IconMoon";
+import { useTheme } from "~/lib/provider";
 
 interface ItemProps {
   iconClass?: string;
@@ -13,6 +14,8 @@ export default component$((props: ItemProps) => {
       (typeof window !== "undefined" && window.localStorage.theme) ||
       undefined,
   });
+
+  const {themeSig} = useTheme();
 
   useVisibleTask$(() => {
     const classList = document.documentElement.classList;
@@ -34,21 +37,22 @@ export default component$((props: ItemProps) => {
       aria-label="Toggle between Dark and Light mode"
       onClick$={() => {
         console.log("button clicked");
-      
+
         // Extract the current theme
-        const currentTheme = store.theme; // e.g., "light-green" or "dark-green"
-        const [mode, color] = currentTheme.split("-"); // Split into ["light", "green"] or ["dark", "blue"]
-      
-        // Determine the new theme based on the current mode
-        const newMode = mode === "light" ? "dark" : "light"; // Toggle between "light" and "dark"
-        const newTheme = `${newMode}-${color}`; // Construct the new theme, e.g., "dark-green"
-      
-        // Remove the old theme and add the new theme immediately to the document
+        const currentTheme = store.theme || ""; // e.g., "light-green" or "dark-green"
+        const [mode, color] = currentTheme.split("-"); // Split into ["light", "green"] or ["dark", "green"]
+
+        // Toggle between "light" and "dark" mode
+        const newMode = mode === "light" ? "dark" : "light"; // Toggle modes
+        const newTheme = `${newMode}-${color}`; // Construct the new theme (e.g., "dark-green" or "light-green")
+
+        // Update the document and classList
         document.documentElement.classList.remove(currentTheme); // Remove the old theme class
         document.documentElement.classList.add(newTheme); // Add the new theme class
-      
-        // Update the store and localStorage immediately to reflect the change
-        store.theme = window.localStorage.theme = newTheme; // Update the store and localStorage
+
+        // Update store and localStorage with the new theme
+        store.theme = window.localStorage.theme = newTheme;
+        themeSig.value = newTheme;
       }}
     >
       {store.theme && store.theme.includes("dark") ? (
