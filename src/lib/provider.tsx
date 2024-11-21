@@ -20,7 +20,8 @@ const ThemeContext = createContextId<UseThemeProps>('theme-context');
 
 export const useTheme = () => useContext(ThemeContext);
 
-const defaultThemes = ['light', 'dark', 'blue'];
+const defaultThemes = ['light-green', 'dark-green', 'light-blue', 'dark-blue'];
+
 
 export const ThemeProvider = component$<ThemeProviderProps>(
   ({

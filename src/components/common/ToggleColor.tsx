@@ -8,13 +8,11 @@ interface ItemProps {
 }
 
 const themes = [
-    { name: 'theme-indigo', color: 'bg-indigo-500' },
-    { name: 'theme-blue', color: 'bg-blue-500' },
-    { name: 'theme-green', color: 'bg-green-500' },
-    { name: 'theme-red', color: 'bg-red-500' },
-    { name: 'theme-yellow', color: 'bg-yellow-500' },
-    { name: 'theme-purple', color: 'bg-violet-500' },
-    { name: 'theme-orange', color: 'bg-orange-500' },
+    { name: 'dark-green', color: 'bg-indigo-500' },
+    { name: 'light-green', color: 'bg-blue-500' },
+    { name: 'dark-blue', color: 'bg-green-500' },
+    { name: 'light-blue', color: 'bg-red-500' },
+  
   ];
   
 

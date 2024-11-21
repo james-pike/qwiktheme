@@ -29,10 +29,16 @@ export default component$(() => {
           rel="stylesheet"
         /> */}
         <RouterHead />
-        <DarkThemeLauncher />
+        {/* <DarkThemeLauncher /> */}
         <ServiceWorkerRegister />
         
 
+        <script>
+          {(function () {
+            const theme = localStorage.getItem('theme') || 'light-green'; // Fallback theme
+            document.documentElement.className = theme;
+          }).toString()}
+        </script>
 
         
       </head>

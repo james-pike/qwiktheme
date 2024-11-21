@@ -1,4 +1,4 @@
-import { component$, useStore } from "@builder.io/qwik";
+import { component$, useStore, useVisibleTask$ } from "@builder.io/qwik";
 import { useContent } from "@builder.io/qwik-city";
 
 import Logo from "~/components/common/Logo";
@@ -17,13 +17,17 @@ export default component$(() => {
 
   const { menu } = useContent();
 
+  useVisibleTask$(() => {
+    themeSig.value = localStorage.getItem("theme") || "default-theme"; // Fallback to 'default-theme' if not set
+  });
+
   return (
     <header
     id="header"
     class={`sticky top-0 z-40 flex-none border-b border-gray-100 ${themeSig.value} border-gray-50/0 transition-all ease-in-out duration-300 ${
       store.isScrolling
         ? "w-full md:bg-white/90 brorder-b border-gray-100 px-1 py-0 md:backdrop-blur-sm dark:md:bg-slate-900/90 bg-white dark:bg-slate-900 md:mx-0 md:rounded-none md:shadow-none"
-        : " mx-auto p-1 rounded-lg shadow-md mt-3 bg-primary text-white sm:text-gray-900"
+        : " mx-auto p-1 rounded-lg shadow-md mt-3 bg-secondary text-white sm:text-gray-900"
     }`}
     window:onScroll$={() => {
       if (!store.isScrolling && window.scrollY >= 10) {

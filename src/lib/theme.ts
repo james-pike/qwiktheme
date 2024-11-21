@@ -11,5 +11,5 @@ export const applyTheme = (theme: string) => {
 // Function to get the theme from localStorage or default to "green-light"
 export const getSavedTheme = (): string => {
   const theme = getFromLocalStorage('theme');
-  return theme || 'green-light';  // Default to 'green-light' if no theme is found
+  return theme || '';  // Default to 'green-light' if no theme is found
 };
