@@ -54,4 +54,38 @@
 --color-bg-primary: hsl(0, 0%, 100%);
   
 }
+
+.dark-red {
+
+  --color-primary: hsl(0, 100%, 20%);
+  --color-secondary: hsl(0, 0%, 0%);
+  --color-text-base: hsl(0, 0%, 100%);
+  --color-bg-primary: hsl(0, 0%, 0%);
+}
+
+.dark-purple {
+
+  --color-primary: hsl(266, 100%, 23%);
+  --color-secondary: hsl(0, 0%, 0%);
+  --color-text-base: hsl(0, 0%, 100%);
+  --color-bg-primary: hsl(0, 50%, 1%);
+}
+
+.light-red {
+
+  --color-primary: hsl(0, 73%, 58%);
+  --color-secondary: hsl(120, 100%, 70%);
+  --color-text-base: hsl(0, 0%, 100%);
+--color-bg-primary: hsl(0, 0%, 100%);
+}
+
+.light-purple {
+
+  --color-primary: hsl(285, 100%, 50%);
+  --color-secondary: hsl(220, 100%, 70%);
+  --color-text-base: hsl(0, 0%, 100%);
+--color-bg-primary: hsl(0, 0%, 100%);
+  
+}
+
 }
