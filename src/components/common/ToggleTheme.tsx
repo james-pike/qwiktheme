@@ -52,7 +52,7 @@ export default component$((props: ItemProps) => {
 
         // Update store and localStorage with the new theme
         store.theme = window.localStorage.theme = newTheme;
-     
+        themeSig.value = newTheme;
       }}
     >
       {store.theme && store.theme.includes("dark") ? (
