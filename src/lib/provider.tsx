@@ -31,7 +31,7 @@ export const ThemeProvider = component$<ThemeProviderProps>(
     enableColorScheme = true,
     storageKey = 'theme',
     themes = defaultThemes,
-    defaultTheme = enableSystem ? 'system' : 'light',
+    defaultTheme = enableSystem ? 'system' : 'light-blue',
     attribute = 'data-theme',
     value,
     nonce,
@@ -136,14 +136,14 @@ export const ThemeProvider = component$<ThemeProviderProps>(
       resolvedThemeSig,
       forcedTheme,
       storageKey,
-      systemTheme: (enableSystem ? resolvedThemeSig.value : undefined) as
-        | SystemTheme
-        | undefined,
+      systemTheme: (enableSystem ? resolvedThemeSig.value : undefined) as SystemTheme |
+        undefined,
       themes: enableSystem
         ? Array.isArray(themes[0])
           ? [...(themes as string[][]), ['system']]
           : [...(themes as string[]), 'system']
         : themes,
+      value: ''
     });
 
     return (
