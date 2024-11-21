@@ -1,9 +1,9 @@
-import { component$, useComputed$ } from "@builder.io/qwik";
+import { component$, useComputed$, useSignal } from "@builder.io/qwik";
 import { Image } from "@unpic/qwik";
 import { useTheme } from "~/lib/provider";
 
 const colorThemes = [
-  { name: "light-blue", primary: "1467efb" },
+  { name: "light-blue", primary: "146efb" },
   { name: "dark-red", primary: "fc3d39" },
   { name: "green", primary: "1F7735" },
   { name: "yellow", primary: "eab308" },

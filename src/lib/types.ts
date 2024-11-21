@@ -9,6 +9,7 @@ export type SystemTheme = 'dark' | 'light';
 export type Theme = 'dark' | 'light' | string | string[] | undefined;
 
 export interface UseThemeProps {
+  value: string;
   // system or light
   defaultTheme: string;
   /** theme signal */
