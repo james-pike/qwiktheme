@@ -4,9 +4,9 @@ interface ValueObject {
   [themeName: string]: string;
 }
 
-export type SystemTheme = 'dark' | 'light' |'blue';
+export type SystemTheme = 'dark' | 'light';
 
-export type Theme = 'dark' | 'light' | 'blue' | string | string[] | undefined;
+export type Theme = 'dark' | 'light' | string | string[] | undefined;
 
 export interface UseThemeProps {
   // system or light

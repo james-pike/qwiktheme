@@ -8,15 +8,28 @@ interface ItemProps {
 }
 
 const themes = [
-  { name: "dark-green", color: "bg-green-500", mode: "dark" },
-  { name: "light-green", color: "bg-green-500", mode: "light" },
-  { name: "dark-blue", color: "bg-blue-500", mode: "dark" },
-  { name: "light-blue", color: "bg-blue-500", mode: "light" },
-  { name: "dark-red", color: "bg-red-500", mode: "dark" },
-  { name: "light-red", color: "bg-red-500", mode: "light" },
-  { name: "dark-purple", color: "bg-purple-500", mode: "dark" },
-  { name: "light-purple", color: "bg-violet-500", mode: "light" },
+  { name: "dark-green", color: "bg-green-700", mode: "dark" },
+  { name: "light-green", color: "bg-green-300", mode: "light" },
+  { name: "dark-blue", color: "bg-blue-700", mode: "dark" },
+  { name: "light-blue", color: "bg-blue-300", mode: "light" },
+  { name: "dark-red", color: "bg-red-700", mode: "dark" },
+  { name: "light-red", color: "bg-red-300", mode: "light" },
+  { name: "dark-purple", color: "bg-purple-700", mode: "dark" },
+  { name: "light-purple", color: "bg-violet-300", mode: "light" },
+  { name: "dark-black", color: "bg-gray-900", mode: "dark" }, // Black theme for dark mode
+  { name: "light-black", color: "bg-gray-400", mode: "light" }, // Light gray as "black" variant for light mode
+  { name: "dark-orange", color: "bg-orange-700", mode: "dark" },
+  { name: "light-orange", color: "bg-orange-300", mode: "light" },
+  { name: "dark-yellow", color: "bg-yellow-700", mode: "dark" },
+  { name: "light-yellow", color: "bg-yellow-300", mode: "light" },
+  { name: "dark-cyan", color: "bg-cyan-700", mode: "dark" },
+  { name: "light-cyan", color: "bg-cyan-300", mode: "light" },
+  { name: "dark-teal", color: "bg-teal-700", mode: "dark" },
+  { name: "light-teal", color: "bg-teal-300", mode: "light" },
+  { name: "dark-pink", color: "bg-pink-700", mode: "dark" },
+  { name: "light-pink", color: "bg-pink-300", mode: "light" }
 ];
+
 
 export default component$((props: ItemProps) => {
   const { iconClass } = props;
