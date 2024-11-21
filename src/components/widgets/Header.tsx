@@ -1,7 +1,6 @@
 import { component$, useStore, useVisibleTask$ } from "@builder.io/qwik";
 import { useContent } from "@builder.io/qwik-city";
 
-import Logo from "~/components/common/Logo";
 import ToggleTheme from "~/components/common/ToggleTheme";
 import ToggleMenu from "~/components/common/ToggleMenu";
 import IconChevronDown from "../icons/IconChevronDown";
@@ -39,9 +38,10 @@ export default component$(() => {
   >
       <div class="absolute inset-0"></div>
       <div class="relative text-default py-3 px-3 md:px-6 mx-auto w-full md:flex md:justify-between max-w-7xl">
+        
   <div class="mr-auto rtl:mr-0 rtl:ml-auto flex justify-between">
     <a class="flex items-center" href={"/"}>
-      <Logo />
+      {/* <Logo /> */}
       <div
   class={`text-2xl md:text-xl font-bold whitespace-nowrap tracking-tight ${
     store.isScrolling
