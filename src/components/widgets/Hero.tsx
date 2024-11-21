@@ -1,15 +1,14 @@
 import { component$, useComputed$, useSignal } from "@builder.io/qwik";
 import { Image } from "@unpic/qwik";
-import { useTheme } from "~/lib/provider";
 
 const colorThemes = [
-  { name: "light-blue", primary: "146f86" },
-  { name: "red", primary: "f87171" },
-  { name: "green", primary: "22c55e" },
+  { name: "light-blue", primary: "1467efb" },
+  { name: "red", primary: "fc3d39" },
+  { name: "green", primary: "1F7735" },
   { name: "yellow", primary: "eab308" },
   { name: "indigo", primary: "4f46e5" },
-  { name: "violet", primary: "8b5cf6" },
-  { name: "orange", primary: "fb923c" },
+  { name: "violet", primary: "8585ff" },
+  { name: "orange", primary: "fd9426" },
   { name: "opal", primary: "9fc5e8" },
   { name: "forest-green", primary: "228B22" },
 ];
