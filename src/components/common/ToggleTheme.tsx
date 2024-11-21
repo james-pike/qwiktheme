@@ -15,7 +15,7 @@ export default component$((props: ItemProps) => {
       undefined,
   });
 
-  const {themeSig} = useTheme();
+  // const {themeSig} = useTheme();
 
   useVisibleTask$(() => {
     const classList = document.documentElement.classList;
