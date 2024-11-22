@@ -3,16 +3,28 @@ import { Image } from "@unpic/qwik";
 import { useTheme } from "~/lib/provider";
 
 const colorThemes = [
-  { name: "light-blue", primary: "146efb" },
-  { name: "dark-red", primary: "fc3d39" },
-  { name: "green", primary: "1F7735" },
-  { name: "yellow", primary: "eab308" },
-  { name: "indigo", primary: "4f46e5" },
-  { name: "violet", primary: "8585ff" },
-  { name: "orange", primary: "fd9426" },
-  { name: "opal", primary: "9fc5e8" },
-  { name: "forest-green", primary: "228B22" },
+  { name: "dark-green", primary: "1F7735" },
+  { name: "light-green", primary: "3CB371" },
+  { name: "dark-blue", primary: "146EF8" },
+  { name: "light-blue", primary: "5BA8F7" },
+  { name: "dark-red", primary: "9E1C1C" },
+  { name: "light-red", primary: "F76C6C" },
+  { name: "dark-purple", primary: "5B217F" },
+  { name: "light-purple", primary: "D0A1F5" },
+  { name: "dark-black", primary: "212121" },
+  { name: "light-black", primary: "B5B5B5" },
+  { name: "dark-orange", primary: "D1631A" },
+  { name: "light-orange", primary: "F7A768" },
+  { name: "dark-yellow", primary: "946A09" },
+  { name: "light-yellow", primary: "FACC68" },
+  { name: "dark-cyan", primary: "136E6E" },
+  { name: "light-cyan", primary: "76D7D7" },
+  { name: "dark-teal", primary: "12564A" },
+  { name: "light-teal", primary: "63B8A8" },
+  { name: "dark-pink", primary: "8B2756" },
+  { name: "light-pink", primary: "F28AB7" },
 ];
+
 
 export default component$(() => {
 
