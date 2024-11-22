@@ -3,4 +3,4 @@
 ## [Tabs](/tabs)
 ## [Terms](/terms)
 ## [Privacy](/privacy)
-## [Blog](/blog)
+## [Contact Us](/contact)

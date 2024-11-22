@@ -7,7 +7,7 @@ export default component$(() => {
   return (
     <>
       <ThemeProvider
-        defaultTheme="light-green" themes={['light-green', 'dark-green', 'light-blue', 'dark-blue']} attribute="class">
+        defaultTheme="light-green" themes={['light-green', 'dark-green', 'light-blue', 'dark-blue', 'light-yellow', 'dark-yellow']} attribute="class">
         <Header />
         <main>
           <Slot />
