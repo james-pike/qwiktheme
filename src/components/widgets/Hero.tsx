@@ -3,47 +3,33 @@ import { Image } from "@unpic/qwik";
 import { useTheme } from "~/lib/provider";
 
 const colorThemes = [
-  { name: "dark-green", primary: "1F7735" },
-  { name: "light-green", primary: "3CB371" },
-  { name: "dark-blue", primary: "146EF8" },
-  { name: "light-blue", primary: "5BA8F7" },
-  { name: "dark-red", primary: "9E1C1C" },
-  { name: "light-red", primary: "F76C6C" },
-  { name: "dark-purple", primary: "5B217F" },
-  { name: "light-purple", primary: "D0A1F5" },
-  { name: "dark-black", primary: "212121" },
-  { name: "light-black", primary: "B5B5B5" },
-  { name: "dark-orange", primary: "D1631A" },
-  { name: "light-orange", primary: "F7A768" },
-  { name: "dark-yellow", primary: "946A09" },
-  { name: "light-yellow", primary: "FACC68" },
-  { name: "dark-cyan", primary: "136E6E" },
-  { name: "light-cyan", primary: "76D7D7" },
-  { name: "dark-teal", primary: "12564A" },
-  { name: "light-teal", primary: "63B8A8" },
-  { name: "dark-pink", primary: "8B2756" },
-  { name: "light-pink", primary: "F28AB7" },
+  { name: "light-blue", primary: "146f86" },
+  { name: "red", primary: "f87171" },
+  { name: "green", primary: "22c55e" },
+  { name: "yellow", primary: "eab308" },
+  { name: "indigo", primary: "4f46e5" },
+  { name: "violet", primary: "8b5cf6" },
+  { name: "orange", primary: "fb923c" },
+  { name: "opal", primary: "9fc5e8" },
+  { name: "forest-green", primary: "228B22" },
 ];
-
 
 export default component$(() => {
 
+const themeSig = useTheme();
 
-
-const {themeSig} = useTheme();
-
-// Computed signal to derive the primary color based on the current theme
+  
   // Computed signal to derive the primary color based on the current theme
   const primaryColor = useComputed$(() => {
-    const themeValue = themeSig.value ?? ""; // Ensure `themeSig.value` is always a string
-    const currentTheme = colorThemes.find((theme) => themeValue.includes(theme.name));
-    return currentTheme ? currentTheme.primary : "000000"; // Default to black if no match
+    const currentTheme = colorThemes.find((theme) => theme.name === themeSig.value);
+    return currentTheme ? currentTheme.primary : "ffffff"; // Default to black if no match
   });
+
   return (
         <div>
 <section class="relative md:-mt-[76px] not-prose bg-primary flex items-center justify-center h-[75vh]">
   
-<div class="absolute inset-0 -mt-28 overflow-hidden z-5">
+<div class="absolute inset-0 -mt-28 overflow-hidden -z-10">
           <img
             width="600"
             height="600"
