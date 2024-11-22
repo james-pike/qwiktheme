@@ -25,22 +25,25 @@ const colorThemes = [
   { name: "light-pink", primary: "F28AB7" },
 ];
 
+
 export default component$(() => {
 
-const themeSig = useTheme();
 
-  
+
+const {themeSig} = useTheme();
+
+// Computed signal to derive the primary color based on the current theme
   // Computed signal to derive the primary color based on the current theme
   const primaryColor = useComputed$(() => {
-    const currentTheme = colorThemes.find((theme) => theme.name === themeSig.value);
-    return currentTheme ? currentTheme.primary : "ffffff"; // Default to black if no match
+    const themeValue = themeSig.value ?? ""; // Ensure themeSig.value is always a string
+    const currentTheme = colorThemes.find((theme) => themeValue.includes(theme.name));
+    return currentTheme ? currentTheme.primary : "000000"; // Default to black if no match
   });
-
   return (
         <div>
 <section class="relative md:-mt-[76px] not-prose bg-primary flex items-center justify-center h-[75vh]">
   
-<div class="absolute inset-0 -mt-28 overflow-hidden -z-10">
+<div class="absolute inset-0 -mt-28 overflow-hidden z-5">
           <img
             width="600"
             height="600"
@@ -81,5 +84,3 @@ const themeSig = useTheme();
   );
 });
 
-
-  
