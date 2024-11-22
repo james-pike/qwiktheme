@@ -1,4 +1,4 @@
-import { component$} from "@builder.io/qwik";
+import { component$, useVisibleTask$ } from "@builder.io/qwik";
 import { Popover } from "@qwik-ui/headless";
 import IconApps from "../icons/IconApps";
 import { useTheme } from "~/lib/provider";
@@ -16,8 +16,8 @@ const themes = [
   { name: "light-red", color: "bg-red-300", mode: "light" },
   { name: "dark-purple", color: "bg-purple-700", mode: "dark" },
   { name: "light-purple", color: "bg-violet-300", mode: "light" },
-  { name: "dark-black", color: "bg-gray-900", mode: "dark" }, // Black theme for dark mode
-  { name: "light-black", color: "bg-gray-400", mode: "light" }, // Light gray as "black" variant for light mode
+  { name: "dark-black", color: "bg-gray-900", mode: "dark" },
+  { name: "light-black", color: "bg-gray-400", mode: "light" },
   { name: "dark-orange", color: "bg-orange-700", mode: "dark" },
   { name: "light-orange", color: "bg-orange-300", mode: "light" },
   { name: "dark-yellow", color: "bg-yellow-700", mode: "dark" },
@@ -27,27 +27,30 @@ const themes = [
   { name: "dark-teal", color: "bg-teal-700", mode: "dark" },
   { name: "light-teal", color: "bg-teal-300", mode: "light" },
   { name: "dark-pink", color: "bg-pink-700", mode: "dark" },
-  { name: "light-pink", color: "bg-pink-300", mode: "light" }
+  { name: "light-pink", color: "bg-pink-300", mode: "light" },
 ];
-
 
 export default component$((props: ItemProps) => {
   const { iconClass } = props;
   const { themeSig } = useTheme();
 
-  // Fallback to light mode if `themeSig.value` is undefined
-  const currentTheme = themeSig.value ?? "light";
-  const isDarkMode = currentTheme.includes("dark");
+  // On initial load, sync the themeSig with localStorage
+  useVisibleTask$(() => {
+    const savedTheme = localStorage.getItem("theme");
+    if (savedTheme && themes.some((theme) => theme.name === savedTheme)) {
+      themeSig.value = savedTheme;
+    }
+  });
 
-  // Filter themes based on current mode
+  const isDarkMode = themeSig.value?.includes("dark") ?? false;
+
+  // Ensure theme matches the current mode
   const filteredThemes = themes.filter((theme) =>
     isDarkMode ? theme.mode === "dark" : theme.mode === "light"
   );
 
-
-
   return (
-    <Popover.Root flip={false} gutter={8}  >
+    <Popover.Root flip={false} gutter={8}>
       <Popover.Trigger>
         <div class="px-4 py-2 font-medium text-white bg-primary rounded-md cursor-pointer">
           <IconApps class={iconClass} />
@@ -61,11 +64,12 @@ export default component$((props: ItemProps) => {
               <div
                 key={theme.name}
                 class={`w-16 h-16 rounded-md ${theme.color} ${
-                  currentTheme === theme.name
-                    ? "ring-2 ring-offset-2 ring-black"
-                    : ""
+                  themeSig.value === theme.name ? "ring-2 ring-offset-2 ring-black" : ""
                 }`}
-                onClick$={() => (themeSig.value = theme.name)}
+                onClick$={() => {
+                  themeSig.value = theme.name;
+                  localStorage.setItem("theme", theme.name); // Save theme
+                }}
                 aria-label={`Select ${theme.name} theme`}
               />
             ))}
