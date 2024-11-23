@@ -111,6 +111,7 @@ export default component$(() => {
     <div class="items-center flex justify-between w-full md:w-auto">
       <div class="flex">
         <ToggleTheme iconClass={`w-6 h-6 md:w-5 md:h-5 ${store.isScrolling ? "text-gray-900 dark:text-slate-200" : "text-white"}`} />
+        <ToggleColor iconClass={`w-6 h-6 md:w-5 md:h-5 ${store.isScrolling ? "text-gray-900 dark:text-slate-200" : "text-white"}`} />
       </div>
       <span class="ml-4 rtl:ml-0 rtl:mr-4">
         <a
