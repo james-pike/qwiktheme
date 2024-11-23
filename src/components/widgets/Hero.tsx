@@ -63,14 +63,14 @@ export default component$(() => {
           </p>
           <div class="sm:max-w-md flex flex-col sm:flex-row sm:justify-center gap-4 lg:justify-start">
             <a
-              class="btn bg-primary text-tBase font-bold w-full"
+              class="btn bg-primary text-tBase font-bold w-full p-2"
               href="https://aymansor.github.io/Etch-a-Sketch/"
               target="_blank"
               rel="noopener"
             >
               Start Etching
             </a>
-            <button class="btn w-full bg-secondary">Learn More</button>
+            <button class="btn w-full bg-secondary p-2">Learn More</button>
           </div>
         </div>
       </div>
