@@ -6,6 +6,7 @@ import ToggleMenu from "~/components/common/ToggleMenu";
 import IconChevronDown from "../icons/IconChevronDown";
 import { useTheme } from "~/lib/provider";
 import ToggleColor from "../common/ToggleColor";
+import Logo from "../common/Logo";
 
 export default component$(() => {
   const store = useStore({
@@ -26,7 +27,7 @@ export default component$(() => {
     class={`sticky top-0 z-40 flex-none border-b border-gray-100 ${themeSig.value} border-gray-50/0 transition-all ease-in-out duration-300 ${
       store.isScrolling
         ? "w-full md:bg-white/90 brorder-b border-gray-100 px-1 py-0 md:backdrop-blur-sm dark:md:bg-slate-900/90 bg-white dark:bg-slate-900 md:mx-0 md:rounded-none md:shadow-none"
-        : " mx-auto p-1 rounded-lg shadow-md mt-3 bg-secondary text-white sm:text-gray-900"
+        : " mx-auto p-1 rounded-lg shadow-md bg-secondary text-white sm:text-gray-900"
     }`}
     window:onScroll$={() => {
       if (!store.isScrolling && window.scrollY >= 10) {
@@ -41,7 +42,7 @@ export default component$(() => {
         
   <div class="mr-auto rtl:mr-0 rtl:ml-auto flex justify-between">
     <a class="flex items-center" href={"/"}>
-      {/* <Logo /> */}
+      <Logo />
       <div
   class={`text-2xl md:text-xl font-bold whitespace-nowrap tracking-tight ${
     store.isScrolling

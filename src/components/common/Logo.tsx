@@ -1,7 +1,7 @@
 import { component$ } from "@builder.io/qwik";
 
 // @ts-ignore
-const logoSrc = "";
+import logoSrc from "~/assets/images/logo.svg";
 
 export default component$(() => (
   <span class="self-center ml-2 text-2xl md:text-xl font-bold whitespace-nowrap dark:text-white flex items-center">
