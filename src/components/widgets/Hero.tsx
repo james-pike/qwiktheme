@@ -57,20 +57,20 @@ export default component$(() => {
             Build A Better {" "}<br class="hidden lg:block" />
             <span class="text-secondary">Website</span>
           </h1>
-          <p class="text-xl text-muted mb-6 text-gray-900 max-w-3xl mx-auto lg:max-w-none">
+          <p class="text-xl text-muted text-tBase mb-6 text-gray-900 max-w-3xl mx-auto lg:max-w-none">
             Master the lines, embrace the quirks, and turn every twist into a masterpiece—because
             art's all about the journey, not the perfect line.
           </p>
           <div class="sm:max-w-md flex flex-col sm:flex-row sm:justify-center gap-4 lg:justify-start">
             <a
-              class="btn bg-primary-500 text-white font-bold w-full"
+              class="btn bg-primary text-tBase font-bold w-full"
               href="https://aymansor.github.io/Etch-a-Sketch/"
               target="_blank"
               rel="noopener"
             >
               Start Etching
             </a>
-            <button class="btn w-full bg-gray-50">Learn More</button>
+            <button class="btn w-full bg-secondary">Learn More</button>
           </div>
         </div>
       </div>
