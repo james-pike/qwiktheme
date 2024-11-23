@@ -1,4 +1,4 @@
-import { component$} from "@builder.io/qwik";
+import { $, component$} from "@builder.io/qwik";
 import { Popover } from "@qwik-ui/headless";
 import IconApps from "../icons/IconApps";
 import { useTheme } from "~/lib/provider";
@@ -35,19 +35,25 @@ export default component$((props: ItemProps) => {
   const { iconClass } = props;
   const { themeSig } = useTheme();
 
-  // Fallback to light mode if `themeSig.value` is undefined
-  const currentTheme = themeSig.value ?? "light";
-  const isDarkMode = currentTheme.includes("dark");
+  const currentTheme = themeSig.value ?? "light-red";
 
-  // Filter themes based on current mode
+const updateTheme = $((themeName: string)=>{
+        // Safeguard currentTheme as a string
+        const safeCurrentTheme = typeof currentTheme === "string" ? currentTheme : Array.isArray(currentTheme) ? currentTheme[0] || "" : "";
+        document.documentElement.classList.remove(safeCurrentTheme);
+        document.documentElement.classList.add(themeName);
+        themeSig.value = themeName;
+        window.localStorage.setItem("theme", themeName);
+    });
+  
+  const isDarkMode = typeof currentTheme === "string" && currentTheme.startsWith("dark");
   const filteredThemes = themes.filter((theme) =>
     isDarkMode ? theme.mode === "dark" : theme.mode === "light"
   );
-
-
+  
 
   return (
-    <Popover.Root flip={false} gutter={8}  >
+    <Popover.Root flip={false} gutter={8}>
       <Popover.Trigger>
         <div class="px-4 py-2 font-medium text-white bg-primary rounded-md cursor-pointer">
           <IconApps class={iconClass} />
@@ -65,7 +71,11 @@ export default component$((props: ItemProps) => {
                     ? "ring-2 ring-offset-2 ring-black"
                     : ""
                 }`}
-                onClick$={() => (themeSig.value = theme.name)}
+                onClick$={() => {
+                  themeSig.value = theme.name;
+                  updateTheme(theme.name);
+                  
+                }}
                 aria-label={`Select ${theme.name} theme`}
               />
             ))}
