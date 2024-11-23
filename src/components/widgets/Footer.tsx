@@ -14,8 +14,8 @@ export default component$(() => {
       items: [
         { title: "Knob Precision", href: "#" },
         { title: "Shake to Erase", href: "#" },
-        { title: "Accidental Squiggles", href: "#" },
         { title: "One-of-a-Kind Art", href: "#" },
+   
       ],
     },
     {
@@ -24,7 +24,7 @@ export default component$(() => {
         { title: "Left Knob API", href: "#" },
         { title: "Right Knob API", href: "#" },
         { title: "Etch Hub", href: "#" },
-        { title: "Shake Mode", href: "#" },
+   
       ],
     },
     {
@@ -32,8 +32,6 @@ export default component$(() => {
       items: [
         { title: "User Manual", href: "#" },
         { title: "Etch Artists Forum", href: "#" },
-        { title: "Pro Tips", href: "#" },
-        { title: "Etch Skills", href: "#" },
       ],
     },
     {
@@ -41,8 +39,6 @@ export default component$(() => {
       items: [
         { title: "Our Story", href: "#" },
         { title: "Etch Blog", href: "#" },
-        { title: "Join the Etch Team", href: "#" },
-        { title: "Media", href: "#" },
       ],
     },
   ]
