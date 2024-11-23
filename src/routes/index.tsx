@@ -26,7 +26,7 @@ export default component$(() => {
   
   return (
     <>
-    <div class={themeSig.value}>
+    <div class={`${themeSig.value}`}/>
     <Hero />
       <Features
   highlight="Features"
