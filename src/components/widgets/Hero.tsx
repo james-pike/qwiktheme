@@ -55,7 +55,7 @@ export default component$(() => {
         <div class="lg:basis-1/2 pb-10 md:pb-16">
           <h1 class="text-6xl md:text-6xl text-tBase font-bold leading-tighter tracking-tighter mb-4 font-heading">
             Build A Better {" "}<br class="hidden lg:block" />
-            <span class="text-secondary">Website</span>
+            <span class="text-primary">Website</span>
           </h1>
           <p class="text-xl text-muted text-tBase mb-6 text-gray-900 max-w-3xl mx-auto lg:max-w-none">
             Master the lines, embrace the quirks, and turn every twist into a masterpiece—because
@@ -63,7 +63,7 @@ export default component$(() => {
           </p>
           <div class="sm:max-w-md flex flex-col sm:flex-row sm:justify-center gap-4 lg:justify-start">
             <a
-              class="btn bg-primary text-tBase font-bold w-full p-2"
+              class="btn bg-primary text-white font-bold w-full p-2"
               href="https://aymansor.github.io/Etch-a-Sketch/"
               target="_blank"
               rel="noopener"
