@@ -49,7 +49,7 @@ export default component$(() => {
       : "text-white md:text-gray-900 dark:md:text-slate-200"
   }`}
 >
-  Etchy Sketchy
+  Webdev.ca
 </div>
 
     </a>
