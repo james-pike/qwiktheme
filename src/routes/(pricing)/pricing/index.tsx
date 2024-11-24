@@ -1,5 +1,6 @@
 import { component$ } from "@builder.io/qwik";
-import SettingsTab from "~/components/widgets/PricingTab";
+import Pricing from "~/components/widgets/Pricing";
+
 
 
 
@@ -10,7 +11,8 @@ export default component$(() => {
 
   return (
    <div>
-    <SettingsTab/>
+    
+    <Pricing/>
    </div>
   );
 });

@@ -8,12 +8,11 @@ import { Input } from './Input';
 export default component$(() => {
   return (
     <section>
-    <h1>Etch Tabs</h1>
-    <p>Etchy Sketchy doesn't need tabs, but another site might. The ones are cached and preloaded for qwicker navigation speeds.</p>
+ 
     <Tabs.Root class="max-w-[400px]">
       <Tabs.List class="grid w-full grid-cols-2">
-        <Tabs.Tab>Account</Tabs.Tab>
-        <Tabs.Tab>Password</Tabs.Tab>
+        <Tabs.Tab>Upfront</Tabs.Tab>
+        <Tabs.Tab>Monthly</Tabs.Tab>
       </Tabs.List>
       <Tabs.Panel>
         <Card.Root>

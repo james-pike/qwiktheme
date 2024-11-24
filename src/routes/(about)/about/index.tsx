@@ -1,5 +1,5 @@
 import { component$ } from "@builder.io/qwik";
-import SettingsTab from "~/components/widgets/SettingsTab";
+import SettingsTab from "~/components/widgets/PricingTab";
 
 
 
