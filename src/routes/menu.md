@@ -2,5 +2,5 @@
 ## [About](/about)
 ## [Tabs](/tabs)
 ## [Terms](/terms)
-## [Privacy](/privacy)
+## [Pricing](/pricing)
 ## [Contact Us](/contact)
