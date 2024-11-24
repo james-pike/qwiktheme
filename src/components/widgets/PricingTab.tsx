@@ -10,7 +10,7 @@ export default component$(() => {
     <section>
     <Tabs.Root class="max-w-[400px] font-headline">
       <Tabs.List class="grid w-full grid-cols-2">
-        <Tabs.Tab>Upfront - $3800 + hosting</Tabs.Tab>
+        <Tabs.Tab>Upfront - $3800</Tabs.Tab>
         <Tabs.Tab>Monthly - $200/month</Tabs.Tab>
       </Tabs.List>
       <Tabs.Panel>
