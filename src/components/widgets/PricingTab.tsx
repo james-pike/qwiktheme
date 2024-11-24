@@ -9,7 +9,7 @@ export default component$(() => {
   return (
     <section>
  
-    <Tabs.Root class="max-w-[400px]">
+    <Tabs.Root class="max-w-[400px] font-headline">
       <Tabs.List class="grid w-full grid-cols-2">
         <Tabs.Tab>Upfront</Tabs.Tab>
         <Tabs.Tab>Monthly</Tabs.Tab>
