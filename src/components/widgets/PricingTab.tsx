@@ -5,7 +5,7 @@ import { Card } from './Card';
 export default component$(() => {
   return (
     <section>
-      <Tabs.Root class="max-w-[400px] font-headline bg-gradient-to-r from-secondary to-bgAccent">
+      <Tabs.Root class="max-w-[400px] font-headline">
         {/* Tab List */}
         <Tabs.List class="grid w-full grid-cols-2">
           <Tabs.Tab class="py-3 text-center bg-bgAccent border-b-2 border-transparent hover:border-primary text-primary cursor-pointer">
