@@ -28,7 +28,7 @@ export default component$(() => {
     store.isScrolling
       ? "bg-gradient-to-r from-secondary via-primary to-bgAccent border-transparent px-0 py-0 md:backdrop-blur-sm"
       : "bg-gradient-to-r from-secondary via-primary to-bgAccent shadow-md"
-  } transition-all ease-in-out duration-300 before:content-[''] before:absolute before:inset-0 before:rounded-md before:border-[2px] before:border-transparent before:animate-shining-line before:from-transparent before:via-white/80 before:to-transparent before:bg-gradient-to-r before:w-full before:h-full before:pointer-events-none`}
+  } transition-all ease-in-out duration-300 before:content-[''] before:absolute before:inset-0 before:rounded-md before:border-[2px] before:border-transparent before:animate-shining-line before:from-transparent before:via-white/80 before:to-transparent before:bg-gradient-to-r before:w-full before:h-full before:pointer-events-none overflow-hidden`}
   window:onScroll$={() => {
     if (!store.isScrolling && window.scrollY >= 10) {
       store.isScrolling = true;
