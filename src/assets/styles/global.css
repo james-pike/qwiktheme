@@ -8,7 +8,7 @@
     --color-primary: hsl(0, 0%, 0%);
     --color-secondary: hsl(0, 0%, 50%);
     --color-text-base: hsl(0, 0%, 100%);
-    --color-bg-primary: hsl(0, 0%, 100%);
+    --color-bg-primary: (var(--color-bg-accent));
     --color-bg-accent: hsl(0, 0%, 97%); /* Lighter neutral */
   }
 
