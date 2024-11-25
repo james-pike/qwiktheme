@@ -20,6 +20,7 @@ module.exports = {
         bgPrimary: 'var(--color-bg-primary)',
         tBase: 'var(--color-text-base)',
         bgAccent: 'var(--color-bg-accent)', // New lighter color
+        bgLight: 'var(--color-bg-light)',
       },
       fontFamily: {
         sans: ["'Inter Variable'", ...defaultTheme.fontFamily.sans],

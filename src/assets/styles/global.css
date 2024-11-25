@@ -39,6 +39,8 @@
     --color-text-base: hsl(0, 0%, 95%);
     --color-bg-primary: hsl(220, 30%, 10%);
     --color-bg-accent: hsl(220, 60%, 90%); /* Lighter blue */
+    --color-bg-light: hsl(220, 75%, 95%); /* New */
+
   }
 
   .light-blue {
@@ -47,6 +49,8 @@
     --color-text-base: hsl(0, 0%, 10%);
     --color-bg-primary: hsl(220, 90%, 95%);
     --color-bg-accent: hsl(220, 85%, 95%); /* Lighter blue */
+    --color-bg-light: hsl(220, 92.5%, 97.5%); /* New */
+
   }
 
   .dark-red {

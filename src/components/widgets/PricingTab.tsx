@@ -24,7 +24,7 @@ export default component$(() => {
 
         {/* Lump Sum Tab Content */}
         <Tabs.Panel>
-          <Card.Root>
+          <Card.Root class="bg-bgLight">
             <Card.Header>
               <Card.Title>Complete Project</Card.Title>
               <Card.Description>
