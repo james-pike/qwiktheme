@@ -5,6 +5,7 @@ import IconTwitter from "~/components/icons/IconTwitter";
 import IconInstagram from "~/components/icons/IconInstagram";
 import IconFacebook from "~/components/icons/IconFacebook";
 import IconGithub from "~/components/icons/IconGithub";
+import Logo from "../common/Logo";
 
 export default component$(() => {
   const links = [
@@ -98,13 +99,14 @@ export default component$(() => {
               </li>
             ))}
           </ul>
-          <div class="text-sm text-gray-700 dark:text-slate-400">
-            <span class="w-5 h-5 md:w-6 md:h-6 md:-mt-0.5 bg-cover mr-1.5 float-left rounded-sm bg-[url(https://onwidget.com/favicon/favicon-32x32.png)]"></span>
-            Designed with <span class="text-primary">♥</span> by{" "}
-            <a class="text-gray-900 underline dark:text-gray-200" href={"/"}>
+          <div class="text-sm text-gray-700 mr-4 dark:text-slate-400 flex items-center">
+            {/* Replace favicon span with your Logo component */}
+            <Logo  />
+            Made with <span class="text-primary">♥</span> by{" "}
+            <a class="text-gray-900 underline dark:text-gray-200" href="#">
               Webdev.ca
             </a>{" "}
-            <span class="hidden md:inline"> · Crafting Digital Experiences.</span>
+            <span class="hidden md:inline"> · All rights reserved.</span>
           </div>
         </div>
       </div>
