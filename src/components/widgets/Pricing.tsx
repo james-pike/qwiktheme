@@ -24,7 +24,8 @@ export default component$(() => {
                            
 
                         <PricingTab/>
-                        <EcomTab/>
+                        {/* <div class="h-10"></div>
+                        <EcomTab/> */}
 
                         
 
