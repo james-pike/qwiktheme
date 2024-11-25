@@ -107,7 +107,7 @@ export default component$(() => {
 
           <div class="text-sm text-gray-700 mr-4 dark:text-slate-400">
             <span class="w-5 h-5 md:w-6 md:h-6 md:-mt-0.5 bg-cover mr-1.5 float-left rounded-sm bg-[url(https://onwidget.com/favicon/favicon-32x32.png)]"></span>
-            Made with <span class="text-black">♥</span> by{" "}
+            Made with <span class="text-primary">♥</span> by{" "}
             <a class="text-gray-900 underline dark:text-gray-200" href="#">
               {" "}
               Webdev.ca
