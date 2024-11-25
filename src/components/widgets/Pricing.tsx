@@ -1,5 +1,6 @@
 import { component$ } from "@builder.io/qwik";
 import PricingTab from "./PricingTab";
+import EcomTab from "./EcomTab";
 
 
 export default component$(() => {
@@ -23,6 +24,7 @@ export default component$(() => {
                            
 
                         <PricingTab/>
+                        <EcomTab/>
 
                         
 
