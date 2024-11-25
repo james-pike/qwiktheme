@@ -1,5 +1,5 @@
 # Menu
-## [About](/about)
+## [About](/)
 ## [Tabs](/tabs)
 ## [Terms](/terms)
 ## [Pricing](/pricing)

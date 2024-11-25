@@ -24,10 +24,10 @@ export default component$(() => {
   return (
     <header
   id="header"
-  class={`sticky top-0 z-40 flex-none relative border-2 ${
+  class={`sticky bg-gradient-to-r from-secondary via-primary to-bgAccent top-0 z-40 flex-none relative border-2 ${
     store.isScrolling
-      ? "bg-gradient-to-r from-secondary via-primary to-bgAccent border-transparent px-0 py-0 md:backdrop-blur-sm"
-      : "bg-gradient-to-r from-secondary via-primary to-bgAccent shadow-md"
+      ? " border-transparent px-0 py-0 md:backdrop-blur-sm"
+      : " shadow-md"
   } transition-all ease-in-out duration-300 before:content-[''] before:absolute before:inset-0 before:rounded-md before:border-[2px] before:border-transparent before:animate-shining-line before:from-transparent before:via-white/80 before:to-transparent before:bg-gradient-to-r before:w-full before:h-full before:pointer-events-none overflow-hidden`}
   window:onScroll$={() => {
     if (!store.isScrolling && window.scrollY >= 10) {
@@ -43,8 +43,8 @@ export default component$(() => {
       <a class="flex items-center" href={"/"}>
         <Logo />
         <div
-          class={`text-2xl md:text-xl font-bold whitespace-nowrap tracking-tight ${
-            store.isScrolling ? "text-gray-900 dark:text-slate-200" : "text-white"
+          class={`text-2xl md:text-xl font-bold whitespace-nowrap tracking-tight text-white dark:text-gray-900 
+  
           }`}
         >
           Webdev.ca
