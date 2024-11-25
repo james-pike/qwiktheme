@@ -55,7 +55,7 @@ export default component$(() => {
   ];
 
   return (
-    <footer class="py-3 bg-gradient-to-r from-primary via-bgAccent  to-secondary px-3">
+    <footer class="py-2 bg-gradient-to-r from-primary via-bgAccent  to-secondary px-2">
       <div class="max-w-7xl mx-auto px-6 bg-bgAccent dark:bg-gray-900 rounded-lg shadow-lg">
         <div class="grid grid-cols-12 gap-4 gap-y-8 sm:gap-8 pt-8 pb-2 md:py-12">
           <div class="col-span-12 lg:col-span-4 pr-8">
