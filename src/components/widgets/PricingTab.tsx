@@ -41,7 +41,7 @@ export default component$(() => {
               </ul>
             </Card.Content>
             <Card.Footer>
-              <button class="btn w-full bg-primary text-white hover:bg-primary-dark">
+              <button class="btn w-full p-2 bg-primary text-white hover:bg-primary-dark">
                 Get Started
               </button>
             </Card.Footer>
@@ -49,8 +49,8 @@ export default component$(() => {
         </Tabs.Panel>
 
         {/* Monthly Plan Tab Content */}
-        <Tabs.Panel>
-          <Card.Root>
+        <Tabs.Panel class="-mt-0">
+        <Card.Root class="bg-bgLight">
             <Card.Header>
               <Card.Title>Monthly Plan</Card.Title>
               <Card.Description>
@@ -67,7 +67,7 @@ export default component$(() => {
               </ul>
             </Card.Content>
             <Card.Footer>
-              <button class="btn w-full bg-secondary text-white hover:bg-secondary-dark">
+              <button class="btn w-full p-2 bg-secondary text-white hover:bg-secondary-dark">
                 Subscribe Now
               </button>
             </Card.Footer>
