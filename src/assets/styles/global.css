@@ -9,6 +9,7 @@
     --color-secondary: hsl(0, 0%, 50%);
     --color-text-base: hsl(0, 0%, 100%);
     --color-bg-primary: hsl(0, 0%, 100%);
+    --color-bg-accent: hsl(0, 0%, 97%); /* Lighter neutral */
   }
 
   * {
@@ -21,6 +22,7 @@
     --color-secondary: hsl(120, 40%, 50%);
     --color-text-base: hsl(0, 0%, 95%);
     --color-bg-primary: hsl(120, 30%, 10%);
+    --color-bg-accent: hsl(120, 60%, 90%); /* Lighter green */
   }
 
   .light-green {
@@ -28,6 +30,7 @@
     --color-secondary: hsl(120, 70%, 60%);
     --color-text-base: hsl(0, 0%, 10%);
     --color-bg-primary: hsl(120, 90%, 95%);
+    --color-bg-accent: hsl(120, 85%, 95%); /* Lighter green */
   }
 
   .dark-blue {
@@ -35,6 +38,7 @@
     --color-secondary: hsl(220, 40%, 50%);
     --color-text-base: hsl(0, 0%, 95%);
     --color-bg-primary: hsl(220, 30%, 10%);
+    --color-bg-accent: hsl(220, 60%, 90%); /* Lighter blue */
   }
 
   .light-blue {
@@ -42,6 +46,7 @@
     --color-secondary: hsl(220, 70%, 60%);
     --color-text-base: hsl(0, 0%, 10%);
     --color-bg-primary: hsl(220, 90%, 95%);
+    --color-bg-accent: hsl(220, 85%, 95%); /* Lighter blue */
   }
 
   .dark-red {
@@ -49,6 +54,7 @@
     --color-secondary: hsl(0, 40%, 50%);
     --color-text-base: hsl(0, 0%, 95%);
     --color-bg-primary: hsl(0, 30%, 10%);
+    --color-bg-accent: hsl(0, 60%, 90%); /* Lighter red */
   }
 
   .light-red {
@@ -56,6 +62,7 @@
     --color-secondary: hsl(0, 70%, 60%);
     --color-text-base: hsl(0, 0%, 10%);
     --color-bg-primary: hsl(0, 90%, 95%);
+    --color-bg-accent: hsl(0, 85%, 95%); /* Lighter red */
   }
 
   .dark-purple {
@@ -63,6 +70,7 @@
     --color-secondary: hsl(285, 40%, 50%);
     --color-text-base: hsl(0, 0%, 95%);
     --color-bg-primary: hsl(285, 30%, 10%);
+    --color-bg-accent: hsl(285, 60%, 90%); /* Lighter purple */
   }
 
   .light-purple {
@@ -70,6 +78,7 @@
     --color-secondary: hsl(285, 70%, 60%);
     --color-text-base: hsl(0, 0%, 10%);
     --color-bg-primary: hsl(285, 90%, 95%);
+    --color-bg-accent: hsl(285, 85%, 95%); /* Lighter purple */
   }
 
   .dark-orange {
@@ -77,6 +86,7 @@
     --color-secondary: hsl(30, 40%, 50%);
     --color-text-base: hsl(0, 0%, 95%);
     --color-bg-primary: hsl(30, 30%, 10%);
+    --color-bg-accent: hsl(30, 60%, 90%); /* Lighter orange */
   }
 
   .light-orange {
@@ -84,6 +94,7 @@
     --color-secondary: hsl(30, 70%, 60%);
     --color-text-base: hsl(0, 0%, 10%);
     --color-bg-primary: hsl(30, 90%, 95%);
+    --color-bg-accent: hsl(30, 85%, 95%); /* Lighter orange */
   }
 
   .dark-yellow {
@@ -91,6 +102,7 @@
     --color-secondary: hsl(50, 40%, 50%);
     --color-text-base: hsl(0, 0%, 95%);
     --color-bg-primary: hsl(50, 30%, 10%);
+    --color-bg-accent: hsl(50, 60%, 90%); /* Lighter yellow */
   }
 
   .light-yellow {
@@ -98,6 +110,7 @@
     --color-secondary: hsl(50, 70%, 60%);
     --color-text-base: hsl(0, 0%, 10%);
     --color-bg-primary: hsl(50, 90%, 95%);
+    --color-bg-accent: hsl(50, 85%, 95%); /* Lighter yellow */
   }
 
   .dark-cyan {
@@ -105,6 +118,7 @@
     --color-secondary: hsl(200, 40%, 50%);
     --color-text-base: hsl(0, 0%, 95%);
     --color-bg-primary: hsl(200, 30%, 10%);
+    --color-bg-accent: hsl(200, 60%, 90%); /* Lighter cyan */
   }
 
   .light-cyan {
@@ -112,6 +126,7 @@
     --color-secondary: hsl(200, 70%, 60%);
     --color-text-base: hsl(0, 0%, 10%);
     --color-bg-primary: hsl(200, 90%, 95%);
+    --color-bg-accent: hsl(200, 85%, 95%); /* Lighter cyan */
   }
 
   .dark-teal {
@@ -119,6 +134,7 @@
     --color-secondary: hsl(180, 40%, 50%);
     --color-text-base: hsl(0, 0%, 95%);
     --color-bg-primary: hsl(180, 30%, 10%);
+    --color-bg-accent: hsl(180, 60%, 90%); /* Lighter teal */
   }
 
   .light-teal {
@@ -126,6 +142,7 @@
     --color-secondary: hsl(180, 70%, 60%);
     --color-text-base: hsl(0, 0%, 10%);
     --color-bg-primary: hsl(180, 90%, 95%);
+    --color-bg-accent: hsl(180, 85%, 95%); /* Lighter teal */
   }
 
   .dark-black {
@@ -133,6 +150,7 @@
     --color-secondary: hsl(0, 0%, 40%);
     --color-text-base: hsl(0, 0%, 95%);
     --color-bg-primary: hsl(0, 0%, 5%);
+    --color-bg-accent: hsl(0, 0%, 15%); /* Lighter black */
   }
 
   .light-black {
@@ -140,5 +158,6 @@
     --color-secondary: hsl(0, 0%, 80%);
     --color-text-base: hsl(0, 0%, 10%);
     --color-bg-primary: hsl(0, 0%, 95%);
+    --color-bg-accent: hsl(0, 0%, 98%); /* Lighter black */
   }
 }
