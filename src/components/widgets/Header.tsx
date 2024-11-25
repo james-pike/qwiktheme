@@ -24,7 +24,7 @@ export default component$(() => {
   return (
 <header
   id="header"
-  class={`sticky top-0 z-40 flex-none relative border-2 ${
+  class={`sticky top-0 z-40 flex-none relative border-2 overflow-hidden ${
     store.isScrolling
       ? "bg-gradient-to-r from-primary via-bgPrimary to-secondary border-transparent px-0 py-0 md:backdrop-blur-sm"
       : "bg-gradient-to-r from-primary via-bgPrimary to-secondary shadow-md"
