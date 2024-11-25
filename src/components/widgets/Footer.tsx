@@ -59,7 +59,7 @@ export default component$(() => {
               </Link>
             </div>
             <div class="text-sm text-gray-600 dark:text-gray-400">
-              Transform your online presence with our custom web design, development, and hosting services. We help businesses create stunning, fast, and secure websites that drive results.
+              Transform your online presence with our custom web design and development services. We help businesses create stunning, fast, and secure websites that drive results.
             </div>
           </div>
           {links.map(({ title, items }, index) => (
