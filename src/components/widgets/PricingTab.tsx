@@ -8,13 +8,13 @@ export default component$(() => {
       <Tabs.Root class="max-w-[400px] font-headline">
         {/* Tab List */}
         <Tabs.List class="grid w-full grid-cols-2">
-          <Tabs.Tab class="py-3 text-center bg-bgAccent border-b-2 border-transparent hover:border-primary text-primary cursor-pointer">
-            <div class="text-sm font-medium">Complete Project -</div>
-            <div class="text-base font-semibold">$5000</div>
+          <Tabs.Tab class="py-3 text-center bg-bgAccent border-b-2 border-transparent hover:border-primary text-secondary cursor-pointer">
+            <div class="text-sm font-medium">Custom Website</div>
+            <div class="text-sm font-semibold">$5000</div>
           </Tabs.Tab>
-          <Tabs.Tab class="relative py-3 text-center bg-bgAccent border-b-2 border-transparent hover:border-secondary text-secondary cursor-pointer">
-            <div class="text-sm font-medium">Monthly Plan -</div>
-            <div class="text-base font-semibold">$250/month</div>
+          <Tabs.Tab class="relative py-3 text-center bg-bgAccent border-b-2 border-transparent hover:border-secondary text-primary cursor-pointer">
+            <div class="text-sm font-medium">Subscription</div>
+            <div class="text-sm font-semibold">$250/month</div>
             {/* Ribbon for Popular Option */}
             <div class="absolute top-[-10px] right-[-10px] bg-secondary text-white text-xs px-2 py-1 rounded-full">
               Popular
