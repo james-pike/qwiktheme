@@ -4,9 +4,9 @@ import PricingTab from "./PricingTab";
 
 export default component$(() => {
     return (
-        <section class="relative bg-gray-100 py-3 sm:pb-20">
-            <div class="max-w-7xl mx-auto px-3 sm:px-6">
-                <div class="pb-5 md:py-0">
+        <section class="relative bg-gray-100 py-2 sm:pb-20">
+            <div class="max-w-7xl mx-auto px-2 sm:px-6">
+                <div class="pb-2 md:py-0">
 
                     <div class="max-w-3xl mx-auto p-3 rounded-md shadow-xl bg-white dark:bg-gray-900">
                         <h2 class="text-4xl md:text-4xl font-bold text-center leading-tighter tracking-tighter pt-0 my-4 font-heading">
