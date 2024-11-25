@@ -6,7 +6,7 @@ module.exports = {
   theme: {
     extend: {
       animation: {
-        'shining-line': 'shining-line 12s linear',
+        'shining-line': 'shining-line 12s linear infinite',
       },
       keyframes: {
         'shining-line': {
