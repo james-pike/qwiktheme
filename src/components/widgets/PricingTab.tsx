@@ -1,65 +1,78 @@
 import { component$ } from '@builder.io/qwik';
 import { Tabs } from './Tabs';
 import { Card } from './Card';
-import { Label } from './Label';
-import { Input } from './Input';
 
 
 export default component$(() => {
   return (
     <section>
-    <Tabs.Root class="max-w-[400px] font-headline">
-      <Tabs.List class="grid w-full grid-cols-2">
-        <Tabs.Tab>Upfront - $3800</Tabs.Tab>
-        <Tabs.Tab>Monthly - $200/month</Tabs.Tab>
-      </Tabs.List>
-      <Tabs.Panel>
-        <Card.Root>
-          <Card.Header>
-            <Card.Title>Account</Card.Title>
-            <Card.Description>
-              Make changes to your account here. Click save when you're done.
-            </Card.Description>
-          </Card.Header>
-          <Card.Content class="space-y-2">
-            <div class="space-y-1">
-              <Label for="name">Name</Label>
-              <Input id="name" value="Pedro Duarte" />
+      <Tabs.Root class="max-w-[400px] font-headline">
+        {/* Tab List */}
+        <Tabs.List class="grid w-full grid-cols-2">
+          <Tabs.Tab class="py-3 text-center border-b-2 border-transparent hover:border-primary text-primary cursor-pointer">
+            Complete Project - $5000
+          </Tabs.Tab>
+          <Tabs.Tab class="relative py-3 text-center border-b-2 border-transparent hover:border-secondary text-secondary cursor-pointer">
+            Monthly Plan - $250/month
+            {/* Ribbon for Popular Option */}
+            <div class="absolute top-[-10px] right-[-10px] bg-secondary text-white text-xs px-2 py-1 rounded-full">
+              Popular
             </div>
-            <div class="space-y-1">
-              <Label for="username">Username</Label>
-              <Input id="username" value="~peduarte" />
-            </div>
-          </Card.Content>
-          <Card.Footer>
-          <button class="btn w-full bg-gray-50">Learn More</button>
-          </Card.Footer>
-        </Card.Root>
-      </Tabs.Panel>
-      <Tabs.Panel>
-        <Card.Root>
-          <Card.Header>
-            <Card.Title>Password</Card.Title>
-            <Card.Description>
-              Change your password here. After saving, you'll be logged out.
-            </Card.Description>
-          </Card.Header>
-          <Card.Content class="space-y-2">
-            <div class="space-y-1">
-              <Label for="current">Current password</Label>
-              <Input id="current" type="password" />
-            </div>
-            <div class="space-y-1">
-              <Label for="new">New password</Label>
-              <Input id="new" type="password" />
-            </div>
-          </Card.Content>
-          <Card.Footer>
-          <button class="btn w-full bg-gray-50">Learn More</button>
-          </Card.Footer>
-        </Card.Root>
-      </Tabs.Panel>
-    </Tabs.Root>
+          </Tabs.Tab>
+        </Tabs.List>
+
+        {/* Lump Sum Tab Content */}
+        <Tabs.Panel>
+          <Card.Root>
+            <Card.Header>
+              <Card.Title>Complete Project</Card.Title>
+              <Card.Description>
+                A one-time payment covering all services for your custom website:
+                design, development, security, and initial setup.
+              </Card.Description>
+            </Card.Header>
+            <Card.Content class="space-y-2">
+              <ul class="list-disc list-inside space-y-1 text-sm">
+                <li>Custom design and development</li>
+                <li>Responsive and accessible layout</li>
+                <li>SEO optimization</li>
+                <li>Initial hosting setup</li>
+              </ul>
+            </Card.Content>
+            <Card.Footer>
+              <button class="btn w-full bg-primary text-white hover:bg-primary-dark">
+                Get Started
+              </button>
+            </Card.Footer>
+          </Card.Root>
+        </Tabs.Panel>
+
+        {/* Monthly Plan Tab Content */}
+        <Tabs.Panel>
+          <Card.Root>
+            <Card.Header>
+              <Card.Title>Monthly Plan</Card.Title>
+              <Card.Description>
+                A recurring plan that ensures your website is up-to-date and secure:
+                hosting, maintenance, and ongoing support.
+              </Card.Description>
+            </Card.Header>
+            <Card.Content class="space-y-2">
+              <ul class="list-disc list-inside space-y-1 text-sm">
+                <li>Premium hosting services</li>
+                <li>Regular updates and backups</li>
+                <li>24/7 security monitoring</li>
+                <li>Priority customer support</li>
+              </ul>
+            </Card.Content>
+            <Card.Footer>
+              <button class="btn w-full bg-secondary text-white hover:bg-secondary-dark">
+                Subscribe Now
+              </button>
+            </Card.Footer>
+          </Card.Root>
+        </Tabs.Panel>
+      </Tabs.Root>
     </section>
   );
 });

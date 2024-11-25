@@ -12,12 +12,12 @@ export default component$(() => {
                         
                         <div class="bg-bgAccent px-1 rounded-t-lg">
                         <h2 class="text-4xl md:text-4xl font-bold text-center leading-tighter tracking-tighter pt-8 my-0 font-heading">
-                            <span class="text-primary-500 pt-0">Pricing</span>
-                            <br class="block sm:hidden" />
-                        </h2>
-                        <p class="text-xl text-gray-600 text-center dark:text-slate-400 py-2">
-                            Choose lump sum and self-host or pay as you go for continous hosting and updates. <br class="hidden md:inline" />
-                        </p>
+  <span class="text-primary-500">Flexible Pricing Options</span>
+  <br class="block sm:hidden" />
+</h2>
+<p class="text-xl text-gray-600 text-center dark:text-slate-400 py-2 pb-6">
+  Choose a one-time payment for a fully custom website, or subscribe to our monthly plan for continuous updates, hosting, and priority support.
+</p>
                         </div>
                         <div class="mt-0">
                            
