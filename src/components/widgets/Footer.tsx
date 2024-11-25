@@ -55,14 +55,14 @@ export default component$(() => {
   ];
 
   return (
-    <footer class="py-3 bg-gradient-to-r from-primary-300 via-pink-200 to-red-200 px-3">
-      <div class="max-w-7xl mx-auto px-6 bg-white dark:bg-gray-900 rounded-lg shadow-lg">
+    <footer class="py-3 bg-gradient-to-r from-primary via-bgAccent  to-secondary px-3">
+      <div class="max-w-7xl mx-auto px-6 bg-bgAccent dark:bg-gray-900 rounded-lg shadow-lg">
         <div class="grid grid-cols-12 gap-4 gap-y-8 sm:gap-8 pt-8 pb-2 md:py-12">
           <div class="col-span-12 lg:col-span-4 pr-8">
             <div class="mb-2">
         
               <Link class="inline-block font-bold text-xl" href={"#"}>
-                Etchy Sketchy
+                Webdev.ca
               </Link>
             </div>
             <div class="text-sm text-gray-600 dark:text-gray-400">
