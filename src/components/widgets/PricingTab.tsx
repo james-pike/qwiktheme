@@ -26,7 +26,7 @@ export default component$(() => {
         <Tabs.Panel class="-mt-0">
           <Card.Root class="bg-bgLight">
             <Card.Header>
-              <Card.Title>Complete Project</Card.Title>
+              <Card.Title class="text-primary">Complete Project</Card.Title>
               <Card.Description>
                 A one-time payment covering all services for your custom website:
                 design, development, security, and initial setup.
@@ -52,14 +52,14 @@ export default component$(() => {
         <Tabs.Panel class="-mt-0">
         <Card.Root class="bg-bgLight">
             <Card.Header>
-              <Card.Title>Monthly Plan</Card.Title>
+              <Card.Title class="text-primary">Monthly Plan</Card.Title>
               <Card.Description>
                 A recurring plan that ensures your website is up-to-date and secure:
                 hosting, maintenance, and ongoing support.
               </Card.Description>
             </Card.Header>
             <Card.Content class="space-y-2">
-              <ul class="list-disc list-inside space-y-1 text-sm">
+              <ul class="list-disc list-inside space-y-1 text-sm text-primary">
                 <li>Premium hosting services</li>
                 <li>Regular updates and backups</li>
                 <li>24/7 security monitoring</li>
