@@ -28,7 +28,6 @@ export default component$(() => {
     {
       title: "Support",
       items: [
-        { title: "Help Center", href: "#" },
         { title: "Contact Us", href: "#" },
         { title: "FAQs", href: "#" },
       ],
@@ -37,7 +36,6 @@ export default component$(() => {
       title: "Company",
       items: [
         { title: "About Us", href: "#" },
-        { title: "Careers", href: "#" },
         { title: "Privacy Policy", href: "#" },
       ],
     },
