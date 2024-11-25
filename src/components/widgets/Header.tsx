@@ -40,20 +40,19 @@ export default component$(() => {
       <div class="absolute inset-0"></div>
       <div class="relative text-default py-2 px-3 md:px-6 mx-auto w-full md:flex md:justify-between max-w-7xl">
         <div class="mr-auto flex justify-between">
-          <a class="flex items-center" href={"/"}>
-            <Logo />
-            <div
-              class={`text-2xl md:text-xl font-bold whitespace-nowrap tracking-tight ${
-                store.isScrolling ? "text-gray-900 dark:text-slate-200" : "text-white"
-              }`}
-            >
-              Webdev.ca
-            </div>
-          </a>
+        <a class="flex items-center" href={"/"}>
+  <Logo />
+  <div
+    class="text-2xl md:text-xl font-bold whitespace-nowrap tracking-tight text-tBase"
+  >
+    Webdev.ca
+  </div>
+</a>
+
           <div class="flex items-center md:hidden">
-            <ToggleColor iconClass={`w-6 h-6 ${store.isScrolling ? "text-gray-900" : "text-white"}`} />
-            <ToggleTheme iconClass={`w-6 h-6 ${store.isScrolling ? "text-gray-900" : "text-white"}`} />
-            <ToggleMenu iconClass={`w-6 h-6 ${store.isScrolling ? "text-gray-900" : "text-white"}`} />
+            <ToggleColor iconClass={`w-6 h-6 text-tBase`} />
+            <ToggleTheme iconClass={`w-6 h-6 text-tBase`} />
+            <ToggleMenu iconClass={`w-6 h-6 text-tBase`} />
           </div>
         </div>
         <nav
