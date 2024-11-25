@@ -24,6 +24,8 @@ export default component$(() => {
 
                         <PricingTab/>
 
+                        
+
 
 
                         </div>
