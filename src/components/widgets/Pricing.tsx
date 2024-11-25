@@ -11,15 +11,15 @@ export default component$(() => {
                     <div class="max-w-3xl mx-auto p-0 rounded-md shadow-xl bg-white dark:bg-gray-900">
                         
                         <div class="bg-gradient-to-r from-bgAccent to-secondary px-1">
-                        <h2 class="text-4xl md:text-4xl font-bold text-center leading-tighter tracking-tighter pt-2 my-4 font-heading">
-                            <span class="text-primary-500">Pricing</span>
+                        <h2 class="text-4xl md:text-4xl font-bold text-center leading-tighter rounded-2xl tracking-tighter pt-4 my-2 font-heading">
+                            <span class="text-primary-500 mt-2">Pricing</span>
                             <br class="block sm:hidden" />
                         </h2>
-                        <p class="text-xl text-gray-600 text-center dark:text-slate-400">
+                        <p class="text-xl text-gray-600 text-center dark:text-slate-400 pb-6">
                             Choose lump sum and self-host or pay as you go for continous hosting and updates. <br class="hidden md:inline" />
                         </p>
                         </div>
-                        <div class="mt-6">
+                        <div class="mt-2">
                            
 
                         <PricingTab/>
