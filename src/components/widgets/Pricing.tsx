@@ -16,7 +16,7 @@ export default component$(() => {
   <br class="block sm:hidden" />
 </h2>
 <p class="text-xl text-gray-600 text-center dark:text-slate-400 py-2 pb-6">
-  Choose a one-time payment for a fully custom website, or subscribe to our monthly plan for continuous updates, hosting, and priority support.
+  Choose a one-time code solution or subscribe to our monthly plan for continuous updates, hosting, and priority support.
 </p>
                         </div>
                         <div class="mt-0">
