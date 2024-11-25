@@ -59,7 +59,7 @@ export default component$(() => {
               </Card.Description>
             </Card.Header>
             <Card.Content class="space-y-2">
-              <ul class="list-disc list-inside space-y-1 text-sm text-primary">
+              <ul class="list-disc list-inside space-y-1 text-sm">
                 <li>Premium hosting services</li>
                 <li>Regular updates and backups</li>
                 <li>24/7 security monitoring</li>
