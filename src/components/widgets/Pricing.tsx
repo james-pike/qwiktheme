@@ -10,7 +10,7 @@ export default component$(() => {
 
                     <div class="max-w-3xl mx-auto p-0 rounded-md shadow-xl bg-white dark:bg-gray-900">
                         
-                        <div class="bg-gradient-to-r from-bgAccent to-secondary px-1">
+                        <div class="bg-gradient-to-r from-bgAccent to-secondary px-1 rounded-t-xl">
                         <h2 class="text-4xl md:text-4xl font-bold text-center leading-tighter rounded-2xl tracking-tighter pt-4 my-2 font-heading">
                             <span class="text-primary-500 mt-2">Pricing</span>
                             <br class="block sm:hidden" />
