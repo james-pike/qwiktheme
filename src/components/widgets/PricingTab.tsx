@@ -2,7 +2,6 @@ import { component$ } from '@builder.io/qwik';
 import { Tabs } from './Tabs';
 import { Card } from './Card';
 
-
 export default component$(() => {
   return (
     <section>
@@ -10,10 +9,12 @@ export default component$(() => {
         {/* Tab List */}
         <Tabs.List class="grid w-full grid-cols-2">
           <Tabs.Tab class="py-3 text-center border-b-2 border-transparent hover:border-primary text-primary cursor-pointer">
-            Complete Project - $5000
+            <div class="text-sm font-medium">Complete Project -</div>
+            <div class="text-base font-semibold">$5000</div>
           </Tabs.Tab>
           <Tabs.Tab class="relative py-3 text-center border-b-2 border-transparent hover:border-secondary text-secondary cursor-pointer">
-            Monthly Plan - $250/month
+            <div class="text-sm font-medium">Monthly Plan -</div>
+            <div class="text-base font-semibold">$250/month</div>
             {/* Ribbon for Popular Option */}
             <div class="absolute top-[-10px] right-[-10px] bg-secondary text-white text-xs px-2 py-1 rounded-full">
               Popular
