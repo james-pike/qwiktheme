@@ -20,7 +20,7 @@ export default component$(() => {
             <use href="#b56e9dab-6ccb-4d32-ad02-6b4bb5d9bbeb" x="86" />
           </svg>
           <blockquote class="text-xl/8 font-semibold text-white sm:text-2xl/9">
-            <p>Gravida quam mi erat tortor neque molestie. Auctor aliquet at porttitor a enim nunc suscipit tincidunt nunc. Et non lorem tortor posuere. Nunc eu scelerisque interdum eget tellus non nibh scelerisque bibendum.</p>
+            <p>Gravida quam mi erat tortor neque molestie. Auctor aliquet at porttitor a enim nunc suscipit tincidunt nunc. Et non lorem tortor posuere.</p>
           </blockquote>
           <figcaption class="mt-8 text-base">
             <div class="font-semibold text-white">Judith Black</div>

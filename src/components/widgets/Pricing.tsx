@@ -1,7 +1,6 @@
 import { component$ } from "@builder.io/qwik";
 import PricingTab from "./PricingTab";
 import TestimonialsCarousel from "./TestimonialsCarousel";
-import AlertBanner from "./AlertBanner";
 
 
 export default component$(() => {
@@ -10,7 +9,7 @@ export default component$(() => {
         <section class="relative bg-bgAccent py-0 sm:pb-20">
              
             <div class="max-w-7xl mx-auto px-2 sm:px-6">
-            <AlertBanner/>
+      
                 <div class="pb-2 md:py-0">
 
                     <div class="max-w-3xl mx-auto p-0 rounded-md shadow-xl bg-white dark:bg-gray-900">
