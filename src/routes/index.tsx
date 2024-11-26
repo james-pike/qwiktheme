@@ -6,7 +6,6 @@ import Features from "~/components/widgets/Features";
 import Steps from "~/components/widgets/Steps";
 import FAQs from "~/components/widgets/FAQs";
 import Stats from "~/components/widgets/Stats";
-import CallToAction from "~/components/widgets/CallToAction";
 
 import { qwikSerialized } from "~/utils/qwikSerialized";
 

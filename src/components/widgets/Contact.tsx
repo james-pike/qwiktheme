@@ -1,5 +1,4 @@
 import { component$ } from "@builder.io/qwik";
-import PricingTab from "./PricingTab";
 import ContactTab from "./ContactTab";
 
 
