@@ -40,8 +40,7 @@ export default component$((props: Props) => {
         )}
       >
         
-        <Headline title={"Flexible Payment Options"} subtitle={"Choose a one time payment or a monthly plan for continuous updates, hosting, and priority support"} 
-        highlight={"Pricing Plans"} classes={classes?.headline} />
+        <Headline title={title} subtitle={subtitle} highlight={highlight} classes={classes?.headline} />
        <PricingTab/>
       </div>
     </section>
