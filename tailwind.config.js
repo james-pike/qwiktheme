@@ -1,17 +1,30 @@
 /** @type {import('tailwindcss').Config} */
 const defaultTheme = require("tailwindcss/defaultTheme");
+import flowbitePlugin from 'flowbite/plugin'
+
 
 module.exports = {
-  content: ["./src/**/*.{js,ts,jsx,tsx,mdx}"],
+  content: ['./src/**/*.{js,ts,jsx,tsx,mdx}',
+    'node_modules/flowbite-qwik/**/*.{cjs,mjs}'],
   theme: {
     extend: {
       animation: {
         'shining-line': 'shining-line 12s linear infinite',
+        'from-left': 'slideFromLeft 0.2s 1',
+        'from-right': 'slideFromRight 0.2s 1',
       },
       keyframes: {
         'shining-line': {
           '0%': { transform: 'translateX(-100%)' },
           '100%': { transform: 'translateX(100%)' },
+        },
+        slideFromLeft: {
+          '0%': { transform: 'translateX(-100%)' },
+          '100%': { transform: 'translateX(0)' },
+        },
+        slideFromRight: {
+          '0%': { transform: 'translateX(100%)' },
+          '100%': { transform: 'translateX(0)' },
         },
       },
       colors: {
@@ -27,6 +40,6 @@ module.exports = {
       },
     },
   },
-  plugins: [require("@tailwindcss/typography")],
+  plugins: [require("@tailwindcss/typography"), flowbitePlugin],
   darkMode: "class",
 };

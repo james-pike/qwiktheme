@@ -6,6 +6,8 @@ import { RouterHead } from "~/components/common/RouterHead";
 
 // import "@fontsource-variable/inter";
 import styles from  "~/assets/styles/global.css?inline";
+import { FlowbiteProvider } from 'flowbite-qwik';
+
 
 export default component$(() => {
   /**
@@ -44,7 +46,10 @@ export default component$(() => {
       </head>
       
       <body class="text-gray-900 dark:text-slate-300 tracking-tight bg-white dark:bg-gray-900 antialiased">
+      <FlowbiteProvider toastPosition={"top-left"} theme="blue">
+
         <RouterOutlet />
+        </FlowbiteProvider>
       </body>
     </QwikCityProvider>
   );
