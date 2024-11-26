@@ -1,6 +1,5 @@
 import { component$ } from "@builder.io/qwik";
 import PricingTab from "./PricingTab";
-import StepsCarousel from "./StepsCarousel";
 import TestimonialsCarousel from "./TestimonialsCarousel";
 
 

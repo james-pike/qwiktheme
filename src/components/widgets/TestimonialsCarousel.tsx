@@ -1,4 +1,4 @@
-import { component$, useSignal, $, QRL } from '@builder.io/qwik';
+import { component$, useSignal, $ } from '@builder.io/qwik';
 import { Carousel } from '@qwik-ui/headless';
 import  IconApps  from '~/components/icons/IconApps';
 

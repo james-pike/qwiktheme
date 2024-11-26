@@ -1,4 +1,4 @@
-import { component$, useStore, $, QRL } from '@builder.io/qwik';
+import { component$, useStore, $ } from '@builder.io/qwik';
 import { Carousel } from '@qwik-ui/headless';
 
 export default component$(() => {
