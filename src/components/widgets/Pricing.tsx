@@ -1,5 +1,7 @@
 import { component$ } from "@builder.io/qwik";
 import PricingTab from "./PricingTab";
+import StepsCarousel from "./StepsCarousel";
+import TestimonialsCarousel from "./TestimonialsCarousel";
 
 
 export default component$(() => {
@@ -26,14 +28,17 @@ export default component$(() => {
                         {/* <div class="h-10"></div>
                         <EcomTab/> */}
 
-                        
+                     
 
 
 
                         </div>
+
+                       
                     </div>
                 </div>
             </div>
+            <TestimonialsCarousel/>
         </section>
     );
 });
