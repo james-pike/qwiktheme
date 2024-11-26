@@ -10,40 +10,36 @@ import Logo from "../common/Logo";
 export default component$(() => {
   const links = [
     {
-      title: "Etch Features",
+      title: "Services",
       items: [
-        { title: "Knob Precision", href: "#" },
-        { title: "Shake to Erase", href: "#" },
-        { title: "One-of-a-Kind Art", href: "#" },
-   
+        { title: "Web Design", href: "#" },
+        { title: "Development", href: "#" },
+        { title: "Hosting Solutions", href: "#" },
       ],
     },
     {
-      title: "Etch Platform",
+      title: "Resources",
       items: [
-        { title: "Left Knob API", href: "#" },
-        { title: "Right Knob API", href: "#" },
-        { title: "Etch Hub", href: "#" },
-   
+        { title: "Case Studies", href: "#" },
+        { title: "Client Testimonials", href: "#" },
+        { title: "Blog", href: "#" },
       ],
     },
     {
-      title: "Support Center",
+      title: "Support",
       items: [
-        { title: "User Manual", href: "#" },
-        { title: "Etch Artists Forum", href: "#" },
+        { title: "Contact Us", href: "#" },
+        { title: "FAQs", href: "#" },
       ],
     },
     {
-      title: "The Etch Team",
+      title: "Company",
       items: [
-        { title: "Our Story", href: "#" },
-        { title: "Etch Blog", href: "#" },
+        { title: "About Us", href: "#" },
+        { title: "Privacy Policy", href: "#" },
       ],
     },
-  ]
-
-
+  ];
 
   const social = [
     { label: "Twitter", icon: IconTwitter, href: "#" },
@@ -53,12 +49,12 @@ export default component$(() => {
   ];
 
   return (
-    <footer class="py-3 bg-gradient-to-r from-bgAccent to-secondary px-3 border-t-2 border-dotted border-primary">
-      <div class="max-w-7xl mx-auto px-6 bg-bgAccent dark:bg-gray-900 rounded-lg shadow-lg border-2 border-dashed border-secondary">
-        <div class="grid grid-cols-12 gap-6 gap-y-8 sm:gap-8 pt-8 pb-4 md:py-12">
+    <footer class="py-2 bg-gradient-to-r from-secondary via-bgAccent to-secondary px-2">
+      <div class="max-w-7xl mx-auto px-6 bg-bgLight dark:bg-gray-900 rounded-lg shadow-lg">
+        <div class="grid grid-cols-12 gap-4 gap-y-8 sm:gap-8 pt-8 pb-2 md:py-12">
           <div class="col-span-12 lg:col-span-4 pr-8">
             <div class="mb-4">
-              <Link class="inline-block font-bold text-3xl text-primary underline" href={"/"}>
+              <Link class="inline-block font-bold text-2xl" href={"/"}>
                 Etchy Sketchy
               </Link>
             </div>
@@ -67,11 +63,8 @@ export default component$(() => {
             </div>
           </div>
           {links.map(({ title, items }, index) => (
-            <div
-              key={index}
-              class="col-span-6 md:col-span-3 lg:col-span-2 border-l-2 border-dotted border-secondary pl-4"
-            >
-              <div class="text-gray-800 dark:text-gray-300 font-medium mb-3 underline decoration-wavy">{title}</div>
+            <div key={index} class="col-span-6 md:col-span-3 lg:col-span-2">
+              <div class="text-gray-800 dark:text-gray-300 font-medium mb-3">{title}</div>
               {Array.isArray(items) && items.length > 0 && (
                 <ul class="text-sm">
                   {items.map(({ title, href }, index2) => (
@@ -104,15 +97,14 @@ export default component$(() => {
               </li>
             ))}
           </ul>
-          <div class="text-sm text-gray-700 mr-4 dark:text-slate-400 flex items-center space-x-1">
-            <Logo />
-            <span>Made with</span>
-            <span class="text-primary text-lg">♥</span>
-            <span>by</span>
-            <a class="text-gray-900 underline decoration-wavy dark:text-gray-200" href="#">
+          <div class="text-sm text-gray-700 mr-4 dark:text-slate-400 flex items-center">
+            {/* Replace favicon span with your Logo component */}
+            <Logo  />
+            Made with <span class="text-primary">♥</span> by{" "}
+            <a class="text-gray-900 underline dark:text-gray-200" href="#">
               Webdev.ca
-            </a>
-            <span class="hidden md:inline">· All rights reserved.</span>
+            </a>{" "}
+            <span class="hidden md:inline"> · All rights reserved.</span>
           </div>
         </div>
       </div>

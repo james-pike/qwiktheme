@@ -9,11 +9,11 @@ export default component$(() => {
         {/* Tab List */}
         <Tabs.List class="grid w-full grid-cols-2">
           <Tabs.Tab class="py-3 text-center bg-bgAccent border-b-2 border-transparent hover:border-primary text-secondary cursor-pointer">
-            <div class="text-sm font-medium">Full Website -</div>
+            <div class="text-sm font-medium">Custom Site -</div>
             <div class="text-sm font-semibold">$5000</div>
           </Tabs.Tab>
           <Tabs.Tab class="relative py-3 text-center bg-bgAccent border-b-2 border-transparent hover:border-secondary text-primary cursor-pointer">
-            <div class="text-sm font-medium">Subscription -</div>
+            <div class="text-sm font-medium">Monthly -</div>
             <div class="text-sm font-semibold">$250/month</div>
             {/* Ribbon for Popular Option */}
             <div class="absolute top-[-10px] right-[-10px] bg-secondary text-white text-xs px-2 py-1 rounded-full">
