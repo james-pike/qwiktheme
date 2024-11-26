@@ -26,7 +26,7 @@ export default component$(() => {
         <Tabs.Panel class="-mt-0">
           <Card.Root class="bg-bgLight">
             <Card.Header>
-              <Card.Title class="text-primary">Complete Project - $5000 + $20/month hosting</Card.Title>
+              <Card.Title class="text-primary">Complete Project - $5000 + hosting</Card.Title>
               <Card.Description>
                 A one-time payment covering all services for your custom website:
                 design, development, security, and initial setup.

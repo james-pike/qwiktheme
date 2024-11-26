@@ -55,7 +55,7 @@ export default component$(() => {
           <div class="col-span-12 lg:col-span-4 pr-8">
             <div class="mb-4">
               <Link class="inline-block font-bold text-2xl" href={"/"}>
-                Etchy Sketchy
+                Webdev.ca
               </Link>
             </div>
             <div class="text-sm text-gray-600 dark:text-gray-400">
