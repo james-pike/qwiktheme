@@ -3,22 +3,9 @@ import { Card, Carousel, Heading } from 'flowbite-qwik'
 
 export default component$(() => {
   return (
-    <Carousel class="" pauseOnHover>
+    <Carousel class="!h-96" pauseOnHover>
       <Carousel.Slide>
-      <figure class="p-6 bg-gray-50 rounded dark:bg-gray-800">
-                  <blockquote class="text-sm text-gray-500 dark:text-gray-400">
-                      <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Solid foundation for any project</h3>
-                      <p class="my-4">"This is a very complex and beautiful set of elements. Under the hood it comes with the best things from 2 different worlds: Figma and Tailwind.”</p>
-                  </blockquote>
-                  <figcaption class="flex items-center space-x-3">
-                      <img class="w-9 h-9 rounded-full" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/bonnie-green.png" alt="profile picture"/>
-                      <div class="space-y-0.5 font-medium dark:text-white">
-                          <div>Bonnie Green</div>
-                          <div class="text-sm font-light text-gray-500 dark:text-gray-400">CTO at Open AI</div>
-                      </div>
-                  </figcaption>    
-              </figure>
-
+     
 
       </Carousel.Slide>
       <Carousel.Slide>
