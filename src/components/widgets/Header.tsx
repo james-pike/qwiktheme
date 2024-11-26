@@ -6,6 +6,7 @@ import IconChevronDown from "../icons/IconChevronDown";
 import { useTheme } from "~/lib/provider";
 import ToggleColor from "../common/ToggleColor";
 import Logo from "../common/Logo";
+import ToggleMenu from "../common/ToggleMenu";
 
 export default component$(() => {
   const store = useStore({
