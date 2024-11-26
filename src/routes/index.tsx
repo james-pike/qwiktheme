@@ -29,7 +29,7 @@ export default component$(() => {
   return (
     <>
     <div class={themeSig.value}>
-      <BentoGrid  />
+     
     <Hero />
       <Features
   highlight="Features"

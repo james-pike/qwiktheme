@@ -46,7 +46,7 @@ export default component$(() => {
 
   return (
     
-    <section class="mx-auto bg-gray-100 dark:bg-gray-800 max-w-6xl px-4 py-10 sm:px-6 lg:px-8 lg:py-20">
+    <section class="mx-auto bg-bgAccent dark:bg-gray-800 max-w-6xl px-4 py-10 sm:px-6 lg:px-8 lg:py-20">
       
     <div class="row-gap-10 grid gap-6 md:grid-cols-2">
       
@@ -68,9 +68,9 @@ export default component$(() => {
                   {index !== items.length - 1 ? (
                     <div class="flex h-10 w-10 items-center justify-center rounded-full border-2 border-primary-900">
                       {typeof Icon !== "undefined" ? (
-                        <Icon class="h-6 w-6 text-primary-800 dark:text-slate-200" />
+                        <Icon class="h-6 w-6 text-primary dark:text-slate-200" />
                       ) : (
-                        <IconStar class="h-6 w-6 text-primary-800 dark:text-slate-200" />
+                        <IconStar class="h-6 w-6 text-primary dark:text-slate-200" />
                       )}
                     </div>
                   ) : (

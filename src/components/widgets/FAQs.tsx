@@ -49,11 +49,11 @@ export default component$((props: Props) => {
           highlight={highlight}
           classes={{
             container: "max-w-xl sm:mx-auto lg:max-w-2xl",
-            title: "sm:text-4xl text-3xl",
+            title: "sm:text-4xl text-3xl text-primary",
             ...(classes?.headline ?? {}),
           }}
         />
-        <div class="sm:mx-auto">
+        <div class="sm:mx-auto text-primary">
           <ItemGrid
             items={items}
             defaultIcon={IconArrowDownRight}
