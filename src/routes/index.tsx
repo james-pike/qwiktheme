@@ -19,6 +19,7 @@ import { SITE } from "~/config.mjs";
 import { useTheme } from "~/lib/provider";
 import Pricing from "~/components/widgets/Pricing";
 import Contact from "~/components/widgets/Contact";
+import BentoGrid from "~/components/widgets/BentoGrid";
 
 export default component$(() => {
 
@@ -28,6 +29,7 @@ export default component$(() => {
   return (
     <>
     <div class={themeSig.value}>
+      <BentoGrid  />
     <Hero />
       <Features
   highlight="Features"
