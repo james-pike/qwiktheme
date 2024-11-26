@@ -18,7 +18,7 @@ export default component$(() => {
   const { menu } = useContent();
 
   useVisibleTask$(() => {
-    themeSig.value = localStorage.getItem("theme") || "default-theme"; // Fallback to 'default-theme' if not set
+    themeSig.value = localStorage.getItem("theme") || "light-blue"; // Fallback to 'default-theme' if not set
   });
 
   return (
@@ -54,9 +54,9 @@ export default component$(() => {
         <ToggleColor
           iconClass={`w-6 h-6 ${store.isScrolling ? "text-gray-900" : "text-white"}`}
         />
-        <ToggleTheme
+        {/* <ToggleTheme
           iconClass={`w-6 h-6 ${store.isScrolling ? "text-gray-900" : "text-white"}`}
-        />
+        /> */}
         <ToggleMenu
           iconClass={`w-6 h-6 ${store.isScrolling ? "text-gray-900" : "text-white"}`}
         />
@@ -114,9 +114,9 @@ export default component$(() => {
     </nav>
     <div class="hidden md:flex items-center justify-end">
       <div class="flex">
-        <ToggleTheme
+        {/* <ToggleTheme
           iconClass={`w-6 h-6 ${store.isScrolling ? "text-gray-900" : "text-white"}`}
-        />
+        /> */}
         <ToggleColor
           iconClass={`w-6 h-6 ${store.isScrolling ? "text-gray-900" : "text-white"}`}
         />
