@@ -1,5 +1,5 @@
 import { component$ } from '@builder.io/qwik'
-import { Card, Carousel, Heading } from 'flowbite-qwik'
+import { Card, Carousel } from 'flowbite-qwik'
 
 export default component$(() => {
   return (
