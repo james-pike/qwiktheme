@@ -1,46 +1,49 @@
 import { component$ } from "@builder.io/qwik";
+import { twMerge } from "tailwind-merge";
+import { Headline } from "~/components/ui/Headline";
+
 import PricingTab from "./PricingTab";
-import TestimonialsCarousel from "./TestimonialsCarousel";
 
+interface Item {
+  title?: string;
+  description?: string;
+  icon?: any;
+  classes?: Record<string, string>;
+}
 
-export default component$(() => {
-    return (
-       
-        <section class="relative bg-bgAccent py-0 sm:pb-20">
-             
-            <div class="max-w-7xl mx-auto px-2 sm:px-6">
+interface Props {
+  id?: string;
+  title?: any;
+  subtitle?: any;
+  highlight?: any;
+  items: Array<Item>;
+  isDark?: boolean;
+  classes?: any;
+}
+
+export default component$((props: Props) => {
+  const { id, title = "", subtitle = "", highlight = "", items = [], classes = {}, isDark = false } = props;
+
+  return (
+    <section class="relative bg-bgLight scroll-mt-16" {...(id ? { id } : {})}>
       
-                <div class="pb-2 md:py-0">
-
-                    <div class="max-w-3xl mx-auto p-0 rounded-md shadow-xl bg-white dark:bg-gray-900">
-                        
-                        <div class="bg-bgAccent px-1 rounded-t-lg">
-                        <h2 class="text-4xl md:text-4xl font-bold text-center leading-tighter tracking-tighter pt-8 my-0 font-heading">
-  <span class="text-primary">Flexible Pricing Options</span>
-  <br class="block sm:hidden" />
-</h2>
-<p class="text-xl text-gray-600 text-center dark:text-slate-400 py-2 pb-6">
-  Choose a one-time payment or subscribe to our monthly plan for continuous updates, hosting, and priority support.
-</p>
-                        </div>
-                        <div class="mt-0">
-                           
-
-                        <PricingTab/>
-                        {/* <div class="h-10"></div>
-                        <EcomTab/> */}
-
-                     
-
-
-
-                        </div>
-
-                       
-                    </div>
-                </div>
-            </div>
-            <TestimonialsCarousel/>
-        </section>
-    );
+      <div class="absolute inset-0 pointer-events-none -z-[1]" aria-hidden="true">
+        <slot name="bg">
+          <div class={twMerge("absolute inset-0", isDark ? "bg-dark dark:bg-transparent" : "")}></div>
+        </slot>
+      </div>
+      <div
+        class={twMerge(
+          "relative mx-auto max-w-5xl px-4 md:px-6 py-12 md:py-16 lg:py-20 text-default",
+          classes?.container,
+          isDark ? "dark" : ""
+        )}
+      >
+        
+        <Headline title={"Flexible Payment Options"} subtitle={"Choose a one time payment or a monthly plan for continuous updates, hosting, and priority support"} 
+        highlight={"Pricing Plans"} classes={classes?.headline} />
+       <PricingTab/>
+      </div>
+    </section>
+  );
 });
