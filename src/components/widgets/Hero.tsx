@@ -74,6 +74,27 @@ export default component$(() => {
           </div>
         </div>
       </div>
+
+      <svg
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 400 300"
+  width="400"
+  height="300"
+  style="display: block; margin: auto; fill: var(--color-primary);"
+>
+
+  <rect x="10" y="10" width="180" height="130" rx="10" ry="10" fill="currentColor" />
+  
+ 
+  <rect x="30" y="30" width="140" height="90" rx="5" ry="5" fill="#fff" />
+  
+  
+  <circle cx="40" cy="120" r="10" fill="#ddd" />
+  
+  
+  <circle cx="160" cy="120" r="10" fill="#ddd" />
+</svg>
+
     </section>
   );
 });
