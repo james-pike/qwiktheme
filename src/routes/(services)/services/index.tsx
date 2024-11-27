@@ -28,8 +28,8 @@ export default component$(() => {
    
      
       <Features
-  highlight="Features"
-  title="What You Get with the Etchy Sketchy"
+  highlight="Our Services"
+  title="What We Do For You"
   subtitle="Bringing you the latest in retro design tools—because digital brushes are overrated."
   items={[
     {
@@ -74,9 +74,9 @@ export default component$(() => {
 
 
       <Pricing
-  highlight="Pricing"
-  title="Flexible Payment Options"
-  subtitle="Bringing you the latest in retro design tools—because digital brushes are overrated."
+  highlight="Pricing Plans"
+  title="Flexible Pricing Options"
+  subtitle="All the above services and features jammed into one package."
   items={[
     {
       title: "Classic Knob Control Integration",
