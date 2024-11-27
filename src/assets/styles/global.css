@@ -16,6 +16,10 @@
     @apply transition-colors duration-500 ease-in-out;
   }
 
+  .carousel-gradient-bg {
+    background: radial-gradient(50% 100% at top, var(--color-secondary), var(--color-bg-primary));
+  }
+
   /* Theme-specific variables */
   .dark-green {
     --color-primary: hsl(120, 40%, 30%);

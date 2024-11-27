@@ -31,7 +31,7 @@ export default component$(() => {
     <>
     <div class={themeSig.value}>
      
-    <Hero />
+    {/* <Hero /> */}
       <Features
   highlight="Features"
   title="What You Get with the Etchy Sketchy"
