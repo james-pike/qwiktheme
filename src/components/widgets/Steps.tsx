@@ -1,5 +1,5 @@
 import { component$ } from "@builder.io/qwik";
-import { Image } from "@unpic/qwik";
+
 
 import IconStar from "~/components/icons/IconStar";
 import { Headline } from "../ui/Headline";
@@ -42,7 +42,7 @@ export default component$(() => {
       alt: "Steps image",
     },
   };
-  const { title, items, image, highlight } = stepsData;
+  const { title, items, highlight } = stepsData;
 
   return (
     
@@ -92,7 +92,7 @@ export default component$(() => {
             </div>
           ))}
       </div>
-      <div class="relative">
+      {/* <div class="relative">
         {typeof image !== "undefined" && (
           <Image
             layout="constrained"
@@ -104,7 +104,7 @@ export default component$(() => {
             breakpoints={[320, 480, 640, 1024]}
           />
         )}
-      </div>
+      </div> */}
     </div>
   </section>
   );
