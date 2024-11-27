@@ -13,8 +13,7 @@ const IconBulb = qwikSerialized(() => import("~/components/icons/IconBulb"));
 
 
 import Pricing from "~/components/widgets/Pricing";
-import Test2 from "~/components/widgets/Test2";
-import Stats from "~/components/widgets/Stats";
+
 import FAQs from "~/components/widgets/FAQs";
 
 
@@ -115,7 +114,7 @@ export default component$(() => {
     },
   ]}
 />
-<Test2/>
+
       <FAQs
   title="Frequently Asked Questions"
   subtitle="Answers to questions you didn't know you had about designing with an Etch A Sketch."
@@ -155,7 +154,7 @@ export default component$(() => {
 />
  
 
-      <Stats />
+     
      
      
     
