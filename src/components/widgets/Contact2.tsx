@@ -26,9 +26,9 @@ export default component$((props: Props) => {
 
   return (
     <section class="relative bg-white scroll-mt-16" {...(id ? { id } : {})}>
-    <div class="relative isolate bg-bgLight px-6 py-12 sm:py-18 lg:px-8">
+    <div class="relative isolate bg-bgLight px-6 py-10 sm:py-18 lg:px-8">
       <svg
-        class="absolute inset-0 -z-10 size-full stroke-secondary [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]"
+        class="absolute inset-0 -z-10 size-full stroke-bgAccent [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]"
         aria-hidden="true"
       >
         <defs>
@@ -61,7 +61,7 @@ export default component$((props: Props) => {
         <Headline title={title} subtitle={subtitle} highlight={highlight} classes={classes?.headline} />
   
         <div
-          class="mt-16 rounded-lg border border-secondary bg-bgLight p-8 lg:p-12"
+          class="mt-12 rounded-lg border border-secondary bg-bgLight p-8 lg:p-12"
          
         >
           <div class="flex flex-col gap-16 sm:gap-y-20 lg:flex-row">
