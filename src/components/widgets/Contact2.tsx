@@ -4,7 +4,6 @@ import { component$ } from "@builder.io/qwik";
 import { twMerge } from "tailwind-merge";
 import { Headline } from "~/components/ui/Headline";
 
-import PricingTab from "./PricingTab";
 
 interface Item {
   title?: string;
