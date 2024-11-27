@@ -28,7 +28,7 @@ export default component$((props: Props) => {
     <section class="relative bg-white scroll-mt-16" {...(id ? { id } : {})}>
     <div class="relative isolate bg-bgLight px-6 py-10 sm:py-18 lg:px-8">
       <svg
-        class="absolute inset-0 -z-10 size-full stroke-bgAccent [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]"
+        class="absolute inset-0 -z-10 size-full stroke-secondary [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]"
         aria-hidden="true"
       >
         <defs>
@@ -43,7 +43,7 @@ export default component$((props: Props) => {
             <path d="M100 200V.5M.5 .5H200" fill="none" />
           </pattern>
         </defs>
-        <svg x="50%" y="-64" class="overflow-visible fill-secondary">
+        <svg x="50%" y="-64" class="overflow-visible fill-bgAccent">
           <path
             d="M-100.5 0h201v201h-201Z M699.5 0h201v201h-201Z M499.5 400h201v201h-201Z M299.5 800h201v201h-201Z"
             stroke-width="0"
