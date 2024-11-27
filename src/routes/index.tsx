@@ -3,7 +3,6 @@ import type { DocumentHead } from "@builder.io/qwik-city";
 
 import Features from "~/components/widgets/Features";
 import Steps from "~/components/widgets/Steps";
-import FAQs from "~/components/widgets/FAQs";
 import Stats from "~/components/widgets/Stats";
 
 import { qwikSerialized } from "~/utils/qwikSerialized";
@@ -17,8 +16,8 @@ const IconBulb = qwikSerialized(() => import("../components/icons/IconBulb"));
 import { SITE } from "~/config.mjs";
 import { useTheme } from "~/lib/provider";
 import Pricing from "~/components/widgets/Pricing";
-import Contact from "~/components/widgets/Contact";
 import Test2 from "~/components/widgets/Test2";
+import Contact2 from "~/components/widgets/Contact2";
 
 
 export default component$(() => {
@@ -76,7 +75,7 @@ export default component$(() => {
       <Steps />
       {/* <svg xmlns="http://www.w3.org/2000/svg" class="mx-0" viewBox="0 0 1000 100" fill="#FF6464"><path d="M0 0v100l500-48 500 48V0H0z" opacity=".5"></path><path d="M0 0h1000v52H0z" opacity=".5"></path><path d="M0 0v4l500 48 500-48V0H0z" opacity=".5"></path><path d="M0 0v4l500 48 500-48V0H0z"></path></svg> */}
 
-<Test2/>
+
       <Pricing
   highlight="Pricing"
   title="Flexible Payment Options"
@@ -119,7 +118,8 @@ export default component$(() => {
     },
   ]}
 />
-      <FAQs
+<Test2/>
+      {/* <FAQs
   title="Frequently Asked Questions"
   subtitle="Answers to questions you didn't know you had about designing with an Etch A Sketch."
   highlight="FAQs"
@@ -156,12 +156,38 @@ export default component$(() => {
     },
   ]}
 />
-
+ */}
 
       <Stats />
       {/* <svg xmlns="http://www.w3.org/2000/svg" class="mx-0" viewBox="0 0 1000 100" fill="#FF6464"><path d="M0 0v100l500-48 500 48V0H0z" opacity=".5"></path><path d="M0 0h1000v52H0z" opacity=".5"></path><path d="M0 0v4l500 48 500-48V0H0z" opacity=".5"></path><path d="M0 0v4l500 48 500-48V0H0z"></path></svg> */}
      
-      <Contact/>
+      <Contact2  highlight="Contact Us"
+  title="Get in Touch"
+  subtitle="Tell us about your project, and we'll get back to you within 24 hours."
+  
+  items = {[{
+    title: "Classic Knob Control Integration",
+    description: "Precision-engineered for the perfect wobbly line. Rotate left for vertical, right for horizontal, and pray for the best!",  
+  },
+  {
+    title: "Ready-to-Use Blank Slate",
+    description: "Start each masterpiece with a fresh gray screen. No distractions, just you, two knobs, and endless possibilities (of frustration).",  
+  },
+  {
+    title: "Minimalist Best Practices",
+    description: "Forget layers, colors, or undo buttons—embrace the simplicity! One line at a time, one misstep away from starting over.",  
+  },
+  {
+    title: "Blazing Erase Speed",
+    description: "Need a redo? Just flip, shake, and presto! Instant erase. Say goodbye to your previous work in a flash (whether you like it or not).",  
+  },
+  {
+    title: "Classic Knob Control Integration",
+    description: "Precision-engineered for the perfect wobbly line. Rotate left for vertical, right for horizontal, and pray for the best!",    
+  },
+
+]}
+  />
     
       </div>
     </>
