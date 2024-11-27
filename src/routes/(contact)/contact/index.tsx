@@ -7,9 +7,9 @@ export default component$(() => {
   
   return (
    <div>
-    <Contact2  highlight="Pricing"
-  title="Flexible Payment Options"
-  subtitle="Bringing you the latest in retro design tools—because digital brushes are overrated."
+    <Contact2  highlight="Contact Us"
+  title="Get in Touch"
+  subtitle="Tell us about your project, and we'll get back to you within 24 hours."
   
   items = {[{
     title: "Classic Knob Control Integration",
