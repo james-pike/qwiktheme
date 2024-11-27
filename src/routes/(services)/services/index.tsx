@@ -1,5 +1,4 @@
 import { component$ } from "@builder.io/qwik";
-import type { DocumentHead } from "@builder.io/qwik-city";
 
 import Features from "~/components/widgets/Features";
 import Steps from "~/components/widgets/Steps";
