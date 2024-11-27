@@ -14,7 +14,8 @@ const IconBulb = qwikSerialized(() => import("~/components/icons/IconBulb"));
 
 import Pricing from "~/components/widgets/Pricing";
 
-import FAQs from "~/components/widgets/FAQs";
+import Contact2 from "~/components/widgets/Contact2";
+import Test2 from "~/components/widgets/Test2";
 
 
 export default component$(() => {
@@ -115,46 +116,37 @@ export default component$(() => {
   ]}
 />
 
-      <FAQs
-  title="Frequently Asked Questions"
-  subtitle="Answers to questions you didn't know you had about designing with an Etch A Sketch."
-  highlight="FAQs"
-  items={[
-    {
-      title: "What do I need to start?",
-      description:
-        "Two knobs, a steady hand, and an ocean of patience. Warning: artistic frustration levels may reach new heights.",
-    },
-    {
-      title: "How do I create detailed designs with an Etch A Sketch?",
-      description:
-        "Simply turn the knobs with millimeter precision for each line segment. If you mess up... well, welcome to square one!",
-    },
-    {
-      title: "Why does my artwork keep getting erased?",
-      description:
-        "Good question! Turns out an Etch A Sketch isn't very forgiving. But hey, practice makes... slightly better?",
-    },
-    {
-      title: "What if my hand slips?",
-      description:
-        "Embrace the chaos! Call it 'abstract art' and tell everyone it's intentional. Alternatively, prepare for the 'shake and start over' technique.",
-    },
-    {
-      title: "How can I add color to my designs?",
-      description:
-        "Oh, that's easy! Just imagine it really hard. Unfortunately, actual color is a bit beyond the Etch A Sketch's capabilities...for now.",
-    },
-    {
-      title: "What’s the most advanced Etch A Sketch technique?",
-      description:
-        "Rumor has it, there's a mystical move called 'The Perfect Circle' that only a select few have mastered. But beware, trying it may result in endless squiggles and slight existential dread.",
-    },
-  ]}
-/>
- 
+      
+ <Test2/>
 
-     
+<Contact2  highlight="Have Some Questions?"
+  title="Contact Us!"
+  subtitle="Tell us about your project, and we'll get back to you within 24 hours."
+  
+  items = {[{
+    title: "Classic Knob Control Integration",
+    description: "Precision-engineered for the perfect wobbly line. Rotate left for vertical, right for horizontal, and pray for the best!",  
+  },
+  {
+    title: "Ready-to-Use Blank Slate",
+    description: "Start each masterpiece with a fresh gray screen. No distractions, just you, two knobs, and endless possibilities (of frustration).",  
+  },
+  {
+    title: "Minimalist Best Practices",
+    description: "Forget layers, colors, or undo buttons—embrace the simplicity! One line at a time, one misstep away from starting over.",  
+  },
+  {
+    title: "Blazing Erase Speed",
+    description: "Need a redo? Just flip, shake, and presto! Instant erase. Say goodbye to your previous work in a flash (whether you like it or not).",  
+  },
+  {
+    title: "Classic Knob Control Integration",
+    description: "Precision-engineered for the perfect wobbly line. Rotate left for vertical, right for horizontal, and pray for the best!",    
+  },
+
+]}
+  />
+    
      
      
     
