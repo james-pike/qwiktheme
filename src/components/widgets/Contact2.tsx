@@ -61,7 +61,7 @@ export default component$((props: Props) => {
         <Headline title={title} subtitle={subtitle} highlight={highlight} classes={classes?.headline} />
   
         <div
-          class="mt-12 rounded-lg border border-secondary bg-bgLight p-8 lg:p-12"
+          class="mt-12 rounded-lg border border-secondary bg-secondary p-8 lg:p-12"
          
         >
           <div class="flex flex-col gap-16 sm:gap-y-20 lg:flex-row">
