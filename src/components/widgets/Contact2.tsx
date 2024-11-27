@@ -1,7 +1,6 @@
 
 
 import { component$ } from "@builder.io/qwik";
-import { twMerge } from "tailwind-merge";
 import { Headline } from "~/components/ui/Headline";
 
 
@@ -23,7 +22,7 @@ interface Props {
 }
 
 export default component$((props: Props) => {
-  const { id, title = "", subtitle = "", highlight = "", classes = {}, isDark = false } = props;
+  const { id, title = "", subtitle = "", highlight = "", classes = {}, } = props;
 
   return (
     <section class="relative bg-white scroll-mt-16" {...(id ? { id } : {})}>
