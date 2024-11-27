@@ -3,7 +3,6 @@ import type { DocumentHead } from "@builder.io/qwik-city";
 
 import Features from "~/components/widgets/Features";
 import Steps from "~/components/widgets/Steps";
-import Stats from "~/components/widgets/Stats";
 
 import { qwikSerialized } from "~/utils/qwikSerialized";
 
