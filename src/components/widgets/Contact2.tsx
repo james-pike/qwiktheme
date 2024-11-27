@@ -43,7 +43,7 @@ export default component$((props: Props) => {
             <path d="M100 200V.5M.5 .5H200" fill="none" />
           </pattern>
         </defs>
-        <svg x="50%" y="-64" class="overflow-visible fill-bgAccent">
+        <svg x="50%" y="-64" class="overflow-visible fill-secondary">
           <path
             d="M-100.5 0h201v201h-201Z M699.5 0h201v201h-201Z M499.5 400h201v201h-201Z M299.5 800h201v201h-201Z"
             stroke-width="0"
@@ -61,7 +61,7 @@ export default component$((props: Props) => {
         <Headline title={title} subtitle={subtitle} highlight={highlight} classes={classes?.headline} />
   
         <div
-          class="mt-12 rounded-lg border border-secondary bg-secondary p-8 lg:p-12"
+          class="mt-12 rounded-lg border border-secondary bg-bgAccent p-8 lg:p-12"
          
         >
           <div class="flex flex-col gap-16 sm:gap-y-20 lg:flex-row">
