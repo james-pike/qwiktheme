@@ -100,7 +100,7 @@ export default component$(() => {
           <div class="text-sm text-gray-700 mr-4 dark:text-slate-400 flex items-center">
             {/* Replace favicon span with your Logo component */}
             <Logo  />
-            Made with {" "}<span class="text-primary mx-1">♥</span>by {" "}
+            Made with {" "}<span class="text-primary mx-1">♥</span> by&nbsp;
             <a class="text-gray-900 underline dark:text-gray-200" href="#">
               Webdev.ca
             </a>{" "}

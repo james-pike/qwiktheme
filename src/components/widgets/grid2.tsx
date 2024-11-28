@@ -164,7 +164,7 @@ export default component$(() => {
             <label for="terms" class="ml-2 text-sm font-normal text-gray-500 dark:text-gray-400">
               I confirm that you have read and agreed to
               <a href="#" title="" class="font-medium text-gray-900 hover:no-underline underline dark:text-white">
-                Flowbite's Terms of Service
+                Terms of Service
               </a>
               and
               <a href="#" title="" class="font-medium text-gray-900 hover:no-underline underline dark:text-white">
