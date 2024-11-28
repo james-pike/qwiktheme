@@ -68,7 +68,7 @@ export default component$(() => {
               {Array.isArray(items) && items.length > 0 && (
                 <ul class="text-sm">
                   {items.map(({ title, href }, index2) => (
-                    <li key={index2} class="mb-2">
+                    <li key={index2} class="mb-1">
                       <Link
                         class="text-gray-600 hover:text-primary hover:underline dark:text-gray-400 transition duration-150 ease-in-out"
                         href={href}
@@ -100,7 +100,7 @@ export default component$(() => {
           <div class="text-sm text-gray-700 mr-4 dark:text-slate-400 flex items-center">
             {/* Replace favicon span with your Logo component */}
             <Logo  />
-            Made with {" "}<span class="text-primary">{" "} ♥ {" "}</span>by {" "}
+            Made with {" "}<span class="text-primary mx-1">♥</span>by {" "}
             <a class="text-gray-900 underline dark:text-gray-200" href="#">
               Webdev.ca
             </a>{" "}
