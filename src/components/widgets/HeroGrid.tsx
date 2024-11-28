@@ -28,7 +28,7 @@ export default component$(() => {
         {gridItemsStore.gridItems.map((item, index) => (
           <div
             key={index}
-            class="bg-bgAccent rounded animate-pulse"
+            class="bg-secondary rounded animate-pulse"
             style={{
               animationDelay: item.animationDelay,
               animationDuration: item.animationDuration,
