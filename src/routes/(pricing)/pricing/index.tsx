@@ -15,7 +15,7 @@ export default component$(() => {
   return (
    <div>
     <Grid/>
-    <Grid2/>
+  
     <Pricing
   highlight="Pricing"
   title="Flexible Payment Options"
