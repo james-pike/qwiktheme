@@ -5,7 +5,7 @@ import IconTwitter from "~/components/icons/IconTwitter";
 import IconInstagram from "~/components/icons/IconInstagram";
 import IconFacebook from "~/components/icons/IconFacebook";
 import IconGithub from "~/components/icons/IconGithub";
-import Logo from "../common/Logo";
+import LogoSmall from "../common/LogoSmall";
 
 export default component$(() => {
   const links = [
@@ -58,9 +58,9 @@ export default component$(() => {
                 Webdev.ca
               </Link>
             </div>
-            {/* <div class="text-sm text-gray-600 dark:text-gray-400">
+            <div class="text-sm text-gray-600 dark:text-gray-400">
               Transform your online presence with our custom web design and development services. We help businesses create stunning, fast, and secure websites.
-            </div> */}
+            </div>
           </div>
           {links.map(({ title, items }, index) => (
             <div key={index} class="col-span-6 md:col-span-3 lg:col-span-2">
@@ -99,7 +99,7 @@ export default component$(() => {
           </ul>
           <div class="text-sm text-gray-700 mr-4 dark:text-slate-400 flex items-center">
             {/* Replace favicon span with your Logo component */}
-            <Logo  />
+            <LogoSmall  />
             Made with {" "}<span class="text-primary mx-1">♥</span> by&nbsp;
             <a class="text-gray-900 underline dark:text-gray-200" href="#">
               Webdev.ca
