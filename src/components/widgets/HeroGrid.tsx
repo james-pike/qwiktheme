@@ -15,7 +15,7 @@ export default component$(() => {
     });
   
     return (
-      <div class="relative min-h-screen flex items-center justify-center bg-gradient-to-b from-primary via-secondary to-bgLight overflow-hidden">
+      <div class="relative min-h-screen flex items-center -mt-10 justify-center bg-gradient-to-b from-primary via-secondary to-bgLight overflow-hidden">
         {/* Grid background with glowing gaps */}
         <div class="grid-background absolute inset-0 p-2 grid grid-cols-6 gap-1 transform -skew-y-6 scale-100">
           {gridItemsStore.gridItems.map((item, index) => (
