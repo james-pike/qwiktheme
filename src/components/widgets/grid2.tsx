@@ -34,7 +34,7 @@ export default component$(() => {
       <div class="relative max-w-4xl mx-auto px-5 lg:px-8">
 
         
-      <div class="max-w-3xl mx-auto mt-4 lg:mt-24 bg-bgLight rounded-lg p-2">
+      <div class="max-w-3xl mx-auto mt-10 lg:mt-24 bg-bgLight rounded-lg p-6">
       <form action="#" class="grid max-w-screen-md grid-cols-1 mx-auto gap-x-8 gap-y-6 sm:grid-cols-2">
         <div>
           <label for="first-name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">
@@ -150,7 +150,7 @@ export default component$(() => {
           <label for="message" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400">
             Your message
           </label>
-          <textarea id="message" rows={4}
+          <textarea id="message" rows={2}
             class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
             placeholder=""></textarea>
         </div>
@@ -173,7 +173,7 @@ export default component$(() => {
         </div>
 
         <button type="submit"
-          class="px-5 py-3 text-sm font-medium text-center text-white rounded-lg bg-primary-700 sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Send
+          class="px-5 py-3 text-sm font-medium text-center text-white rounded-lg bg-primary sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Send
           message</button>
       </form>
     </div>
