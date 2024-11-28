@@ -15,7 +15,7 @@ export default component$(() => {
   });
 
   return (
-    <div class="relative min-h-screen bg-bgAccent overflow-hidden">
+    <div class="relative bg-bgAccent overflow-hidden">
       <div class="grid-background absolute inset-0 p-2 grid grid-cols-6 gap-1 transform -skew-y-0 scale-100">
         {gridItemsStore.gridItems.map((item, index) => (
           <div
