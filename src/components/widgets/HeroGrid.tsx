@@ -1,4 +1,4 @@
-import { component$, useStore, useTask$ } from '@builder.io/qwik';
+import { component$, useStore} from '@builder.io/qwik';
 
 function getRandomInt(min: number, max: number): number {
   min = Math.ceil(min);
@@ -21,7 +21,7 @@ export default component$(() => {
           {gridItemsStore.gridItems.map((item, index) => (
             <div
               key={index}
-              class="bg-secondary rounded animate-pulse"
+              class="bg-bgAccent rounded animate-pulse"
               style={{
                 animationDelay: item.animationDelay,
                 animationDuration: item.animationDuration,
