@@ -51,7 +51,7 @@ export default component$(() => {
   return (
     <footer class="py-3 bg-gradient-to-r from-bgAccent via-secondary to-bgLight px-3">
       <div class="max-w-7xl mx-auto px-4 bg-bgAccent dark:bg-gray-900 rounded-lg shadow-lg">
-        <div class="grid grid-cols-12 gap-4 gap-y-4 sm:gap-8 pt-8 pb-2 md:py-12">
+        <div class="grid grid-cols-12 gap-4 gap-y-4 sm:gap-8 pt-6 pb-2 md:py-12">
           <div class="col-span-12 lg:col-span-4 pr-8">
             <div class="mb-4">
               <Link class="inline-block font-bold text-2xl" href={"/"}>
@@ -97,7 +97,7 @@ export default component$(() => {
               </li>
             ))}
           </ul>
-          <div class="text-sm text-gray-700 mr-4 pb-4 dark:text-slate-400 flex items-center">
+          <div class="text-sm text-gray-700 mr-4 pb-2 dark:text-slate-400 flex items-center">
             {/* Replace favicon span with your Logo component */}
             <LogoSmall  />
             Made with {" "}<span class="text-primary mx-1">♥</span> by&nbsp;
