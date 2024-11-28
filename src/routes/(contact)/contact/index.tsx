@@ -14,9 +14,9 @@ export default component$(() => {
    <div>
    
 <Grid2
-  highlight="Features"
-  title="What You Get with the Etchy Sketchy"
-  subtitle="Bringing you the latest in retro design tools—because digital brushes are overrated."
+  highlight="Get In Touch"
+  title="Contact Us For A Free Consultation"
+  subtitle="Tell us about your project, and we’ll get back to you with details on how we can make it happen."
   items={[
     {
       title: "Classic Knob Control Integration",
