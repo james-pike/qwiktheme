@@ -83,7 +83,7 @@ export default component$(() => {
           ))}
         </div>
         <div class="md:flex md:items-center md:justify-between pb-2 md:py-8">
-          <ul class="flex mb-3 md:order-1 -ml-2 md:ml-4 md:mb-0">
+          <ul class="flex mb-2 md:order-1 -ml-2 md:ml-4 md:mb-0">
             {social.map(({ label, href, icon: Icon }, index) => (
               <li key={index}>
                 <Link
@@ -97,7 +97,7 @@ export default component$(() => {
               </li>
             ))}
           </ul>
-          <div class="text-sm text-gray-700 mr-4 pb-3 dark:text-slate-400 flex items-center">
+          <div class="text-sm text-gray-700 mr-4 pb-4 dark:text-slate-400 flex items-center">
             {/* Replace favicon span with your Logo component */}
             <LogoSmall  />
             Made with {" "}<span class="text-primary mx-1">♥</span> by&nbsp;
