@@ -34,12 +34,12 @@ export default component$((props: Props) => {
   });
 
   return (
-    <div class="relative bg-bgLight overflow-hidden">
-      <div class="grid-background absolute inset-0  -mt-10 p-2 grid grid-cols-6 gap-1 transform -skew-y-12 scale-100">
+    <div class="relative bg-bgAccent overflow-hidden">
+      <div class="grid-background absolute inset-0 p-2 -mt-10 grid grid-cols-6 gap-1 transform -skew-y-12 scale-100">
         {gridItemsStore.gridItems.map((item, index) => (
           <div
             key={index}
-            class="bg-bgAccent rounded animate-pulse"
+            class="bg-secondary rounded animate-pulse"
             style={{
               animationDelay: item.animationDelay,
               animationDuration: item.animationDuration,
