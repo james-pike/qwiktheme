@@ -1,10 +1,10 @@
 import { component$ } from "@builder.io/qwik";
 import { Link } from "@builder.io/qwik-city";
 
-// import IconTwitter from "~/components/icons/IconTwitter";
-// import IconInstagram from "~/components/icons/IconInstagram";
-// import IconFacebook from "~/components/icons/IconFacebook";
-// import IconGithub from "~/components/icons/IconGithub";
+import IconTwitter from "~/components/icons/IconTwitter";
+import IconInstagram from "~/components/icons/IconInstagram";
+import IconFacebook from "~/components/icons/IconFacebook";
+import IconGithub from "~/components/icons/IconGithub";
 import Logo from "../common/Logo";
 
 export default component$(() => {
@@ -41,12 +41,12 @@ export default component$(() => {
     // },
   ];
 
-  // const social = [
-  //   { label: "Twitter", icon: IconTwitter, href: "#" },
-  //   { label: "Instagram", icon: IconInstagram, href: "#" },
-  //   { label: "Facebook", icon: IconFacebook, href: "#" },
-  //   { label: "Github", icon: IconGithub, href: "#" },
-  // ];
+  const social = [
+    { label: "Twitter", icon: IconTwitter, href: "#" },
+    { label: "Instagram", icon: IconInstagram, href: "#" },
+    { label: "Facebook", icon: IconFacebook, href: "#" },
+    { label: "Github", icon: IconGithub, href: "#" },
+  ];
 
   return (
     <footer class="py-3 bg-gradient-to-r from-bgAccent via-secondary to-bgLight px-3">
@@ -59,7 +59,7 @@ export default component$(() => {
               </Link>
             </div>
             <div class="text-sm text-gray-600 dark:text-gray-400">
-              Transform your online presence with our custom web design and development services. We help businesses create stunning, fast, and secure websites that drive results.
+              Transform your online presence with our custom web design and development services. We help businesses create stunning, fast, and secure websites.
             </div>
           </div>
           {links.map(({ title, items }, index) => (
@@ -83,7 +83,7 @@ export default component$(() => {
           ))}
         </div>
         <div class="md:flex md:items-center md:justify-between py-6 md:py-8">
-          {/* <ul class="flex mb-4 md:order-1 -ml-2 md:ml-4 md:mb-0">
+          <ul class="flex mb-4 md:order-1 -ml-2 md:ml-4 md:mb-0">
             {social.map(({ label, href, icon: Icon }, index) => (
               <li key={index}>
                 <Link
@@ -96,11 +96,11 @@ export default component$(() => {
                 </Link>
               </li>
             ))}
-          </ul> */}
+          </ul>
           <div class="text-sm text-gray-700 mr-4 dark:text-slate-400 flex items-center">
             {/* Replace favicon span with your Logo component */}
             <Logo  />
-            Made with <span class="text-primary">{" "}♥{" "}</span>by{" "}
+            Made with {" "}<span class="text-primary">{" "} ♥ {" "}</span>by {" "}
             <a class="text-gray-900 underline dark:text-gray-200" href="#">
               Webdev.ca
             </a>{" "}
