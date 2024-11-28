@@ -46,7 +46,7 @@ export default component$(() => {
 
   return (
     
-    <section class="mx-auto bg-bgAccent dark:bg-gray-800 max-w-6xl px-4 py-10 sm:px-6 lg:px-8 lg:py-20">
+    <section class="mx-auto bg-bgAccent dark:bg-gray-800 max-w-6xl px-4 py-12 sm:px-6 lg:px-8 lg:py-20">
       
     <div class="row-gap-10 grid gap-6 md:grid-cols-2">
       
