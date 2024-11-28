@@ -16,7 +16,6 @@ import { SITE } from "~/config.mjs";
 import { useTheme } from "~/lib/provider";
 import Pricing from "~/components/widgets/Pricing";
 import Test2 from "~/components/widgets/Test2";
-import Contact2 from "~/components/widgets/Contact2";
 import HeroGrid from "~/components/widgets/HeroGrid";
 import Grid2 from "~/components/widgets/grid2";
 
