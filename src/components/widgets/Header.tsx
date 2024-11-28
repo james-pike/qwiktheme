@@ -24,11 +24,11 @@ export default component$(() => {
   return (
     <header
   id="header"
-  class={`sticky bg-gradient-to-r from-bgAccent via-secondary to-bgAccent top-0 z-40 flex-none relative border-2 ${
+  class={`sticky bg-gradient-to-r from-bgAccent via-secondary to-bgAccent top-0 z-40 flex-none relative border-4 ${
     store.isScrolling
       ? " border-transparent px-0 py-0 md:backdrop-blur-sm"
       : " shadow-md"
-  } transition-all ease-in-out duration-300 before:content-[''] before:absolute before:inset-0 before:rounded-md before:border-[2px] before:border-transparent before:animate-shining-line before:from-transparent before:via-white/80 before:to-transparent before:bg-gradient-to-r before:w-full before:h-full before:pointer-events-none overflow-hidden`}
+  } transition-all ease-in-out duration-300 before:content-[''] before:absolute before:inset-0 before:rounded-md before:border-[4px] before:border-bgAccent before:animate-shining-line before:from-transparent before:via-white/80 before:to-transparent before:bg-gradient-to-r before:w-full before:h-full before:pointer-events-none overflow-hidden`}
   window:onScroll$={() => {
     if (!store.isScrolling && window.scrollY >= 10) {
       store.isScrolling = true;
