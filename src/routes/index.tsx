@@ -18,6 +18,7 @@ import Pricing from "~/components/widgets/Pricing";
 import Test2 from "~/components/widgets/Test2";
 import Contact2 from "~/components/widgets/Contact2";
 import HeroGrid from "~/components/widgets/HeroGrid";
+import Grid2 from "~/components/widgets/grid2";
 
 
 export default component$(() => {
@@ -30,6 +31,7 @@ export default component$(() => {
     <div class={themeSig.value}>
 
       <HeroGrid />
+      
     {/* <Hero1  highlight="Contact Us"
   title="Get in Touch"
   subtitle="Tell us about your project, and we'll get back to you within 24 hours."
@@ -189,7 +191,7 @@ export default component$(() => {
       {/* <Stats /> */}
       {/* <svg xmlns="http://www.w3.org/2000/svg" class="mx-0" viewBox="0 0 1000 100" fill="#FF6464"><path d="M0 0v100l500-48 500 48V0H0z" opacity=".5"></path><path d="M0 0h1000v52H0z" opacity=".5"></path><path d="M0 0v4l500 48 500-48V0H0z" opacity=".5"></path><path d="M0 0v4l500 48 500-48V0H0z"></path></svg> */}
      
-      <Contact2  highlight="Contact Us"
+      {/* <Contact2  highlight="Contact Us"
   title="Get in Touch"
   subtitle="Tell us about your project, and we'll get back to you within 24 hours."
   
@@ -215,7 +217,9 @@ export default component$(() => {
   },
 
 ]}
-  />
+  /> */}
+
+<Grid2/>
     
       </div>
     </>
