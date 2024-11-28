@@ -53,7 +53,7 @@ export default component$((props: Props) => {
       <div class="relative max-w-4xl mx-auto px-5 lg:px-8">
 
         
-      <div class="max-w-3xl mx-auto mt-4 lg:mt-24 bg-bgLight rounded-lg pt-8 p-6">
+      <div class="max-w-3xl mx-auto mt-6 lg:mt-24 bg-bgLight rounded-lg pt-8 p-6">
       <Headline title={title} subtitle={subtitle} highlight={highlight} classes={classes?.headline} />
       <form action="#" class="grid max-w-screen-md grid-cols-1 mx-auto gap-x-8 gap-y-6 pt-0 sm:grid-cols-2">
         <div>
@@ -172,7 +172,7 @@ export default component$((props: Props) => {
           </label>
           <textarea id="message" rows={2}
             class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
-            placeholder="Hey James! I need a website for my business.."></textarea>
+            placeholder="Hey, I need a website for my business, it's.."></textarea>
         </div>
 
         <div class="sm:col-span-2">
