@@ -1,4 +1,22 @@
 import { component$, useStore } from '@builder.io/qwik';
+import { Headline } from '../ui/Headline';
+
+interface Item {
+    title?: string;
+    description?: string;
+    icon?: any;
+    classes?: Record<string, string>;
+  }
+  
+  interface Props {
+    id?: string;
+    title?: any;
+    subtitle?: any;
+    highlight?: any;
+    items: Array<Item>;
+    isDark?: boolean;
+    classes?: any;
+  }
 
 function getRandomInt(min: number, max: number): number {
   min = Math.ceil(min);
@@ -6,7 +24,8 @@ function getRandomInt(min: number, max: number): number {
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
-export default component$(() => {
+export default component$((props: Props) => {
+    const { id, title = "", subtitle = "", highlight = "", items = [], classes = {}, isDark = false } = props;
   const gridItemsStore = useStore({
     gridItems: new Array(30).fill(null).map(() => ({
       animationDelay: `${getRandomInt(0, 5)}s`,
@@ -34,9 +53,8 @@ export default component$(() => {
       <div class="relative max-w-4xl mx-auto px-5 lg:px-8">
 
         
-      <div class="max-w-3xl mx-auto mt-10 lg:mt-24 bg-bgLight rounded-lg p-6">
-      <h1>Contact Us</h1>
-      <h2>This is where the contact information goes</h2>
+      <div class="max-w-3xl mx-auto mt-10 lg:mt-24 bg-bgLight rounded-lg pt-8 p-6">
+      <Headline title={title} subtitle={subtitle} highlight={highlight} classes={classes?.headline} />
       <form action="#" class="grid max-w-screen-md grid-cols-1 mx-auto gap-x-8 gap-y-6 pt-6 sm:grid-cols-2">
         <div>
           <label for="first-name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">
