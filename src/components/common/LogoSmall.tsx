@@ -4,8 +4,8 @@ export default component$(() => (
   <span class="self-center mr-1 text-2xl md:text-xl font-bold whitespace-nowrap dark:text-white flex items-center">
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="16"
-      height="16"
+      width="24"
+      height="24"
       viewBox="0 0 56 56"
     >
       <path
