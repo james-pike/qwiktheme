@@ -18,6 +18,7 @@ import Pricing from "~/components/widgets/Pricing";
 import Test2 from "~/components/widgets/Test2";
 import Contact2 from "~/components/widgets/Contact2";
 import Hero1 from "~/components/widgets/Hero1";
+import HeroGrid from "~/components/widgets/HeroGrid";
 
 
 export default component$(() => {
@@ -28,6 +29,8 @@ export default component$(() => {
   return (
     <>
     <div class={themeSig.value}>
+
+      <HeroGrid />
     <Hero1  highlight="Contact Us"
   title="Get in Touch"
   subtitle="Tell us about your project, and we'll get back to you within 24 hours."

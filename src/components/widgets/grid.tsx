@@ -24,7 +24,7 @@ export default component$(() => {
   return (
     <div class="relative min-h-screen flex items-center justify-center bg-bgAccent overflow-hidden">
       {/* Grid background */}
-      <div class="grid-background absolute inset-0 p-2 grid grid-cols-6 gap-1 transform -skew-y-12 scale-125">
+      <div class="grid-background absolute inset-0 p-2 grid grid-cols-6 gap-1 transform -skew-y-12 scale-100">
         {gridItemsStore.gridItems.map((item, index) => (
           <div
             key={index}
