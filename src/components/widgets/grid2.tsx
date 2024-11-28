@@ -35,7 +35,7 @@ export default component$((props: Props) => {
 
   return (
     <div class="relative bg-bgAccent overflow-hidden">
-      <div class="grid-background absolute inset-0 p-2 -mt-14 grid grid-cols-6 gap-1 transform -skew-y-12 scale-100">
+      <div class="grid-background absolute inset-0 p-2 -mt-16 grid grid-cols-6 gap-1 transform -skew-y-12 scale-100">
         {gridItemsStore.gridItems.map((item, index) => (
           <div
             key={index}
@@ -58,11 +58,11 @@ export default component$((props: Props) => {
       <form action="#" class="grid max-w-screen-md grid-cols-1 mx-auto gap-x-8 gap-y-6 pt-0 sm:grid-cols-2">
         <div>
           <label for="first-name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">
-            First name
+            Name
           </label>
           <input type="text" id="first-name"
             class="block w-full p-3 text-sm text-gray-900 border border-gray-300 rounded-lg shadow-sm bg-gray-50 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
-            placeholder="Bonnie" required/>
+            placeholder="James" required/>
         </div>
 
         {/* <div>
@@ -80,7 +80,7 @@ export default component$((props: Props) => {
           </label>
           <input type="email" id="email"
             class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
-            placeholder="name@flowbite.com" required/>
+            placeholder="james@webdev.ca" required/>
         </div>
 
         <div>
@@ -89,7 +89,7 @@ export default component$((props: Props) => {
           </label>
           <input type="number" id="phone-number"
             class="block w-full p-3 text-sm text-gray-900 border border-gray-300 rounded-lg shadow-sm bg-gray-50 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
-            placeholder="+(12) 345 6789" required/>
+            placeholder="(613) 345-6789" required/>
         </div>
 
         <div>
@@ -120,12 +120,12 @@ export default component$((props: Props) => {
           <select id="country"
             class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500">
             <option>Select a country</option>
-            <option value="US" selected>United States</option>
+            <option value="US" selected>Canada</option>
             <option value="DE">Germany</option>
             <option value="FR">France</option>
             <option value="GB">United Kingdom</option>
             <option value="ES">Spain</option>
-            <option value="CA">Canada</option>
+            <option value="CA">United States</option>
             <option value="JP">Japan</option>
             <option value="CN">People's Republic of China</option>
           </select>
@@ -172,7 +172,7 @@ export default component$((props: Props) => {
           </label>
           <textarea id="message" rows={2}
             class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
-            placeholder=""></textarea>
+            placeholder="Hey James! I need a website for my business.."></textarea>
         </div>
 
         <div class="sm:col-span-2">
