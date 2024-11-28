@@ -1,4 +1,4 @@
-import { component$, useStore, useTask$ } from '@builder.io/qwik';
+import { component$, useStore } from '@builder.io/qwik';
 
 function getRandomInt(min: number, max: number): number {
   min = Math.ceil(min);
