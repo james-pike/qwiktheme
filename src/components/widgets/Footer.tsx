@@ -51,9 +51,9 @@ export default component$(() => {
   return (
     <footer class="py-3 bg-gradient-to-r from-bgAccent via-secondary to-bgLight px-3">
       <div class="max-w-7xl mx-auto px-6 bg-bgLight dark:bg-gray-900 rounded-lg shadow-lg">
-        <div class="grid grid-cols-12 gap-4 gap-y-8 sm:gap-8 pt-8 pb-2 md:py-12">
+        <div class="grid grid-cols-12 gap-3 gap-y-4 sm:gap-8 pt-6 pb-0 md:py-12">
           <div class="col-span-12 lg:col-span-4 pr-8">
-            <div class="mb-4">
+            <div class="mb-3">
               <Link class="inline-block font-bold text-2xl" href={"/"}>
                 Webdev.ca
               </Link>
@@ -82,8 +82,8 @@ export default component$(() => {
             </div>
           ))}
         </div>
-        <div class="md:flex md:items-center md:justify-between py-6 md:py-8">
-          <ul class="flex mb-4 md:order-1 -ml-2 md:ml-4 md:mb-0">
+        <div class="md:flex md:items-center md:justify-between py-2 md:py-8">
+          <ul class="flex mb-2 md:order-1 -ml-2 md:ml-4 md:mb-0">
             {social.map(({ label, href, icon: Icon }, index) => (
               <li key={index}>
                 <Link
