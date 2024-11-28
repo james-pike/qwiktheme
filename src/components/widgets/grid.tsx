@@ -9,7 +9,7 @@ function getRandomInt(min: number, max: number): number {
 export default component$(() => {
   // Store for grid items with random animation properties
   const gridItemsStore = useStore({
-    gridItems: new Array(20).fill(null).map(() => ({
+    gridItems: new Array(30).fill(null).map(() => ({
       animationDelay: `${getRandomInt(0, 5)}s`,
       animationDuration: `${getRandomInt(3, 6)}s`,
     })),
@@ -22,13 +22,13 @@ export default component$(() => {
   });
 
   return (
-    <div class="relative min-h-screen flex items-center justify-center bg-gray-900 overflow-hidden">
+    <div class="relative min-h-screen flex items-center justify-center bg-bgAccent overflow-hidden">
       {/* Grid background */}
-      <div class="grid-background absolute inset-0 p-2 grid grid-cols-12 gap-2 transform -skew-y-12 scale-125">
+      <div class="grid-background absolute inset-0 p-2 grid grid-cols-6 gap-1 transform -skew-y-12 scale-125">
         {gridItemsStore.gridItems.map((item, index) => (
           <div
             key={index}
-            class="bg-gray-800 rounded animate-pulse"
+            class="bg-secondary rounded animate-pulse"
             style={{
               animationDelay: item.animationDelay,
               animationDuration: item.animationDuration,
