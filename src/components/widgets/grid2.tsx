@@ -35,7 +35,9 @@ export default component$(() => {
 
         
       <div class="max-w-3xl mx-auto mt-10 lg:mt-24 bg-bgLight rounded-lg p-6">
-      <form action="#" class="grid max-w-screen-md grid-cols-1 mx-auto gap-x-8 gap-y-6 sm:grid-cols-2">
+      <h1>Contact Us</h1>
+      <h2>This is where the contact information goes</h2>
+      <form action="#" class="grid max-w-screen-md grid-cols-1 mx-auto gap-x-8 gap-y-6 pt-6 sm:grid-cols-2">
         <div>
           <label for="first-name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">
             First name
@@ -45,14 +47,14 @@ export default component$(() => {
             placeholder="Bonnie" required/>
         </div>
 
-        <div>
+        {/* <div>
           <label for="last-name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">
             Last name
           </label>
           <input type="text" id="last-name"
             class="block w-full p-3 text-sm text-gray-900 border border-gray-300 rounded-lg shadow-sm bg-gray-50 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
             placeholder="Green" required/>
-        </div>
+        </div> */}
 
         <div>
           <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">
@@ -111,7 +113,7 @@ export default component$(() => {
           </select>
         </div>
 
-        <div>
+        {/* <div>
           <div class="flex items-center gap-1.5 mb-2">
             <label for="language" class="block text-sm font-medium text-gray-900 dark:text-gray-300">
               Language
@@ -144,7 +146,7 @@ export default component$(() => {
             <option value="JP">Japanese</option>
             <option value="NL">Dutch</option>
           </select>
-        </div>
+        </div> */}
 
         <div class="sm:col-span-2">
           <label for="message" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400">
