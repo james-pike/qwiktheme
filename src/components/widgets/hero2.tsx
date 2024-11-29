@@ -37,7 +37,7 @@ export default component$((props: Props) => {
 
   // Ensure the correct hue is applied on page load
   useVisibleTask$(() => {
-    const savedHue = window.localStorage.getItem("hue") || "220"; // Default to blue if no hue is saved
+    const savedHue = window.localStorage.getItem("hue") || "0"; // Default to blue if no hue is saved
     document.documentElement.style.setProperty("--color-hue", savedHue);
   });
 
