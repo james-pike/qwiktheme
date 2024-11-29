@@ -1,56 +1,28 @@
-import { $, component$} from "@builder.io/qwik";
+import { $, component$, useVisibleTask$ } from "@builder.io/qwik";
 import { Popover } from "@qwik-ui/headless";
 import IconApps from "../icons/IconApps";
-import { useTheme } from "~/lib/provider";
 
 interface ItemProps {
   iconClass?: string;
 }
 
-const themes = [
-  { name: "dark-green", color: "bg-green-700", mode: "dark" },
-  { name: "light-green", color: "bg-green-300", mode: "light" },
-  { name: "dark-blue", color: "bg-blue-700", mode: "dark" },
-  { name: "light-blue", color: "bg-blue-300", mode: "light" },
-  { name: "dark-red", color: "bg-red-700", mode: "dark" },
-  { name: "light-red", color: "bg-red-300", mode: "light" },
-  { name: "dark-purple", color: "bg-purple-700", mode: "dark" },
-  { name: "light-purple", color: "bg-violet-300", mode: "light" },
-  { name: "dark-black", color: "bg-gray-900", mode: "dark" }, // Black theme for dark mode
-  { name: "light-black", color: "bg-gray-400", mode: "light" }, // Light gray as "black" variant for light mode
-  { name: "dark-orange", color: "bg-orange-700", mode: "dark" },
-  { name: "light-orange", color: "bg-orange-300", mode: "light" },
-  { name: "dark-yellow", color: "bg-yellow-700", mode: "dark" },
-  { name: "light-yellow", color: "bg-yellow-300", mode: "light" },
-  { name: "dark-cyan", color: "bg-cyan-700", mode: "dark" },
-  { name: "light-cyan", color: "bg-cyan-300", mode: "light" },
-  { name: "dark-teal", color: "bg-teal-700", mode: "dark" },
-  { name: "light-teal", color: "bg-teal-300", mode: "light" },
-  { name: "dark-pink", color: "bg-pink-700", mode: "dark" },
-  { name: "light-pink", color: "bg-pink-300", mode: "light" }
-];
-
+const hues = [0, 30, 60, 120, 180, 210, 240, 270, 300, 330]; // Hue values for various colors
 
 export default component$((props: ItemProps) => {
   const { iconClass } = props;
-  const { themeSig } = useTheme();
 
-  const currentTheme = themeSig.value ?? "light-red";
+  // Load the hue from localStorage and apply it on page load
+  useVisibleTask$(() => {
+    const savedHue = window.localStorage.getItem("hue");
+    if (savedHue) {
+      document.documentElement.style.setProperty("--color-hue", savedHue);
+    }
+  });
 
-const updateTheme = $((themeName: string)=>{
-        // Safeguard currentTheme as a string
-        const safeCurrentTheme = typeof currentTheme === "string" ? currentTheme : Array.isArray(currentTheme) ? currentTheme[0] || "" : "";
-        document.documentElement.classList.remove(safeCurrentTheme);
-        document.documentElement.classList.add(themeName);
-        themeSig.value = themeName;
-        window.localStorage.setItem("theme", themeName);
-    });
-  
-  const isDarkMode = typeof currentTheme === "string" && currentTheme.startsWith("dark");
-  const filteredThemes = themes.filter((theme) =>
-    isDarkMode ? theme.mode === "dark" : theme.mode === "light"
-  );
-  
+  const updateHue = $((hue: number) => {
+    document.documentElement.style.setProperty("--color-hue", hue.toString());
+    window.localStorage.setItem("hue", hue.toString());
+  });
 
   return (
     <Popover.Root flip={false} gutter={8}>
@@ -61,22 +33,17 @@ const updateTheme = $((themeName: string)=>{
       </Popover.Trigger>
       <Popover.Panel>
         <div class="grid gap-4 p-4 bg-gray-100 border border-gray-300 rounded-md shadow-md overflow-hidden">
-          <h4 class="font-medium text-lg">Select a Theme</h4>
-          <div class="grid grid-cols-3 gap-2">
-            {filteredThemes.map((theme) => (
+          <h4 class="font-medium text-lg">Select a Theme Hue</h4>
+          <div class="grid grid-cols-5 gap-2">
+            {hues.map((hue) => (
               <div
-                key={theme.name}
-                class={`w-16 h-16 rounded-md ${theme.color} ${
-                  currentTheme === theme.name
-                    ? "ring-2 ring-offset-2 ring-black"
-                    : ""
-                }`}
-                onClick$={() => {
-                  themeSig.value = theme.name;
-                  updateTheme(theme.name);
-                  
+                key={hue}
+                class="w-16 h-16 rounded-md cursor-pointer"
+                style={{
+                  backgroundColor: `hsl(${hue}, 70%, 50%)`,
                 }}
-                aria-label={`Select ${theme.name} theme`}
+                onClick$={() => updateHue(hue)}
+                aria-label={`Select hue ${hue}`}
               />
             ))}
           </div>
