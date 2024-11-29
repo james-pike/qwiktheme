@@ -1,11 +1,10 @@
-import { component$, useStore } from '@builder.io/qwik';
+import { component$, useVisibleTask$, useStore } from '@builder.io/qwik';
 import { Headline } from '../ui/Headline';
 
 interface Item {
-  title?: string;
-  description?: string;
-  icon?: any;
-  classes?: Record<string, string>;
+  animationDelay: string;
+  animationDuration: string;
+  shade: number;
 }
 
 interface Props {
@@ -24,11 +23,10 @@ function getRandomInt(min: number, max: number): number {
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
-
-
 export default component$((props: Props) => {
   const { title = "", subtitle = "", highlight = "", classes = {} } = props;
-  
+
+  // Grid item store
   const gridItemsStore = useStore({
     gridItems: new Array(30).fill(null).map(() => ({
       animationDelay: `${getRandomInt(0, 5)}s`,
@@ -37,14 +35,21 @@ export default component$((props: Props) => {
     })),
   });
 
+  // Ensure the correct hue is applied on page load
+  useVisibleTask$(() => {
+    const savedHue = window.localStorage.getItem("hue") || "220"; // Default to blue if no hue is saved
+    document.documentElement.style.setProperty("--color-hue", savedHue);
+  });
+
   return (
     <div class="relative bg-p1 min-h-screen overflow-hidden flex items-center justify-center py-6">
-      <div class="grid-background absolute inset-0 grid-animate p-2 -mt-16 grid grid-cols-6 gap-1 transform -skew-y-12 scale-100">
+      <div class="grid-background absolute inset-0 grid-animate opacity-20 p-2 -mt-16 grid grid-cols-6 gap-1 transform -skew-y-0 scale-100">
         {gridItemsStore.gridItems.map((item, index) => (
           <div
             key={index}
-            class={`bg-p${item.shade} rounded grid-animate`}
+            class="rounded grid-animate"
             style={{
+              backgroundColor: `var(--color-p${item.shade})`,
               animationDelay: item.animationDelay,
               animationDuration: item.animationDuration,
             }}
@@ -56,7 +61,6 @@ export default component$((props: Props) => {
         <div class="max-w-3xl mx-auto lg:mt-24 bg-p1 rounded-lg pt-8 p-6">
           <Headline title={title} subtitle={subtitle} highlight={highlight} classes={classes?.headline} />
           <div class="sm:max-w-md flex flex-col sm:flex-row sm:justify-center gap-4 lg:justify-start">
-          
             <button class="btn w-full bg-p7 text-white p-2">Start Etching</button>
             <button class="btn w-full bg-p3 p-2">Learn More</button>
           </div>
