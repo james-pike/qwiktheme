@@ -28,7 +28,7 @@ export default component$(() => {
   return (
     <>
     <div class={themeSig.value}>
-<div class="bg-p3 h-40">hey</div>
+
     <Hero2
   highlight="Etchy Sketchy 0.1.0"
   title="Be A Better Designer"
