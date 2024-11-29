@@ -39,7 +39,7 @@ export default component$(() => {
             <h1 class="text-6xl md:text-6xl text-tBase font-bold leading-tighter tracking-tighter mb-4 font-heading">
               Build A Better {" "}
               <br class="hidden lg:block" />
-              <span class="text-primary">Website</span>
+              <span class="text-p5">Website</span>
             </h1>
             <p class="text-xl text-muted text-tBase mb-6 text-gray-900 max-w-3xl mx-auto lg:max-w-none">
               Master the lines, embrace the quirks, and turn every twist into a masterpiece—because

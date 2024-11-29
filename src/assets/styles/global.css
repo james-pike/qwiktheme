@@ -4,22 +4,74 @@
 
 @layer base {
   :root {
-    /* Default theme variables */
-    --color-primary: hsl(0, 0%, 0%);
-    --color-secondary: hsl(0, 0%, 50%);
-    --color-text-base: hsl(0, 0%, 100%);
-    --color-bg-primary: var(--color-bg-accent);
-    --color-bg-accent: hsl(0, 0%, 97%); /* Lighter neutral */
+    --color-hue: 220; /* Dynamic base hue */
+    --color-lightness-adjust: 0%; /* Default lightness (light mode) */
+    
+
+  /* Primary color shades with a new lightness scale */
+  --color-p1: hsl(var(--color-hue), 100%, calc(95% + var(--color-lightness-adjust)));  /* Lighter accent */
+  --color-p2: hsl(var(--color-hue), 100%, calc(85% + var(--color-lightness-adjust)));
+  --color-p3: hsl(var(--color-hue), 100%, calc(75% + var(--color-lightness-adjust)));
+  --color-p4: hsl(var(--color-hue), 100%, calc(65% + var(--color-lightness-adjust))); 
+  --color-p5: hsl(var(--color-hue), 100%, calc(55% + var(--color-lightness-adjust))); /* Base primary color */
+  --color-p6: hsl(var(--color-hue), 100%, calc(45% + var(--color-lightness-adjust)));
+  --color-p7: hsl(var(--color-hue), 100%, calc(35% + var(--color-lightness-adjust))); 
+  --color-p8: hsl(var(--color-hue), 100%, calc(25% + var(--color-lightness-adjust))); /* Darker accent */
+  --color-p9: hsl(var(--color-hue), 100%, calc(15% + var(--color-lightness-adjust))); /* Darkest primary */
+
+  /* Secondary colors (complementary to the primary) with the same lightness scale */
+  --color-s1: hsl(calc(var(--color-hue) + 120), 100%, calc(95% + var(--color-lightness-adjust)));  /* Lightest secondary */
+  --color-s2: hsl(calc(var(--color-hue) + 120), 100%, calc(85% + var(--color-lightness-adjust)));
+  --color-s3: hsl(calc(var(--color-hue) + 120), 100%, calc(75% + var(--color-lightness-adjust)));
+  --color-s4: hsl(calc(var(--color-hue) + 120), 100%, calc(65% + var(--color-lightness-adjust))); 
+  --color-s5: hsl(calc(var(--color-hue) + 120), 100%, calc(55% + var(--color-lightness-adjust))); /* Base secondary color */
+  --color-s6: hsl(calc(var(--color-hue) + 120), 100%, calc(45% + var(--color-lightness-adjust)));
+  --color-s7: hsl(calc(var(--color-hue) + 120), 100%, calc(35% + var(--color-lightness-adjust))); 
+  --color-s8: hsl(calc(var(--color-hue) + 120), 100%, calc(25% + var(--color-lightness-adjust))); /* Darker secondary */
+  --color-s9: hsl(calc(var(--color-hue) + 120), 100%, calc(15% + var(--color-lightness-adjust))); /* Darkest secondary */
+}
+
+  /* Custom animation for color transitions */
+@keyframes color-cycle {
+  0% {
+    background-color: var(--color-p1);
   }
+  12.5% {
+    background-color: var(--color-p2);
+  }
+  25% {
+    background-color: var(--color-p3);
+  }
+  37.5% {
+    background-color: var(--color-p4);
+  }
+  50% {
+    background-color: var(--color-p5);
+  }
+  62.5% {
+    background-color: var(--color-p6);
+  }
+  75% {
+    background-color: var(--color-p7);
+  }
+  87.5% {
+    background-color: var(--color-p8);
+  }
+  100% {
+    background-color: var(--color-p9);
+  }
+}
+
+.grid-animate {
+  animation: color-cycle 10s infinite alternate;
+}
+
 
   * {
     @apply transition-colors duration-500 ease-in-out;
   }
 
-  .carousel-gradient-bg {
-    background: radial-gradient(50% 100% at top, var(--color-secondary), var(--color-bg-primary));
-  }
-  
+
   @keyframes gradient-move {
     0% {
       background-position: 0% 0%;
@@ -34,170 +86,62 @@
     animation: gradient-move 6s linear infinite;
   }
 
-  /* Theme-specific variables */
+  @keyframes color-cycle-0 {
+    0%, 100% { background-color: var(--color-p1); }
+    14% { background-color: var(--color-p2); }
+    28% { background-color: var(--color-p3); }
+    42% { background-color: var(--color-p4); }
+    56% { background-color: var(--color-p5); }
+    70% { background-color: var(--color-p6); }
+    84% { background-color: var(--color-p7); }
+  }
+  
+  @keyframes color-cycle-1 { /* Add different variations to avoid uniform cycling */ }
+  
+  .rounded {
+    animation-name: color-cycle-0;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+  }
+
+  /* Theme-specific variables
   .dark-green {
-    --color-primary: hsl(120, 40%, 30%);
-    --color-secondary: hsl(120, 40%, 50%);
+    --color-primary: var(--color-p5);
+    --color-secondary: var(--color-s5);
     --color-text-base: hsl(0, 0%, 95%);
     --color-bg-primary: hsl(120, 30%, 10%);
-    --color-bg-accent: hsl(120, 60%, 90%); /* Lighter green */
-    --color-bg-light: hsl(120, 75%, 95%); /* New */
+    --color-bg-accent: hsl(120, 60%, 90%);
+    --color-bg-light: hsl(120, 75%, 95%);
   }
 
   .light-green {
-    --color-primary: hsl(120, 70%, 40%);
-    --color-secondary: hsl(120, 70%, 60%);
+    --color-primary: var(--color-p4);
+    --color-secondary: var(--color-s4);
     --color-text-base: hsl(0, 0%, 10%);
     --color-bg-primary: hsl(120, 90%, 95%);
     --color-bg-accent: hsl(120, 85%, 95%);
-    --color-bg-light: hsl(120, 92.5%, 97.5%); /* Lighter green */
+    --color-bg-light: hsl(120, 92.5%, 97.5%);
   }
 
   .dark-blue {
-    --color-primary: hsl(220, 40%, 30%);
-    --color-secondary: hsl(220, 40%, 50%);
+    --color-primary: var(--color-p5);
+    --color-secondary: var(--color-s5);
     --color-text-base: hsl(0, 0%, 95%);
     --color-bg-primary: hsl(220, 30%, 10%);
-    --color-bg-accent: hsl(220, 60%, 90%); /* Lighter blue */
-    --color-bg-light: hsl(220, 75%, 95%); /* New */
-
+    --color-bg-accent: hsl(220, 60%, 90%);
+    --color-bg-light: hsl(220, 75%, 95%);
   }
 
   .light-blue {
-    --color-primary: hsl(220, 70%, 40%);
-    --color-secondary: hsl(220, 70%, 60%);
+    --color-primary: var(--color-p4);
+    --color-secondary: var(--color-s4);
     --color-text-base: hsl(0, 0%, 10%);
     --color-bg-primary: hsl(220, 90%, 95%);
-    --color-bg-accent: hsl(220, 85%, 95%); /* Lighter blue */
-    --color-bg-light: hsl(220, 92.5%, 97.5%); /* New */
+    --color-bg-accent: hsl(220, 85%, 95%);
+    --color-bg-light: hsl(220, 92.5%, 97.5%);
+  } */
 
-  }
-
-  .dark-red {
-    --color-primary: hsl(0, 40%, 30%);
-    --color-secondary: hsl(0, 40%, 50%);
-    --color-text-base: hsl(0, 0%, 95%);
-    --color-bg-primary: hsl(0, 30%, 10%);
-    --color-bg-accent: hsl(0, 60%, 90%); /* Lighter red */
-    --color-bg-light: hsl(0, 75%, 95%); /* New */
-  }
-
-  .light-red {
-    --color-primary: hsl(0, 70%, 40%);
-    --color-secondary: hsl(0, 70%, 60%);
-    --color-text-base: hsl(0, 0%, 10%);
-    --color-bg-primary: hsl(0, 90%, 95%);
-    --color-bg-accent: hsl(0, 85%, 95%);
-    --color-bg-light: hsl(0, 92.5%, 97.5%); /* Lighter red */
-  }
-
-  .dark-purple {
-    --color-primary: hsl(285, 40%, 30%);
-    --color-secondary: hsl(285, 40%, 50%);
-    --color-text-base: hsl(0, 0%, 95%);
-    --color-bg-primary: hsl(285, 30%, 10%);
-    --color-bg-accent: hsl(285, 60%, 90%); /* Lighter purple */
-    --color-bg-light: hsl(285, 75%, 95%); /* New */
-  }
-
-  .light-purple {
-    --color-primary: hsl(285, 70%, 40%);
-    --color-secondary: hsl(285, 70%, 60%);
-    --color-text-base: hsl(0, 0%, 10%);
-    --color-bg-primary: hsl(285, 90%, 95%);
-    --color-bg-accent: hsl(285, 85%, 95%);
-    --color-bg-light: hsl(285, 92.5%, 97.5%); /* Lighter purple */
-  }
-
-  .dark-orange {
-    --color-primary: hsl(30, 40%, 30%);
-    --color-secondary: hsl(30, 40%, 50%);
-    --color-text-base: hsl(0, 0%, 95%);
-    --color-bg-primary: hsl(30, 30%, 10%);
-    --color-bg-accent: hsl(30, 60%, 90%); /* Lighter orange */
-    --color-bg-light: hsl(30, 75%, 95%); /* New */
-  }
-
-  .light-orange {
-    --color-primary: hsl(30, 70%, 40%);
-    --color-secondary: hsl(30, 70%, 60%);
-    --color-text-base: hsl(0, 0%, 10%);
-    --color-bg-primary: hsl(30, 90%, 95%);
-    --color-bg-accent: hsl(30, 85%, 95%);
-    --color-bg-light: hsl(30, 92.5%, 97.5%); /* Lighter orange */
-  }
-
-  .dark-yellow {
-    --color-primary: hsl(50, 40%, 30%);
-    --color-secondary: hsl(50, 40%, 50%);
-    --color-text-base: hsl(0, 0%, 95%);
-    --color-bg-primary: hsl(50, 30%, 10%);
-    --color-bg-accent: hsl(50, 60%, 90%); /* Lighter yellow */
-    --color-bg-light: hsl(50, 75%, 95%); /* New */
-  }
-
-  .light-yellow {
-    --color-primary: hsl(50, 70%, 40%);
-    --color-secondary: hsl(50, 70%, 60%);
-    --color-text-base: hsl(0, 0%, 10%);
-    --color-bg-primary: hsl(50, 90%, 95%);
-    --color-bg-accent: hsl(50, 85%, 95%);
-    --color-bg-light: hsl(50, 92.5%, 97.5%); /* Lighter yellow */
-  }
-
-  .dark-cyan {
-    --color-primary: hsl(200, 40%, 30%);
-    --color-secondary: hsl(200, 40%, 50%);
-    --color-text-base: hsl(0, 0%, 95%);
-    --color-bg-primary: hsl(200, 30%, 10%);
-    --color-bg-accent: hsl(200, 60%, 90%); /* Lighter cyan */
-    --color-bg-light: hsl(200, 75%, 95%); /* New */
-  }
-
-  .light-cyan {
-    --color-primary: hsl(200, 70%, 40%);
-    --color-secondary: hsl(200, 70%, 60%);
-    --color-text-base: hsl(0, 0%, 10%);
-    --color-bg-primary: hsl(200, 90%, 95%);
-    --color-bg-accent: hsl(200, 85%, 95%); 
-    --color-bg-light: hsl(200, 92.5%, 97.5%);/* Lighter cyan */
-  }
-
-  .dark-teal {
-    --color-primary: hsl(180, 40%, 30%);
-    --color-secondary: hsl(180, 40%, 50%);
-    --color-text-base: hsl(0, 0%, 95%);
-    --color-bg-primary: hsl(180, 30%, 10%);
-    --color-bg-accent: hsl(180, 60%, 90%); /* Lighter teal */
-    --color-bg-light: hsl(180, 75%, 95%); /* New */
-  }
-
-  .light-teal {
-    --color-primary: hsl(180, 70%, 40%);
-    --color-secondary: hsl(180, 70%, 60%);
-    --color-text-base: hsl(0, 0%, 10%);
-    --color-bg-primary: hsl(180, 90%, 95%);
-    --color-bg-accent: hsl(180, 85%, 95%);
-    --color-bg-light: hsl(180, 92.5%, 97.5%); /* Lighter teal */
-  }
-
-  .dark-black {
-    --color-primary: hsl(0, 0%, 20%);
-    --color-secondary: hsl(0, 0%, 40%);
-    --color-text-base: hsl(0, 0%, 95%);
-    --color-bg-primary: hsl(0, 0%, 5%);
-    --color-bg-accent: hsl(0, 0%, 15%); /* Lighter black */
-    --color-bg-light: hsl(0, 75%, 95%); /* New */
-  }
-
-  .light-black {
-    --color-primary: hsl(0, 0%, 60%);
-    --color-secondary: hsl(0, 0%, 80%);
-    --color-text-base: hsl(0, 0%, 10%);
-    --color-bg-primary: hsl(0, 0%, 95%);
-    --color-bg-accent: hsl(0, 0%, 98%);
-    --color-bg-light: hsl(0, 92.5%, 97.5%); /* Lighter black */
-  }
+  /* More themes here ... */
 }
 
 @layer qwik-ui {
@@ -236,4 +180,3 @@
     }
   }
 }
-
