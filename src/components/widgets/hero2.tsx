@@ -43,7 +43,7 @@ export default component$((props: Props) => {
 
   return (
     <div class="relative bg-p1 min-h-screen overflow-hidden flex items-center justify-center py-6">
-      <div class="grid-background absolute inset-0 grid-animate opacity-20 p-2 -mt-16 grid grid-cols-6 gap-1 transform -skew-y-0 scale-100">
+      <div class="grid-background absolute inset-0 grid-animate opacity-30 p-2 -mt-16 grid grid-cols-6 gap-1 transform -skew-y-12 scale-100">
         {gridItemsStore.gridItems.map((item, index) => (
           <div
             key={index}
