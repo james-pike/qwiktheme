@@ -16,8 +16,8 @@ import { SITE } from "~/config.mjs";
 import { useTheme } from "~/lib/provider";
 import Pricing from "~/components/widgets/Pricing";
 import Test2 from "~/components/widgets/Test2";
-import HeroGrid from "~/components/widgets/HeroGrid";
 import Grid2 from "~/components/widgets/grid2";
+import Hero2 from "~/components/widgets/hero2";
 
 
 export default component$(() => {
@@ -29,7 +29,14 @@ export default component$(() => {
     <>
     <div class={themeSig.value}>
 
-      <HeroGrid />
+    <Hero2
+  highlight="Etchy Sketchy 0.1.0"
+  title="Be A Better Designer"
+  subtitle="Bringing you the latest in retro design tools—because digital brushes are overrated."
+  items={[
+   
+  ]}
+/>
       
     {/* <Hero1  highlight="Contact Us"
   title="Get in Touch"
