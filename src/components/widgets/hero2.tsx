@@ -55,7 +55,11 @@ export default component$((props: Props) => {
       <div class="relative max-w-4xl mx-auto px-5 lg:px-8">
         <div class="max-w-3xl mx-auto lg:mt-24 bg-p1 rounded-lg pt-8 p-6">
           <Headline title={title} subtitle={subtitle} highlight={highlight} classes={classes?.headline} />
+          <div class="sm:max-w-md flex flex-col sm:flex-row sm:justify-center gap-4 lg:justify-start">
           
+            <button class="btn w-full bg-p7 text-white p-2">Start Etching</button>
+            <button class="btn w-full bg-p3 p-2">Learn More</button>
+          </div>
         </div>
       </div>
     </div>
